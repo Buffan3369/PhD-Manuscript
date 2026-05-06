@@ -1,0 +1,4 @@
+# Literature cited {.unnumbered header-title="Literature cited"}
+
+::: {#refs}
+:::

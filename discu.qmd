@@ -1,0 +1,33 @@
+# Discussion {.unnumbered header-title="Discussion"}
+
+## Limitations
+
+Lack of time-continuous proxy for precipitations.
+
+Lack of well-constrained phylogenetic framework, as many of the endemic Cenozoic South American mammal fauna has gone extinct
+
+### Terminology, definitions and other macroevolutionary enigmas
+
+Defining a species?
+
+Inferring diversity/diversification patterns from the fossil record: Signor & Lipps effect @signor1982
+
+## Perspectives
+
+### An almost closed system: founding migrations in the Palaeogene history of South American mammals
+
+Hystricognath rodents & Platyrrhine primates. Introduce the debate. We lack fossil evidence for the earliest comers, oldest occurrences in Western Amazonia whereas most likely come from Afro-Asian ancestors, so should have arrived by the East. Polyphyletic/several crossing events? Summarised in @marivaux2023
+
+@pino for migrations and impact on SA diversity
+
+There is still some work to do to accurately elucidate continent-scale macroevolutionary dynamics of Caviomorph rodents (others than Chinchilloids, a contribution of this thesis): set the scene for GIGARAT
+
+### Sustainable late Cenozoic connection to North America: what drove the asymmetry of the GABI?
+
+Set the scene for IMBALANCE
+
+How about neutral theory?
+
+### Future directions towards an improved understanding of the emergence and dynamics of South American ecosystems
+
+DIACHRONANDES, PHENOMENA

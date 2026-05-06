@@ -1,0 +1,61 @@
+project:
+  type: book
+  
+book:
+  title: "Macroecological and macroevolutionary perspectives on the Cenozoic history of South American Mammals"
+  author: "Lucas Buffan"
+  chapters:
+    - index.qmd
+    - introduction.qmd
+    - chap_div_cnz.qmd
+    - chap_chinchi.qmd
+    - chap_gabi.qmd
+    - discu.qmd
+    - ccl.qmd
+    - glossary.qmd
+    - references.qmd
+  
+bibliography: references.bib
+#citecolor: LimeGreen
+csl: ecology-letters.csl
+
+format:
+  pdf:
+    indent: true
+    documentclass: scrreprt
+    papersize: letter
+    geometry: 
+      - left=25mm
+      - right=25mm
+      - bottom=25mm
+      - top=25mm
+    link-citations: true
+    fig-pos: h
+    filters: 
+      - custom-header.lua
+    include-in-header: 
+      text: |
+        % Increase Line Spacing
+        \setlength{\parskip}{0.5\baselineskip}
+        
+        % Display section-specific header
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \renewcommand{\headrulewidth}{0.4pt}
+        
+        % 1. Initialize \myheader as empty BEFORE any section
+        \newcommand{\myheader}{}
+        
+        % 2. Define the header content
+        \fancyhead[R]{\myheader}
+        
+        % CRITICAL FIX: Force headers on ALL pages, including the first of a section
+        \renewcommand{\chapterpagestyle}{fancy}
+        
+        % Add page numbers
+        \fancyfoot[C]{\thepage}
+        
+    
+editor: visual
+

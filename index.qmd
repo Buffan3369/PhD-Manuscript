@@ -1,0 +1,33 @@
+\pagenumbering{roman}
+
+# Foreword and Acknowledgements {.unnumbered header-title="Foreword and Acknowledgements"}
+
+## Foreword
+
+::: {.content-visible unless-format="pdf"}
+Back in the days, Aristotle famously wrote that "*The more you know, the more you realise you don't know*". This statement has a particularly strong reasoning at the time I jump into the first lines of what is supposed to be the achievement of three years of intense labour on a topic on which I will apparently become an *expert* of.
+:::
+
+## Acknowledgements
+
+::: {.content-visible unless-format="pdf"}
+### People
+
+Sofía y Dani.
+
+Merci PierrO. N'en déplaise à toute considération d'horizontalité hiérarchique, à bien des égards, t'es le boss.
+
+Guillaume pour ces échanges au détour d'un café ou autre dont je pense être sorti grandi, et, plus généralement, ton regard très intégré sur les questions de macroévolution et le registre fossile et ton appétance -- partagée -- pour les douceurs anisées.
+
+Laurent Sausset, Amandine Lazarini.
+
+### Funds
+
+Ministère de l'Enseignement Supérieur et de la Recherche, via Contrat Doctoral Spécifique Normalien. Labex CEBA (EMERGENCE) for financing my attendance to the GTÖ Lisbon (02/2024) congress, the two missions in Amazonia, and one paper in PNAS. ECOS-Nord for travel tickets to Colombia. PEM-PAL teams for their support to attend PalAss 2024 and 2025. The Palaeontological Association for travel grants. Thomas J. Smith, Erin E. Saupe and her NERC project for organising this highly insightful workshop about spatial methods to study the fossil record in Oxford (03/2024). Alexis Licht and ERC DISPERSAL for organising BIOGEOPHYLO workshop (03/2025), probably the most inspiring and interesting scientific event I have had the chance to attend so far. MAPAS project ERC for financing my tickets to Vigo in June 2024. École Doctorale GAIA for travel grant to attend AEET-SIBECOL joint congress in Pontevedra and my subsequent stay in Vigo (06/2025).
+
+{{< pagebreak >}}
+
+\noindent "*Le génie est fait d'1% d'inspiration et de 99% de transpiration*" -- Thomas Edison
+
+\noindent Ça doit puer un génie...
+:::

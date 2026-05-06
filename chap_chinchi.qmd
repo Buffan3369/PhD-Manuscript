@@ -1,0 +1,9 @@
+# Chapter 2. A matter of size: what underpinned the rise and demise of the largest rodents that ever lived? {.unnumbered header-title="Chapter 2"}
+
+::: {.content-visible unless-format="pdf"}
+
+## Foreword
+
+With their 2,747 recognised species organised into 540 genera, rodents are the most diverse mammal order, accounting for *c.* $40\%$ of extant mammal diversity [@burgin2025]. Within rodents, New World hystricognaths (Hystricognathi: Caviomorpha) encompass *c.* $10\%$ of the extant rodent diversity. This speciose and morphologically disparate American and Caribbean radiation can be divided into four major clades: Octodontoidea (spiny rats and relatives), Cavioidea (maras, cavies, capybara and relatives), Erethizontoidea (New World porcupines) and Chinchilloidea (chinchillas, viscachas and pacarana) [@upham2015; @álvarez2017]. Talk about their arrival on the continent
+
+:::
