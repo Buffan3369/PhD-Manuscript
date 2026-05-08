@@ -260,24 +260,13 @@ include_graphics("./Figures/Collection_map/Collection_plot_annotated.png")
 
 ### First stratum: endemic radiations (late Cretaceous--middle Eocene)
 
-The oldest Cenozoic South American land mammalian assemblages date back to the early Palaeocene. These have been recovered from the Punta Peligro (Argentina) and Tiupampa (Bolivia) localities (@fig-MapLoc), each leading to the recognition of the oldest intervals of the South American Land Mammal Age (SALMA) scale, namely, the Peligran and the Tiupampan (**Fig SALMAs**). Biochronological evidence suggests the Tiupampan SALMA to be older than the Peligran SALMA, and corroborate an age interval of 64.5--64 Ma for the Tiupampan fauna [@gelfo2009]. An additional occurrence of pre-Tiumpampan therian mammal was recovered from the Grenier Farm locality (@fig-MapLoc), and was assigned to the extinct metatherian order Polydolopimorphia [@goin2006].
+The oldest Cenozoic South American land mammalian assemblages date back to the early Palaeocene. These have been recovered from the Punta Peligro (Argentina) and Tiupampa (Bolivia) localities (@fig-MapCol), each leading to the recognition of the oldest intervals of the South American Land Mammal Age (SALMA) scale, namely, the Peligran and the Tiupampan (**Fig SALMAs**). Biochronological evidence suggests the Tiupampan SALMA to be older than the Peligran SALMA, and corroborate an age interval of 64.5--64 Ma for the Tiupampan fauna [@gelfo2009]. An additional occurrence of pre-Tiumpampan therian mammal was recovered from the Grenier Farm locality (@fig-MapCol), and was assigned to the extinct metatherian order Polydolopimorphia [@goin2006].
 
-The faunal composition of the Tiupampan and Peligran assemblages delivered precious insights into the early Cenozoic history of South American mammals. The great metatherian diversity (@fig-metatheria), together with the presence of representatives from several ungulate-related lineages typically found in the Northern hemisphere (formerely grouped into the 'condylarths'), suggested that South American mammalian assemblages received significant faunal supply from North America between the late Cretaceous and the early Palaeocene [@pascual2006]. Geological evidence indeed corroborated the possibility for intermediate episodic connections between North and South America in that interval [@pascual2006], possibly also involving the Caribbean islands [@viñola-lópez2022]. As an echo to the name 'Great American Biotic Interchange' (see @sec-strat3 and \textcolor{Blue}{Chapter 3}), this keystone biotic exchange for the architecture of Simpson's first stratum was thus termed 'First American Biotic Interchange' (FABI) [@goin_origin_2012].
-
-Along with these therian lineages of North American affinity, non-therian lineages persisted in South America at least until the mid-Palaeogene -- thus well after the Cretaceous--Palaeogene boundary [@goin_gondwana_2012].
-
-```{r, echo=FALSE}
-#| label: fig-metatheria
-#| out-width: 15cm
-#| fig-cap: "Order-level persistence of South American metatherians in the fossil record. Fading colours mean that the group has no known fossil record for the period, but should already exist. Photos were taken from iNaturalist (credit: Jorge Brito, Eduardo Silva Rodriguez, Thiago Chagas). *Wamradolops telloi* cranium comes from @stutz2026, reproduced with permission."
-
-include_graphics("./Figures/SAM_simplified_chronogram/metatheria_chronogram.png")
-
-```
+The faunal composition of the Tiupampan and Peligran assemblages provided precious insights into the early Cenozoic history of South American mammals. These faunas are dominated by metatherian and 
 
 ### Second stratum: Palaeogene migrant arrival and diversification (late Eocene--Late Miocene)
 
-### Third stratum: North American migrant arrival, massive faunal disruption, and establishment of the extant mammal biodiversity across the Neotropics (latest Miocene--Present) {#sec-strat3}
+### Third stratum: North American migrant arrival, massive faunal disruption, and establishment of the extant mammal biodiversity across the Neotropics (latest Miocene--Present)
 
 Tropical North America: "the portion of the North American continent which belongs zoologically to South America" [@wallace1876].
 
