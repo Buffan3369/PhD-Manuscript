@@ -242,9 +242,9 @@ South American mammal palaeontology sadly started as a colonisation by-product, 
 
 The second half of the 19$^{th}$ century marked the beginning of South American mammal palaeontology made by scientists from South America, or more precisely, from the Republic of Argentina. At that time, natural sciences, as well as any other field contributing to sharpening knowledge on the country's own territory, were envisaged as nation-building, and the Southern part of the country (Pampas and Patagonia provinces) had long been recognised to overflow with fossil remains of extinct animals. Consequently, important efforts were devoted to collect and shed light on the country's archaeological and palaeontological patrimony, centralised within national museums, such as the "Museo Nacional de La Plata", headed by the prominent explorer and natural scientist Francico Moreno in the 1870s.
 
-South American mammal palaeontology owes a lot to the labour of the patriotic Argentinian palaeontologist Florentino Ameghino. Relying on fossil material mostly collected during field expeditions led by his brother Carlos, Florentino Ameghino produced a remarkable quantity of systematic palaeontological work, and his written productions are regarded as essential building-blocks for South American palaeomammalogy. These are probably best exemplified by his foundational monographies, such as "*Contribución al conocimiento de los mammíferos fósiles de la República Argentina*" [@ameghino1889], where several hundreds of taxa from the Argentinian fossil record are described. Argentina's fossil richness, together with the aforementioned efforts to enlighten its natural patrimony, made that South American palaeomammalogy long remained essentially constrained to the country, hence the striking spatial clustering of the fossil occurrences in the Southern cone depicted on (@fig-MapLoc). As recalled by @simpson1940, in the first half of the 20$^{th}$ century, knowledge of Cenozoic mammal remains outside Argentina was very scarce. Many of the most significant discoveries of non-Argentinian mammal-bearing fossil localities (as those highlighted on @fig-MapLoc) have indeed occurred throughout the last 80 years.
+South American mammal palaeontology owes a lot to the labour of the patriotic Argentinian palaeontologist Florentino Ameghino. Relying on fossil material mostly collected during field expeditions led by his brother Carlos, Florentino Ameghino produced a remarkable quantity of systematic palaeontological work, and his written productions are regarded as essential building-blocks for South American palaeomammalogy. These are probably best exemplified by his foundational monographies, such as "*Contribución al conocimiento de los mammíferos fósiles de la República Argentina*" [@ameghino1889], where several hundreds of taxa from the Argentinian fossil record are described. Argentina's fossil richness, together with the aforementioned efforts to enlighten its natural patrimony, made that South American palaeomammalogy long remained essentially constrained to the country, hence the striking spatial clustering of the fossil occurrences in the Southern cone depicted on @fig-MapLoc. As recalled by @simpson1940, in the first half of the 20$^{th}$ century, knowledge of Cenozoic mammal remains outside Argentina was very scarce. Many of the most significant discoveries of non-Argentinian mammal-bearing fossil localities (as those highlighted on @fig-MapLoc) have indeed occurred throughout the last 80 years.
 
-In the 1930s, the young U.S. vertebrate palaeontologist George G. Simpson, later to become the renowed architect of the Modern Synthesis of Evolution [@futuyma2015], carried out his first expeditions in South America, intrigued by the continent's peculiar fossils. Simpson further developed a strong interest towards understanding the evolution of South American mammals, that animated him all over his career [*e*.*g*., @simpson1940; -@simpson1950; -@simpson1967; -@simpson1970]. In 1980, he integrated all the fossil record known at that time to produce a cornerstone synthesis of the South American mammalian evolution across the Cenozoic, that is still used as a reference today [@simpson1980]. In his book, he proposed that the tempo of South American mammalian evolution could be summarised by three temporally-distinct 'faunal strata', that will be briefly outlined in the subesquent sections.
+In the 1930s, the young U.S. vertebrate palaeontologist George G. Simpson, later to become the renowed architect of the Modern Synthesis of Evolution [@futuyma2015], carried out his first expeditions in South America, intrigued by the continent's peculiar fossils. Simpson further developed a strong interest towards understanding the evolution of South American mammals, that animated him all over his career [*e*.*g*., @simpson1940; -@simpson1950; -@simpson1967; -@simpson1970]. In 1980, he produced a cornerstone synthesis of South American mammalian evolution across the Cenozoic, that is still used as a reference today [@simpson1980]. In his book, he proposed that the tempo of South American mammalian evolution could be summarised by three temporally-distinct 'faunal strata', that will be briefly outlined in the subesquent sections (@fig-SALMA).
 
 ::: {.content-visible unless-format="pdf"}
 Then, the beginning of the 1910s saw the rise of another greatly recognised Argentinian figure of South American mammal palaeontology: Lucas Kraglievich, who produced major contributions to the knowledge of the evolution of xenarthrans, caviomorphs and native ungulates of Argentina and, in the last years of his life, of Uruguay. Carlos de Paula Couto?
@@ -258,28 +258,66 @@ Then, the beginning of the 1910s saw the rise of another greatly recognised Arge
 include_graphics("./Figures/Collection_map/Collection_plot_annotated.png")
 ```
 
-### First stratum: endemic radiations (late Cretaceous--middle Eocene)
+### First stratum: endemic radiations (Late Cretaceous--middle Eocene)
 
-The oldest Cenozoic South American land mammalian assemblages date back to the early Palaeocene. These have been recovered from the Punta Peligro (Argentina) and Tiupampa (Bolivia) localities (@fig-MapLoc), each leading to the recognition of the oldest intervals of the South American Land Mammal Age (SALMA) scale, namely, the Peligran and the Tiupampan (**Fig SALMAs**). Biochronological evidence suggests the Tiupampan SALMA to be older than the Peligran SALMA, and corroborate an age interval of 64.5--64 Ma for the Tiupampan fauna [@gelfo2009]. An additional occurrence of pre-Tiumpampan therian mammal was recovered from the Grenier Farm locality (@fig-MapLoc), and was assigned to the extinct metatherian order Polydolopimorphia [@goin2006].
+Simpson's first stratum characterises the early phase of South American mammal evolution in the aftermath of the continent's isolation. It is thought to have lasted from the Late Cretaceous/early Palaeocene to the late middle Eocene. Mammal at that time are often referred to as the continent's 'original inhabitants'. These would include endemic metatherians (@fig-metatheria), native ungulates (@fig-SANUs), xenarthrans (@fig-Xenarthra), as well as a few remnant non-therian lineages (*e*.*g*., Gondwanatheria).
 
-The faunal composition of the Tiupampan and Peligran assemblages delivered precious insights into the early Cenozoic history of South American mammals. The great metatherian diversity (@fig-metatheria), together with the presence of representatives from several ungulate-related lineages typically found in the Northern hemisphere (formerely grouped into the 'condylarths'), suggested that South American mammalian assemblages received significant faunal supply from North America between the late Cretaceous and the early Palaeocene [@pascual2006]. Geological evidence indeed corroborated the possibility for intermediate episodic connections between North and South America in that interval [@pascual2006], possibly also involving the Caribbean islands [@viñola-lópez2022]. As an echo to the name 'Great American Biotic Interchange' (see @sec-strat3 and \textcolor{Blue}{Chapter 3}), this keystone biotic exchange for the architecture of Simpson's first stratum was thus termed 'First American Biotic Interchange' (FABI) [@goin_origin_2012].
+The oldest Cenozoic South American land mammalian assemblages date back to the early Palaeocene. These have been recovered from the Punta Peligro (Argentina) and Tiupampa (Bolivia) localities (@fig-MapLoc), each leading to the recognition of the oldest intervals of the South American Land Mammal Age (SALMA) scale, namely, the Peligran and the Tiupampan (@fig-SALMA). Biochronological evidence suggests the Tiupampan SALMA to be older than the Peligran SALMA, and corroborate an age interval of 64.5--64 Ma for the Tiupampan fauna [@gelfo2009]. An additional occurrence of pre-Tiumpampan therian mammal was recovered from the Grenier Farm locality (@fig-MapLoc), and was assigned to the extinct metatherian order Polydolopimorphia [@goin2006].
+
+The faunal composition of the Tiupampan and Peligran assemblages delivered precious insights into the early Cenozoic history of South American mammals. The great metatherian diversity (@fig-metatheria), together with the presence of representatives from several ungulate-related lineages typically found in the Northern hemisphere (formerly grouped into the 'condylarths'), suggested that South American mammalian assemblages received significant faunal supply from North America between the late Cretaceous and the early Palaeocene [@pascual2006]. Geological evidence corroborated the possibility for intermediate episodic connections between the two continents in that interval [@pascual2006], possibly also involving the Caribbean islands [@viñola-lópez2022]. As an echo to the name 'Great American Biotic Interchange' (see @sec-strat3 and \textcolor{Blue}{Chapter 3}), this keystone biotic exchange for the architecture of Simpson's first stratum was thus termed 'First American Biotic Interchange' (FABI) [@goin_origin_2012].
 
 Along with these therian lineages of North American affinity, non-therian lineages persisted in South America at least until the mid-Palaeogene -- thus well after the Cretaceous--Palaeogene boundary [@goin_gondwana_2012].
+
+Younger assemblages characteristic of Simpson's first stratum notably include the São José de Itaboraí (often abbreviated Itaboraí) fauna (@fig-MapLoc), one of the most diverse in the Palaeogene of South America. It led to the Itaboraian SALMA, approximately dating back to 53 Ma (@fig-SALMA). The Itaboraian fauna is still dominated by metatherians [@goin2016]. It also revealed that all the higher South American Native Ungulate (SANU) lineages were clearly differentiated at that time (@fig-SANUs). More importantly, the Itaboraian fauna yielded the oldest known occurrence of already differentiated armadillos (Xenarthra: Cingulata) [@bergqvist2004], thus documenting the appearance of Xenarthra in the fossil record (@fig-Xenarthra). The late appearance of xenarthrans in the fossil record remains an enigma for South American mammal palaeontology, and has been referred to as the 'xenarthran mystery' [@goin2016]. Indeed, as suggested by their name meaning "weird articulations", xenarthrans, today represented by sloths, anteaters and armadillos, share very derived morphological characters that are not found in any other known eutherian mammal lineage. Molecular evidence suggests that they form a clade with the african group Afrotheria, called 'Atlantogenata', literally meaning "generated by the Atlantic ocean", and thus, would have diverged from their sister-group following the break-up of Gondwana, some 120 Ma [@waddell1999]. Why armadillos only appear in the fossil record *ca.* 53 Ma, and sloths in the Late Oligocene (@sec-strat2), whereas their divergence with other South American eutherians largely predates the earliest known mammal assemblages found on the continent thus remains an open question.
+
+Younger assemblages of the first stratum progressively record a turnover in the relative proportion of metatherian vs. eutherian mammals in the communities, with an increasing dominance of eutherians, that several authors related to the gradual Eocene climate cooling from *ca.* 50 Ma onwards [@goin2016; @croft_horned_2016; @westerhold2020].
+
+```{r, echo=FALSE}
+#| label: fig-SALMA
+#| out-height: 20cm
+#| fig-cap: "The South American Land Mammal Age (SALMA) scale used all over this thesis, depicted along with their corresponding Geological Time Scale (GTS) epochs, from the [International Chronostratigraphic Chart](https://stratigraphy.org/chart/) (v2024/12). Boundaries between SALMAs were defined on the basis of the most up-to-date literature [*e*.*g*., @bellinzoni2025; @gelfo2009; @dunn2013; @woodburne2014], but please note that many intervals lack absolute temporal calibration. Alongside are shown Simpson's three faunal strata [@simpson1980]."
+
+include_graphics("./Figures/GTS_plot/Detailed_GTS.png")
+```
+
+### Second stratum: Trans-atlantic migrations and faunal 'modernisation' (late Eocene--Late Miocene) {#sec-strat2}
+
+Most scientists agree that major re-organisations occurred among South American mammal assemblages near the Eocene--Oligocene boundary (that will be more thoroughly covered in \textcolor{Blue}{Chapter 1}), marking the onset of Simpson's second faunal stratum. This 
+
+### Third stratum: Inter-american exchange, massive faunal disruption, and establishment of the extant mammal biodiversity (latest Miocene--Present) {#sec-strat3}
+
+Tropical North America: "the portion of the North American continent which belongs zoologically to South America" [@wallace1876].
+
+
 
 ```{r, echo=FALSE}
 #| label: fig-metatheria
 #| out-width: 15cm
 #| fig-cap: "Order-level persistence of South American metatherians in the fossil record. Fading colours mean that the group has no known fossil record for the period, but should already exist. Photos were taken from iNaturalist (credit: Jorge Brito, Eduardo Silva Rodriguez, Thiago Chagas). *Wamradolops telloi* cranium comes from @stutz2026, reproduced with permission."
 
-include_graphics("./Figures/SAM_simplified_chronogram/metatheria_chronogram.png")
+include_graphics("./Figures/SAM_simplified_chronogram/metatheria/metatheria_chronogram.png")
 
 ```
 
-### Second stratum: Palaeogene migrant arrival and diversification (late Eocene--Late Miocene)
+```{r, echo=FALSE}
+#| label: fig-SANUs
+#| out-width: 15cm
+#| fig-cap: "Higher-level persistence of South American Native Ungulates (SANUs) in the fossil record, adapted from @croft2020. Fading colours depict uncertainty in the age of earliest fossil. Silhouettes are from Phylopic (credit: Julián Bayona)."
 
-### Third stratum: North American migrant arrival, massive faunal disruption, and establishment of the extant mammal biodiversity across the Neotropics (latest Miocene--Present) {#sec-strat3}
+include_graphics("./Figures/SAM_simplified_chronogram/SANUs/SANUs.png")
 
-Tropical North America: "the portion of the North American continent which belongs zoologically to South America" [@wallace1876].
+```
+
+```{r, echo=FALSE}
+#| label: fig-Xenarthra
+#| out-width: 15cm
+#| fig-cap: "Higher-level persistence of xenarthrans in the fossil record. Fading colours with question marks depict the 'xenarthran mystery', *i*.*e*., that the group in question has no known fossil record for the period, but should already exist. Divergence ages between the main lineages were taken from @tejada2024. Vermilingua and Folivora altogether form the order Pilosa. Silhouettes are from Phylopic (credit: Julián Bayona and Sarah Werning)."
+
+include_graphics("./Figures/SAM_simplified_chronogram/xenarthra/Xenarthra.png")
+
+```
+
+
 
 ## Challenges for South American mammal palaeontology {#sec-PalChal}
 
