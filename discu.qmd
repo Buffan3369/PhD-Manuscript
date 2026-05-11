@@ -18,7 +18,7 @@ Inferring diversity/diversification patterns from the fossil record: Signor & Li
 
 Hystricognath rodents & Platyrrhine primates. Introduce the debate. We lack fossil evidence for the earliest comers, oldest occurrences in Western Amazonia whereas most likely come from Afro-Asian ancestors, so should have arrived by the East. Polyphyletic/several crossing events? Summarised in @marivaux2023
 
-@pino for migrations and impact on SA diversity
+A recent quantitative study suggested that the diversification of rodents and primates negatively affected the diversity of the endemic groups [@pino2025].
 
 There is still some work to do to accurately elucidate continent-scale macroevolutionary dynamics of Caviomorph rodents (others than Chinchilloids, a contribution of this thesis): set the scene for GIGARAT
 
