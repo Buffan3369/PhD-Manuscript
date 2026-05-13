@@ -116,7 +116,6 @@ The third class of biases can be referred to as time-related biases. These compr
 
 Thus, studying large-scale biodiversity patterns across time requires embracing many sources of uncertainty.
 
-
 ```{r, echo=FALSE}
 #| label: fig-SpatBias
 #| out-width: 15cm
@@ -124,7 +123,6 @@ Thus, studying large-scale biodiversity patterns across time requires embracing 
 
 include_graphics("./Figures/Collection_map/Global_Mammalia_collections_PBDB.pdf")
 ```
-
 
 # Disentangling biodiversity patterns across space and time: the macro-eco-evolutionary perspective {#sec-MEEP}
 
@@ -144,7 +142,7 @@ Just like any other fields of evolutionary biology [@simpson1944], studying macr
 
 ### Tempo of Macroevolution: how do rates change across time? {#sec-MacroTempo}
 
-The temporal dynamics of diversification rates rule how clades' diversity change across evolutionary times (@sec-TempHetero). As 
+The temporal dynamics of diversification rates rule how clades' diversity change across evolutionary times (@sec-TempHetero). As
 
 - early acquisition of hovering flight and nectarivory among birds likely promoted the radiation of hummingbirds (Trochilidae) [@mayr2004]
 - early acquisition of echolochation likely favoured the radiation of bats [@hand2023]
@@ -152,7 +150,6 @@ The temporal dynamics of diversification rates rule how clades' diversity change
 - flower, along with other traits related to physiology (faster pace of living) promoted angiosperm radiation, Darwin's 'second abominable mystery' [@sauquet2017; @benton2022]
 
 Mass extinctions: @raup1982 @raup1986, @sepkoski2012 chap. 9
-
 
 ### Mode of Macroevolution: what drives macroevolutionary rate variations? {#sec-drivers}
 
@@ -222,31 +219,32 @@ TED
 
 # A strange biodiversity on a strange land : the case of mammals in South America
 
-South America has attracted the interest of natural scientists since the times of Humboldt, Darwin or Wallace.
+"*\[The Neotropical\] region includes South America, the Antilles and tropical North America; and it possesses more peculiar families of vertebrates and genera of birds and mammalia than any other region*" [@wallace1876]
 
-In 1876, Wallace wrote that the Neotropical region, encompassing South America, Caribbean Islands and tropical North America "possesses more peculiar families of vertebrates and genera of birds and mammalia than any other region" [@wallace1876].
+## South America across the Cenozoic: elements of palaeogeographical and palaeoenvironmental context {#sec-CnzSA}
 
-Introduce Wallaces' zoogeographical subregions for the Neotropics (Mexican, Brazilian, Antillean, Chiliean)?
+Due to its unique physical geography, South America offers an immense diversity of habitats, from tropical alluvial plains, dry highlands, grasslands to the top of the second highest mountains on Earth (@fig-physiography). Understanding the build-up of South American landscapes is vital to disentangle the build-up of South America's astonishing biodiversity.
 
-## South America across the Cenozoic: geographical and environmental context {#sec-CnzSA}
+South America had a very singular palaeogeographic history. Akin to Australia in the present day, the continent spent most of the Cenozoic completely isolated from other landmasses [@scotese2018]. In terms of faunal evolution, such an isolation had strong implications, that will be further detailed in @sec-SAFauna.
 
-Start from SA ecoregions in the present day (plot map, and ovelay with diversity of clades).
+Probably the main feature that stands out as one stares at the present-day map of South America is its marked topographical heterogeneity. The eastern side of the continent indeed appears topographically homogeneous, despite the existence of a few rolling areas like the Brazilian Highlands or the Guianian Shield (both composed of billion-years-old cratons, @fig-physiography). On the contrary, with the Andes stretching North-to-South over 8000 km, the Western margin of South America is considerably more topographically heterogeneous. The Andes, including more than 70 peaks above 5000 m and two out of the three highest plateaus on Earth, are the result of the subduction of the Nazca plate beneath the South American plate [@ramos2009]. Although the Andean subduction system started way earlier, the Andean orogenetic (*i*.*e*., mountain-building) cycle began in the late Early -- early Late Cretaceous [@horton2018; @ramos2009]. This uplift intensified from the Late Miocene onwards, showing a pronounced northwards-propagating diachrony [@gianni2020; @boschman2021] (@fig-SALMA). The eastern part of the Andes (matching the Andean foreland basins, see @boschman2021 for details), offering a wide altitudinal range and a tropical climate, is arguably the most species-rich region in the world (@fig-maps), and the origin of its huge local diversity has puzzled biogeographers since the times of Humboldt [@antonelli2018; @rahbek2019; -@rahbek_humboldt_2019]. In addition, it should be mentioned that a significant amount of low-latitude fossil evidence unearthed in the recent years came from this foreland basin [@antoine2017] (@fig-MapLoc).
 
-Palaeoenvironmental evolution: summarise & update @hoorn2010
+The palaeogeographic, palaeoclimatic and palaeoenvironmental history of South America during the Cenozoic was tightly related to the pace of the Andean uplift and its spatial dynamics [@hoorn2010]. A wealth of evidence indeed attests that the elevation of this mountain chain profoundly re-organised continental climate, notably since it represents a topographic barrier to atmospheric circulation, and thus, aridified some places and intensified precipitations in others [@hartley2003; @blisniuk2005]. These effects, of increasing intensity as the Andes got higher (notably since the Middle Miocene, @fig-SALMA), combined with global-scale temperature dynamics greatly shaped the landscapes at the continent scale, and notably the rise of open landscapes at the expense of closed forests [*e*.*g*., @palazzesi2012].
 
-Continental island framework
+The Andean uplift also exerted a major control on continent-scale hydrographic patterns, in turn strongly impacting the structure and composition of faunal and floral assemblages locally. From the Early to the late Middle Miocene (*ca.* 20--10 Ma), a vast wetland known as the 'Pebas MegaWetland System' (PMWS, @fig-SALMA) covered Western Amazonia, occupying significant portions of what is now Colombia, Ecuador, Peru, Venezuela and Brazil [@hoorn2022]. There is clear evidence supporting that, together with eustatism, the Andean uplift was the primary control of the emergence and sustaining of this system, mostly by causing subsidence and locally increasing precipitation rates [@hoorn2022 and literature therein]. The PMWS was characterised by a complex mixture of interconnected aquatic environments, such as lakes or swamps (somewhat analogous to what may be found in the Pantanal region in Brazil, see @marivaux2020), and was home to a unique biodiversity, very distinct from what is recovered from extant assemblages in the region [*e*.*g*., @antoine2017; @salas-gismondi2015; @tejada-lara2015]. The demise of the PMWS was most likely also a by-product of the Andean uplift. Similarly, there is strong evidence supporting that the Late Miocene marine introgression that flooded parts of what is now Northern Argentina, Brazil and Southern Bolivia, known as the 'Paranense sea' (named after the region of Paraná, see @fig-physiography and -@fig-SALMA) was primarily controlled by the Andean uplift [@hernández2005]. The Paranense sea is suspected to have been a strong driver for lineage diversification, particularly among caviomorph rodents [*e*.*g*., @candela2012].
 
-### Amazonia: a unique and dynamic tropical ecoregion
+Last, South American ecosystems were also immensely impacted the closure of the isthmus of Panama, regarded as an incontestable facilitator for the inter-American faunal admixture known as the 'Great American Biotic Interchange' (GABI, see @fig-SALMA and @sec-strat3) [@jaramillo2018]. The timing of the completion of an overland connection between the Americas, having profound implications for the temporal calibration of the GABI, has been widely debated. The age of 3.5 Ma has long been used as a benchmark [@bacon2015] but geological [@coates2013; @montes2015] and biological [@bacon2015] evidence also suggested an earlier age, raising some criticism [@lessios2015; @marko2015; @odea2016]. Nowadays, integrating data from several areas of Earth and biological sciences resulted in a consensus in which deep-water flow in the isthmian region ceased with the closure of the Central American Seaway by the late Middle Miocene (ca. 10 Ma). After this date, it is generally accepted that the Pacific and the Caribbean still exchanged shallow water until the late Pliocene (ca. 3.5--2.8 Ma), marking the emergence of a land bridge -- the so-called isthmus of Panama -- that most likely persisted until nowadays [@odea2016; @jaramillo2018].
 
-### The rise of the Andes : emergence of one of the largest and highest mountain chains, and its consequences on biodiversity
+```{r, echo=FALSE}
+#| label: fig-physiography
+#| fig-pos: 'H'
+#| out-height: 12cm
+#| fig-cap: Extant physiography of the South American continent.
 
-### Intermediate flooding events
+include_graphics("./Figures/Physiography/Labelled_SA_physiography.png")
+```
 
-### South America as a playground for evolutionary biologists
-
-## 'Splendid isolation': the captivating history of South American mammals across the Cenozoic
-
-“the southern tree of life, its own tree and independent of the one born and raised in the opposite hemisphere” (Francisco Moreno, El Museo de La Plata: Rápida ojeada sobre su fundación y desarrollo. Revista del Museo de La Plata 1 (1890–1891): 27–55)
+## 'Splendid isolation': the captivating history of South American mammals across the Cenozoic {#sec-SAFauna}
 
 ### History of mammal palaeontology in South America: a brief overview
 

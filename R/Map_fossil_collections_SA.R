@@ -21,6 +21,28 @@ r.df <- as.data.frame(r, xy = TRUE)
 colnames(r.df) <- c("lon", "lat", "elev")
 r.df <- r.df %>% filter(elev >= 0)
 
+# Save SA map
+SA_simple <- nw %>%
+  # Extract South America 
+  filter(ECO_NAM %in% c("North_Mesoamerica", "Nearctic", "South_Mesoamerica", "Carribean") == F) %>%
+  # Merge extracted polygons
+  st_union() %>% 
+  # Plot
+  ggplot() + 
+  geom_sf(lwd=0) +
+  geom_tile(data = r.df, aes(x = lon, y = lat, fill = elev)) +
+  scale_fill_continuous(low = "#fee391", high = "#662506") +
+  labs(fill = "Elevation (m)", colour = NULL) +
+  theme(axis.line = element_blank(),
+        axis.text = element_blank(),
+        axis.title = element_blank(),
+        axis.ticks = element_blank(),
+        panel.background = element_rect(fill = "#87aade"),
+        panel.grid = element_blank(),
+        plot.title = element_text(hjust = 0.5))
+
+ggsave("./Figures/Physiography/SA_Physiographic_map.png", SA_simple, dpi = 600, height = 20, width = 15, units = "cm")
+
 ## Process map data and plot ---------------------------------------------------
 PL <- list()
 itr <- factor(unique(spl_lonlat$epoch),
