@@ -2,7 +2,7 @@ project:
   type: book
   
 book:
-  title: "Macroecological and macroevolutionary perspectives on the Cenozoic history of South American Mammals"
+  title: "Macro-eco-evolutionary perspectives on the Cenozoic history of South American Mammals"
   author: "Lucas Buffan"
   chapters:
     - index.qmd
@@ -30,6 +30,7 @@ format:
       - bottom=25mm
       - top=25mm
     link-citations: true
+    toc-depth: 3
     fig-pos: h
     filters: 
       - custom-header.lua
