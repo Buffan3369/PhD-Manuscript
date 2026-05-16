@@ -1,10 +1,14 @@
 # Discussion {.unnumbered header-title="Discussion"}
 
+EOT: A mass extinction? Could this, as proposed by @bambach2006, reflect the fact that the definition of a mass extinction should incorporate degrees of freedom?
+
 ## Limitations
 
 Lack of time-continuous proxy for precipitations.
 
 Lack of well-constrained phylogenetic framework, as many of the endemic Cenozoic South American mammal fauna has gone extinct
+
+Traits mediate biotic interactions
 
 ### Terminology, definitions and other macroevolutionary enigmas
 
