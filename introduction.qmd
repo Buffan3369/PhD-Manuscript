@@ -114,7 +114,9 @@ Essentially, fossil-related biases can be grouped into three main classes. The f
 
 The second class of biases arising from the fossil record is more human-related, as it involves the *sampling* process. Indeed, unearthing a fossil has some parts of contingency. Should a hypothetical excavation be conducted a few metres away from a spot hosting a highly-valuable fossil, such a fossil would probably never be found. That being said, far from being uniformly distributed at the surface of the globe, sampling effort exhibits a striking spatial structure [@smith2001], being extremely high in some regions (*e*.*g*., North America, Europe, Japan), and extremely low in others (*e*.*g*., tropical non-Andean northern South America, Africa, South East Asia, Siberia, Antarctica) (@fig-SpatBias). It is interesting to notice that the most species-rich regions at present (*i*.*e*., the tropics, @fig-maps) are often the most fossil-depauperated (@fig-SpatBias). Consequently, the *known fossil record* (*i*.*e*., all the specimens that have been unearthed to date) is only a subsample of the *potential fossil record*, (*i*.*e*., all the biological remains that came to fossilise in the history of life), itself a subsample of all the life that ever existed [@benton2011]. Considering the spatial structure of the fossil record is an ongoing research avenue, that led to several keystone discoveries [@close2017; @flannery-sutherland2022; @reijenga2025].
 
-The third class of biases can be referred to as time-related biases. These comprise the difficulty to replace a fossil in an absolute temporal framework [@behrensmeyer2026]. Indeed, dating a fossil is far from being a trivial task. In the best scenario, nearby absolute anchoring points (*i*.*e*., minerals usually from tuffs or volcanic zircons that can be robustly dated with isotopes) allow to constrain the interval when the fossil-bearing beds were deposited (*absolute datation*). However, many deposits lack such temporal anchors, and are thus dated using indirect methods, that will not be detailed here (*relative datation*). Hence, age intervals coming along with a fossil can be large, which may in turn add another layer of uncertainty to upstream biodiversity-through-time reconstructions. Another source of time-related biases is the fact that the probability for a fossil to get eroded, and thus, lost, increases with its age. Consequently, the number of available fossil occurrences is expected to be larger for younger assemblages, an effect that @raup1979 termed 'pull of the Recent'.
+The stochastic character of both sampling and fossilisation fossilisation may lead, for a given taxon, to a significant truncation of its temporal persistence. Consequently, the oldest and youngest occurrences of this taxon may fail to accurately
+
+The third class of biases can be referred to as time-related biases. These comprise the difficulty to replace a fossil in an absolute temporal framework [@behrensmeyer2026]. Indeed, dating a fossil is far from being a trivial task. In the best scenario, nearby absolute anchoring points (*i*.*e*., minerals usually from tuffs or volcanic zircons that can be robustly dated with isotopes) allow to constrain the interval when the fossil-bearing beds were deposited (*absolute datation*). However, many deposits lack such temporal anchors, and are thus dated using indirect methods, that will not be detailed here (*relative datation*). Hence, age intervals coming along with a fossil can be large, which may in turn add another layer of uncertainty to upstream biodiversity-through-time reconstructions. Another source of time-related biases is the fact that the probability for a fossil to get eroded, and thus, lost, increases with its age. Consequently, the number of available fossil occurrences is expected to be larger for younger assemblages, an effect termed 'Pull of the Recent' [@foote2000].
 
 Thus, studying large-scale biodiversity patterns across time requires embracing many sources of uncertainty.
 
@@ -197,11 +199,24 @@ This section is aimed to provide a broad outline of some methodological means to
 
 Review from @benton2015
 
+#### The birth--death process {.unnumbered}
+
+In macroevolution, the dynamics of clade diversification are usually modelled by a birth--death process (of course, this only holds for *model-based methods*, not for *count methods*, see next section) [*see* @tavaré2018 *for an exhaustive outlook*]. This stochastic process, borrowed from the field of population dynamics, is a classical example of continuous-time Markov process. Consequently, under this model, the number of species within a clade at any step $i$ (here noted $N_i$) only depends on the number of species in the previous step ($N_{i-1}$). In addition, $N_i$ is ruled by two processes independently occurring at the scale of every individual lineages. Each lineage can indeed give birth to a new lineage (*speciation* event), or die (*extinction* event). In a birth--death process, speciation and extinction are modelled as Poisson point processes, and their respective intensities (also called rates) are usually noted $\lambda$ and $\mu$, expressed in number of events per lineage per unit of time. Thus, the birth--death process makes the strong assumption that speciation and extinction are instantaneous events, which may not be appropriate, particularly in the case of speciation [*see* @morlon2024 *for further discussion*].
+
+@kendall1948 generalised the constant-rate birth--death process by allowing $\lambda$ and $\mu$ to be functions of time. Half a century later, this foundational mathematical development spurred significant theoretical and computational innovations in the field of macroevolution [*e*.*g*., @budd2025; @condamine2013; @lambert2023; @maddison2007; @morlon2014; -@morlon2024; @quintero2024; @silvestro_bayesian_2014; @lehtonen2017; @stadler2010; -@stadler2018].
+
 #### Fossil occurrence-based {.unnumbered}
 
-Diversification rate inference has historically relied on fossil occurrence data.
+The first estimations of origination and extinction rates in macroevolution relied on the only direct source of evidence of life in the past, namely, the fossil record, and at least date back to the key contributions of @newell1952. Nowadays, occurrence-based estimations of diversification rates may be grouped into two different classes.
 
-Count methods. To circumvent several known biases of the fossil record (@sec-FossilBias), such as the 'pull of the recent' [@raup1979] or edge effects -- arising as the age of the oldest and youngest occurrences of a given taxon does not accurately reflect the taxon's origination and extinction ages [@signor1982] -- sampling strategies have known massive improvements in the late 20$^{th}$/early 21$^{st}$ century.
+*Count methods* have been the first historically applied. As their names indicate, these have originally consisted of approximating origination and extinction rates within a given time bin with raw counts of the number taxa appearing or disappearing within such a bin [*e*.*g*., @newell1952; @webb1976]. However, the palaeobiological community's growing concern about the caveats of the fossil record (@sec-FossilBias) challenged the accuracy of such estimates. Notably, the well characterisation of the 'Pull of the Recent' 
+
+
+triggered substantial methodological improvements within that set of methods. 
+
+Preservation issue can generate artificial truncations within the time range of a given taxon. Consequently, the taxon's first and last appearance date may fail to accurately reflect the actual origination and extinction 
+
+To circumvent several known biases of the fossil record (@sec-FossilBias), such as the 'pull of the recent' [@foote2000] or edge effects -- arising as the age of the oldest and youngest occurrences of a given taxon does not accurately reflect the taxon's origination and extinction ages [@signor1982] -- sampling strategies have known massive improvements in the late 20$^{th}$/early 21$^{st}$ century.
 
 Model-based methods.
 
@@ -351,7 +366,6 @@ As described by @woodburne2010, although the early phases of the GABI were chara
 
 What shaped the striking asymmetry of this lineage exchange has been one of the most puzzling issues in South American mammal palaeontology. Several hypotheses have indeed been proposed to explain such a exchange imbalance, that will be intensively reviewed and discussed in \textcolor{Blue}{Chapter 3}. The first hypotheses formulated involved some kind of competitive superiority of North American taxa out of South Americans [*e*.*g*., @simpson1950]. Later hypotheses instead placed the emphasis on the role of palaeoclimate change [*e*.*g*., @vrba1992; @webb1991]. @simpson1980 even termed such an exchange a "fortuitous experiment", arguing that if things were to be repeated, the resulting pattern would thus not necessarily be equivalent. On top of this, confounding effects may arise from megafaunal extinctions [@svenning2024; @hadler2026], several studies arguing that hunting may also have caused the demise of endemic (large-sized) south American clades in South America [@boscaini2025; @prates2021]. Consequently, despite being the subject of a wide range of studies, the drivers behind the asymmetry of the GABI remain an open question, and one of the core aims of the present doctoral work is to contribute to a better understanding of this fascinating enigma.
 
-
 ### Challenges for South American mammal palaeontology {#sec-PalChal}
 
 Despite being unique and invaluable, several challenges arise as we intend to work with the South American mammal fossil record, in addition to those previously mentioned arising while using fossils (@sec-FossilBias).
@@ -364,7 +378,7 @@ Such an incompletness was shown to significantly affect upstream macroevolutiona
 
 ```{r, echo=FALSE}
 #| label: fig-TMB
-#| fig-cap: Example of a fossil locality along the Huallaga river, Peruvian Amazonia (photo by the author).
+#| fig-cap: Example of a fossil locality along the Tambo river, Peruvian Amazonia (photo by the author).
 
 include_graphics("./Figures/TMB01-2025.jpeg")
 ```

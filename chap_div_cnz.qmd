@@ -1,19 +1,17 @@
-# Chapter 1. Deciphering the trends and drivers of South American mammal large-scale evolution across the Cenozoic {.unnumbered header-title="Chapter 1"}
-
-## Chapter 2.1. The fate of South America's endemic mammalian fauna in response to the most dramatic Cenozoic climate disruption
+# Chapter 1. The fate of South America's endemic mammalian fauna in response to the most dramatic Cenozoic climate disruption
 
 ::: {.content-visible unless-format="pdf"}
-### Foreword
+## Foreword
 
 Understanding what drove the emergence and demise of lineages during biodiversity crises may provide key insights at the time of the sixth mass extinction. Here, using a vetted fossil database, we explored how South American mammals (SAM) responded to the most dramatic Cenozoic climate cooling episode, the Eocene−Oligocene transition (ca. 34 Ma). We found that SAM experienced a gradual and long-standing diversity decline strongly related to late Eocene progressive climate cooling, followed by a major taxonomic turnover in the Oligocene, driven by diversity-dependent factors, Andean uplift and perhaps grassland expansion. SAM were therefore more subject to long-term diversity changes rather than abrupt ones, contrary to what would be expected in a mass extinction scenario.
 
-The content of this sub-chapter was published in PNAS [@buffan2025].
+The content of this chapter was published in PNAS [@buffan2025].
 
-### Abstract
+## Abstract
 
 Around 34 million years ago (Ma), the Eocene−Oligocene transition (EOT) marked the most dramatic global climatic cooling of the Cenozoic. On a planetary scale, paleontological evidence suggests that this transition was associated with major faunal turnovers, sometimes even regarded as a mass extinction crisis. In South America, there is no consensus on the response of the endemic mammals to this transition. Here, using a vetted fossil dataset and cutting-edge Bayesian methods, we analyzed the dynamics of South American mammal (SAM) diversification and their possible drivers across latitude (tropical vs. extratropical), taxonomic groups, and trophic guilds throughout the Eocene−Oligocene (ca. 56−23 Ma). Our results did not evidence any mass extinction among SAM at the EOT. Instead, they experienced a gradual and long-term diversity decline from the middle Eocene to the early Oligocene, followed by a sudden waxing-and-waning diversity associated with a large taxonomic – but not ecological – turnover. Tropical and extratropical lineages have had very distinct macroevolutionary histories. No effective change in the pace at which tropical lineages diversify was found, thus favoring the tropical stability hypothesis proposed by Wallace. Diversity-dependent effects, temperature and Andean uplift were recovered as probable drivers of SAM diversification across the period. Contrasting evidence casts doubt on the common hypothesis primarily linking Oligocene faunal changes to grassland expansion. Our findings illustrate the uniqueness of the deep-time interplay between endemic SAM and their physical environment in a context of climatic shift, highlighting the need to consider regional idiosyncrasies for understanding the coevolution of life and climate.
 
-### Introduction
+## Introduction
 
 Today, South America is home to a unique mammalian fauna, hosting one of the most species-rich regions of the world, Amazonia [@willig2003]. Although the extant mammalian taxonomic diversity in the continent is astonishing, it is a poor reflection of what can be drawn from the fossil record. In fact, throughout most of the Cenozoic (i.e., the last 66 million years), South America was isolated from other landmasses [@scotese_atlas_2021]. In this insular context, terrestrial mammal lineages that inhabited this huge landmass experienced unique radiations [@goin2016; @boivin2019; @croft2020; @beck2023; @tejada2024]. According to @simpson1980 , South American mammal (SAM) communities through the Cenozoic are well summarized by three successive ‘faunal strata’. The first one, stretching from the early Paleocene (66 million years ago, Ma) to the late Eocene (ca. 37 Ma), is characterized by the early establishment and radiation of endemic lineages, mostly xenarthrans, metatherians and native ungulates. Then, from the early Oligocene (ca. 33 Ma) until the Late Miocene-Early Pliocene (ca. 5 Ma), key morphological innovations appeared among native lineages, leading to a so-called ‘faunal modernization’ [@croft2008]. In the meantime, rodents and primates, Afro-Asian lineages that most likely reached South America in the middle-late Eocene [@antoine2012; @bond2015; @marivaux2023], diversified locally [@boivin2019; @beck2023]. In Plio-Pleistocene times, this endemic fauna was massively disrupted. Meanwhile, the closure of the Panama isthmus [@montes2015] had paved the way for major faunal exchanges between North and South America, described as the ‘Great American Biotic Interchange’ [@marshall1988], and immigrant taxa from North America (*e*.*g*., carnivores, perissodactyls, artiodactyls, or proboscideans) appeared in the South American fossil record. In the last millions of years, many endemic South American lineages declined, or even went totally extinct (e.g., litopterns, notoungulates, sparassodonts, glyptodonts, ground sloths).
 
@@ -28,4 +26,3 @@ Here, we aim to fill these gaps by examining the available fossil record of SAM.
 {{< pagebreak >}}
 :::
 
-## Chapter 2.2. Continent-scale insights into the last 23 million years of South American mammalian evolution
