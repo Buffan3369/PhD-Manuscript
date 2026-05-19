@@ -1,6 +1,8 @@
 project:
   type: book
   
+editor: source
+
 book:
   title: "Macro-eco-evolutionary perspectives on the Cenozoic history of South American Mammals"
   author: "Lucas Buffan"
@@ -57,6 +59,4 @@ format:
         % Add page numbers
         \fancyfoot[C]{\thepage}
         
-    
-editor: visual
 
