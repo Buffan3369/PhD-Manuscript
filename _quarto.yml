@@ -27,8 +27,8 @@ format:
     documentclass: scrreprt
     papersize: letter
     geometry: 
-      - left=25mm
-      - right=25mm
+      - left=23mm
+      - right=23mm
       - bottom=25mm
       - top=25mm
     link-citations: true
