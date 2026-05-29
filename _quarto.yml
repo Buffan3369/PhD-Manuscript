@@ -17,7 +17,7 @@ book:
     - glossary.qmd
     - references.qmd
   
-bibliography: references.bib
+bibliography: references1.bib
 #citecolor: LimeGreen
 csl: ecology-letters.csl
 
