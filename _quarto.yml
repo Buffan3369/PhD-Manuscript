@@ -10,6 +10,7 @@ book:
     - index.qmd
     - introduction.qmd
     - chap_div_cnz.qmd
+    - chap1_appendix.qmd
     - chap_chinchi.qmd
     - chap_gabi.qmd
     - discu.qmd
