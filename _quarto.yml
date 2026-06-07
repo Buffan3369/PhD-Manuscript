@@ -10,7 +10,6 @@ book:
     - index.qmd
     - introduction.qmd
     - chap_div_cnz.qmd
-    - chap1_appendix.qmd
     - chap_chinchi.qmd
     - chap_gabi.qmd
     - discu.qmd
@@ -18,8 +17,9 @@ book:
     - glossary.qmd
     - references.qmd
   
-bibliography: references1.bib
+bibliography: references.bib
 #citecolor: LimeGreen
+
 csl: ecology-letters.csl
 
 format:
@@ -60,4 +60,3 @@ format:
         % Add page numbers
         \fancyfoot[C]{\thepage}
         
-

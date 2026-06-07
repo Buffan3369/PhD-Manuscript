@@ -1,4 +1,4 @@
-# *Supporting Information Appendix for Chapter 1* {.unnumbered header-title="Chapter 1 -- *SI Appendix*"}
+# *Supporting Information Appendix for Chapter 1* {header-title="Chapter 1 -- SI Appendix"}
 
 ## Supplementary text
 
@@ -82,7 +82,6 @@ What changes is the diversification (birth-death) model they fit to the reconstr
 BDCS models were run across 10,000,000 iterations, sampling every 10,000.
 All subsequent analyses were performed in R v4.4.0 @R_citation.
 
-::: {.content-visible unless-format="pdf"}
 #### Age-Dependent Extinction
 
 To assess the effect of taxon age on its extinction probability, we fitted the Age-Dependent Extinction (ADE) model to our data (`-ADE 1` option in PyRate) @hagen_estimating_2018.
@@ -853,4 +852,4 @@ knitr::kable(tbl, align = 'c')
 
 
 
-:::
+
