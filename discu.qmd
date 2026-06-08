@@ -1,20 +1,10 @@
 # Discussion {header-title="Discussion"}
 
+## A deep-time perspective on the Cenozoic history of South American mammals
+
+### On the status of the Eocene--Oligocene boundary
+
 EOT: A mass extinction? Could this, as proposed by @bambach2006, reflect the fact that the definition of a mass extinction should incorporate degrees of freedom?
-
-## Limitations
-
-Lack of time-continuous proxy for precipitations.
-
-Lack of well-constrained phylogenetic framework, as many of the endemic Cenozoic South American mammal fauna has gone extinct
-
-Traits mediate biotic interactions
-
-### Terminology, definitions and other macroevolutionary enigmas
-
-Defining a species?
-
-## Perspectives
 
 ### An almost closed system: founding migrations in the Palaeogene history of South American mammals
 
@@ -24,7 +14,7 @@ A recent quantitative study suggested that the diversification of rodents and pr
 
 There is still some work to do to accurately elucidate continent-scale macroevolutionary dynamics of Caviomorph rodents (others than Chinchilloids, a contribution of this thesis): set the scene for GIGARAT
 
-### Sustainable late Cenozoic connection to North America: what drove the asymmetry of the GABI?
+### If climate didn't: what drove the asymmetry of the GABI?
 
 Set the scene for IMBALANCE
 
@@ -33,3 +23,22 @@ How about neutral theory?
 ### Future directions towards an improved understanding of the emergence and dynamics of South American ecosystems
 
 DIACHRONANDES, PHENOMENA
+
+## Dealing with the Devil: uncertainties in the large-scale study of biodiversity
+
+Lack of well-constrained phylogenetic framework, as many of the endemic Cenozoic South American mammal fauna has gone extinct
+
+Traits mediate biotic interactions
+
+Defining a species?
+
+### Apples, oranges and brushes: impact of the inherent biases 
+
+Data cleaning !
+
+Lack of time-continuous proxy for precipitations.
+
+### Simulating biodiversity : expanding or narrowing the field of possibilities?
+
+
+{{< pagebreak >}}

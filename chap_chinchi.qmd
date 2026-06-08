@@ -1,4 +1,9 @@
-# Chapter 2. A matter of size: what underpinned the rise and demise of the largest rodents that ever lived? {.unnumbered header-title="Chapter 2"}
+# Chapter 2. A matter of size: what underpinned the demise of the largest rodents that ever lived? {header-title="Chapter 2 -- Macroevolution of Chinchilloidea"}
+
+```{r, echo=FALSE}
+library(knitr)
+```
+
 
 ::: {.content-visible unless-format="pdf"}
 
@@ -7,3 +12,742 @@
 With their 2,747 recognised species organised into 540 genera, rodents are the most diverse mammal order, accounting for *c.* $40\%$ of extant mammal diversity [@burgin2025]. Within rodents, New World hystricognaths (Hystricognathi: Caviomorpha) encompass *c.* $10\%$ of the extant rodent diversity. This speciose and morphologically disparate American and Caribbean radiation can be divided into four major clades: Octodontoidea (spiny rats and relatives), Cavioidea (maras, cavies, capybara and relatives), Erethizontoidea (New World porcupines) and Chinchilloidea (chinchillas, viscachas and pacarana) [@upham2015; @álvarez2017]. Talk about their arrival on the continent
 
 :::
+
+Authors: Lucas Buffan¹\*, Myriam Boivin$^{2,3}$\*, Alicia Álvarez$^{2,3}$, Fabien L. Condamine¹, Laurent Marivaux¹
+
+|
+
+¹ Institut des Sciences de l’Évolution de Montpellier, Université de Montpellier, CNRS, IRD, Place Eugène Bataillon, 34095 Montpellier cedex 5, France.\
+² Laboratorio de Paleontología, Instituto de Ecorregiones Andinas (INECOA), CONICET -- Universidad Nacional de Jujuy, Avenida Bolivia 1661, 4600 San Salvador de Jujuy, Jujuy, Argentina.\
+³ Instituto de Geología y Minería (IdGyM), Universidad Nacional de Jujuy, Avenida Bolivia 1661, 4600 San Salvador de Jujuy, Jujuy, Argentina
+
+\* corresponding authors: lucas.l.buffan\@gmail.com, mboivin\@idgym.unju.edu.ar
+
+**Keywords:** Body Mass; Environment-dependent Diversification; Extinction Selectivity; Rodentia; South America; Trait-dependent Diversification
+
+## Abstract
+
+Understanding the causes behind evolutionary declines is a central aim of macroevolutionary research. Today, Chinchilloidea (chinchillas, vizcachas and relatives) only encompass a few species distributed across South America. However, the fossil record attests that this clade was much more diverse in the past, and notably accounted for some of the largest rodents that ever existed, until six times as heavy as a capybara -- the heaviest living rodent. Despite several hypotheses, the tempo of chinchilloid diversification remains poorly elucidated, and the causes behind their spectacular decline have never been properly quantified. Here, using a comprehensive dataset combining expert-revised fossil occurrences, molecular phylogenies, and the most exhaustive body mass and crown height reconstructions for the clade, we elucidate the macroevolutionary dynamics of Chinchilloidea and their likely trait and environmental correlates by means of a multi-approach framework relying on Bayesian birth--death models and neural networks. Our findings revealed that the demise of Chinchilloidea resulted from a Late Miocene change in extinction regime. This increase in extinction rate was selective against large-sized, extratropical taxa, and was likely mediated by the Andean uplift and sea-level changes, suggesting that the tectonically- and eustatically-controlled Late Miocene collapse of large wetlands contributed to selectively shape the decline of Chinchilloidea. We emphasise the coupled dynamics between chinchilloid diversity and body size disparity, illustrating the scale-dependence of the relationship between taxonomic diversity and morphological disparity. Our results illustrate how the complex interplay between traits and environmental factors shape the macroevolutionary fate of the clades.
+
+## Introduction
+
+How taxonomic diversity and morphological disparity vary and covary through evolutionary timescales has long puzzled macroevolutionary researchers [@jablonski2017]. Evolution towards gigantism has been repeatedly documented in the fossil record of a wide array of animal clades [*e*.*g*., @sander2011; @bianucci2023], raising the two-sided question of what drove the emergence and the subsequent demise of these remarkable phenotypes [*e*.*g*., @pimiento2019; @chiarenza2020; @boessenecker2019; @boscaini2025]. Two classes of factors are usually invoked to explain the long-term dynamics of taxonomic diversity. On one side, in its modern interpretation, the classical 'Red Queen' hypothesis [@vanvalen1973] posits that evolutionary changes primarily result from biotic interactions [@barnosky2001]. On the other hand, a wealth of hypotheses summarised under the 'Court Jester' model rather emphasise the role of abiotic factors as the primary drivers of evolutionary changes [@barnosky2001]. Deciphering how these factors shape speciation and extinction dynamics as well as the evolution of phenotypes is a central aim of macroevolutionary research [@benton2009], and may in turn provide answers to the evolutionary questions raised by gigantism.
+
+During most of the Cenozoic, the isolation of South America constrained the landmass' mammalian fauna to evolve in a vacuum, leading to a vast array of endemic radiations [@simpson1980]. Among the most emblematic are the impressively disparate New World hystricognath rodents (Hystricognathi: Caviomorpha), accounting for *c*. 10% of the global extant rodent diversity [@upham2026]. The astonishing disparity within Caviomorpha is greatly exemplified by their body size range, going far beyond what is usually found in the Rodentia, from 50 g (*Tympanoctomys kirchnerorum* Teta, 2014) to 50 kg (*Hydrochoerus hydrochaeris* Linnaeus, 1766, the largest living rodent) [@patton2015]. In fact, hystricognaths, and particularly caviomorphs, evolved the largest body sizes found in the Rodentia. Interestingly, evolution towards large (*i*.*e*., body mass above 10 kg) to giant (*i*.*e*., above 100 kg) body sizes occurred iteratively and independently in an almost coordinated way among distinct caviomorph lineages [*e*.*g*., @vucetich2015; @álvarez2017], a trend particularly well illustrated within the Chinchilloidea.
+
+Today, Chinchilloidea includes eight small-to-moderate-sized species with high-crowned, ever-growing (euhypsodont) cheek teeth, distributed among four distantly-related genera -- *Chinchilla* Bennett, 1829, *Lagidium* Meyen, 1933 and *Lagostomus* Brookes, 1828, forming the family Chinchillidae, and *Dinomys* Peters, 1873, the only living representative of the Dinomyidae (@fig-context). *Chinchilla* and *Lagidium*, encompassing six out of the eight described chinchilloid species, are distributed in the Andean cordillera, whereas *Lagostomus* and *Dinomys* respectively inhabit the Argentinian and the West-Amazonian plains. The fossil record of Chinchilloidea extends back to the latest Eocene [@antoine2021] and comprises more than 100 described species with variable degrees of crown height [@candela2005], and including many of the largest rodents ever recorded. On the South American landmass, fossils of giant chinchilloids were assigned to $\dagger$Neoepiblemidae (*e*.*g*., $\dagger$*Phoberomys* Kraglievitch, 1926) and Dinomyidae (*e*.*g*., $\dagger$*Isostylomys* Kraglievich, 1926 or $\dagger$*Josephoartigasia* Mones 2007, the latter being the largest rodent ever recorded) [*e*.*g*., @sánchez-villagra2003; @rinderknecht2008; @rasia2024]. All these giant taxa, together with the rest of the Chinchilloidea, flourished until the Late Miocene and further vanished, leaving the modest extant diversity of the group (achieving no more than some 15 kg for *Dinomys branickii*, the largest extant chinchilloid, an order of magnitude below its giant ancestors) as a relic of a formerly speciose superfamily [@vucetich2015]. Most of these extinct large-to-giant taxa are considered as likely semi-aquatic [*e*.*g*., @sánchez-villagra2003; @rinderknecht2008; @candela2013], a lifestyle that totally disappeared in the extant representatives of the superfamily. In addition, systematics based on morphological characters (primarily dental traits, @marivaux_early_2020) also placed the Pleistocene Caribbean 'giant hutias' $\dagger$*Amblyrhiza inundata* Cope, 1868 and $\dagger$*Elasmodontomys obliquus* Anthony, 1916 within Chinchilloidea[^1].
+
+[^1]: One might however mention that, as summarised by @marivaux2022, the phylogenetic placement of $\dagger$*Elasmodontomys* still represents a real *conundrum*, with contrasting sources of evidence either suggesting this taxon to be nested within Chinchilloidea [*e*.*g*., @marivaux_early_2020; @marivaux2022], Octodontoidea [*e*.*g*., @woods2021] -- another caviomorph superfamily -- or to be a morphological intermediate between those two clades (*i*.*e*., Octochinchilloi, sensu @boivin2019) [@macphee2011; @dacunha2023].
+
+Several hypotheses have been advocated to explain chinchilloid diversity dynamics and exceptional phenotypical evolution, though mostly emphasising high latitudes. Some authors argued that the environmentally-driven emergence of new niches, either promoted by the late Neogene climatic cooling and aridification [@vucetich2015] or the Late Miocene hydrographic changes [@candela2013], favoured the remarkable size-increase pattern found in this rodent clade [@álvarez2017]. Also, the spectacular sizes achieved by the 'Giant Hutias' -- particularly $\dagger$*Amblyrhiza* -- have often been proposed to result from the 'island rule' [*e*.*g*., @biknevicius1993; @mcfarlane1998], though the validity of this macroecological pattern has been under debate [*e*.*g*., @meiri2007]. However, our understanding of the evolutionary dynamics of Chinchilloidea, and particularly of their drastic evolutionary decline, remains fragmentary. Previous studies relying on a phylogenetic framework illustrated that the dynamics of caviomorph diversity and body mass evolution were decoupled [@álvarez2017; @carrillo2026]. Nevertheless, many extinct chinchilloid taxa lack DNA or sufficient morphological material to be adequately replaced in a phylogenetic framework, leading to their exclusion from subsequent macroevolutionary analyses relying on phylogenies. Thus, there is much to gain by relaxing phylogenetic assumptions and fully taking advantage of the rich fossil record of the group to reconstruct its macroevolutionary history [*but see* @carrillo2026]. In addition, despite the major palaeoenvironmental upheavals that took place in South America since the late Eocene (*e*.*g*., Andean orogeny, marine introgressions, river network changes, onset of the dry diagonal) as well as the vast array of methods that flourished over the last decade [*e*.*g*., @hauffe2024; @morlon2024 *and literature therein*], the macroevolutionary dynamics of Chinchilloidea have never been analysed in a trait- and environment-dependent diversification framework.
+
+Here, we investigate the evolutionary history of Chinchilloidea and highlight its trait and environmental correlates. To do so, we compiled and revised 708 chinchilloid fossil occurrences from online databases and the literature and used divergence times leading to extant species absent from the fossil record extracted from a dated phylogeny to build the most exhaustive temporal occurrence database ever produced for this group, encompassing 62 genera and 124 species. In parallel, we collected cranio-dental traits and measurements in order to (1) carry out body mass estimations based on recently-published sets of predictive equations, and (2) determine cheek teeth crown height categories based on hypsodonty indices. We further analysed chinchilloid diversity and diversification dynamics throughout their entire evolutionary history using state-of-the-art preservation-aware methodological frameworks, and sought for their likely environmental drivers, allowing rate variations across time, body size and crown height categories. We hypothesise that (i) climate -- in particular temperature -- evolution since the middle Miocene impacted the diversification history of Chinchilloidea; (ii) continent-scale changes in habitat connectivity, either mediated by hydrographic (*i*.*e*., sea level) or tectonic (*i*.*e*., Andean elevation) factors had repercussions on the macroevolutionary fate of Chinchilloidea; (iii) the magnitude of the changes in speciation and/or extinction rates were heterogeneous across body size and crown height categories.
+
+
+```{r, echo=FALSE}
+#| label: fig-context
+#| out-height: 15cm
+#| out-width: 13cm
+#| fig-pos: 'H'
+#| fig-cap: "A glimpse into the evolutionary history of Chinchilloidea : combined perspectives from a dated phylogeny and the fossil record. On the top left corner, we represented the extant caviomorph tree of life, encompassing four superfamilies: Octodontoidea, Cavioidea, Erethizontoidea and Chinchilloidea. At present, Chinchilloidea encompass eight species, represented on their dated sub-tree along with a few silhouettes (credits in @tbl-s3). Purple bars represent node age 95% Confidence Interval. On the bottom part of the figure, we plotted the raw chinchilloid species count across 5-Myr time bins from the fossil occurrence dataset that we built *de novo* ($n=124$ species). In the Late Miocene, up to 37 chinchilloid species were co-existing in a 5-Myr frame, contrasting with the extant diversity of the group. This paper seeks to understand the causes of this striking diversity decline."
+
+include_graphics("../Chinchilloids/Figures/Main/Figure_set_the_scene/Figure_context.png")
+```
+
+
+## Materials and Methods
+
+### Temporal occurrence database
+
+We downloaded genus- and species-level fossil occurrences of Chinchilloidea from The Paleobiology Database (https://paleobiodb.org). Each entry was then checked and, if necessary, updated by us (taxonomic name, fossiliferous locality and geologic formation, age range). We tried to give the most precise age range on the basis of the data available in the literature, firstly searching limits for the fossiliferous level(s), then increasing to the member, formation or locality level in case the first did not exist. We updated some ages previously published given recent chronostratigraphic (International Chronostratigraphic Chart 2024/12; @cohen2025) and geomagnetic [@ogg2020] scales. The SALMA limits are based on @dunn2013, @brandoni2016, @fernicola2019, @cuitiño2021 and @muñoz2023. This compilation was further complemented by an extensive literature review conducted up to April 2026, which enabled the removal of duplicates, the incorporation of missing published data [*e*.*g*., @arnal2026] and to account for the most up-to-date taxonomic revisions [*e*.*g*., @rasia2026]. We excluded occurrences with open nomenclature names (*cf*., *aff*., ?) from upstream analyses. Additional details on our data cleaning procedure may be found in Supplementary materials.
+
+We then obtained an exhaustive dated caviomorph phylogeny from VertLife (http://vertlife.org/phylosubsets). This tree was extracted from the credible set of 10,000 trees, including 5,911 mammalian species (Mammals birth--death node-dated completed trees; see @upham2019). Relying on this phylogeny, we developed a simple approach to incorporate extant species lacking fossil record (*i*.*e*., *Chinchilla chinchilla*[^2], *Chinchilla lanigera*, *Lagidium ahuacaense*, *Lagidium viscacia*[^3], *Lagidium wolffsohni* and *Dinomys branickii*) in our database (@fig-ExtSampl). Combining information from the fossil record and molecular phylogenies for macroevolutionary inference was already done for groups where a large proportion of the extant diversity is absent from the fossil record, like sharks [*e*.*g*., @brée2022; @jouault_ants_2024; @marion_bioluminescence_2025]. These studies typically considered the divergence times leading to extant species (hereafter termed $T_{d,i}$ for a given species $i$) as a proxy of extant species origination times ($T_{s,i}$), and carried out their macroevolutionary inference out of a single combined origination and extinction times dataset -- acknowledging that the extinction times of extant species were by definition equal to zero. Here, we propose to treat $T_{d,i}$ as a lower bound of $T_{s,i}$. Our approach therefore involves sampling virtual occurrences of each extant species $i$ within $[0, T_{d,i}]$, and incorporating these virtual occurrences into the previously-introduced fossil occurrence database. Assuming sampling probability to decrease as we get closer to $T_{d,i}$ [@liow2010], we therefore randomly drew $n$ occurrences of the species $i$ from a truncated exponential distribution ($^{tr}\epsilon$) of rate $\gamma$ determined so that an arbitrary proportion $\alpha$ of the non-truncated distribution lies within $[0, T_{d,i}]$ (@fig-ExtSampl). This leads to
+
+[^2]: Remains of *Chinchilla chinchilla* were in fact once reported from an archaeological assemblage, but we assume their age to be too close to the present to provide useful information on the time of speciation of the species.
+
+[^3]: Same as for *Lagidium viscacia* remains.
+
+$$\gamma = \frac{-ln(1-\alpha)}{T_{d,i}}$$
+
+In practice, we sampled $n=10$ values $T_{d,i}^{\star}$ from the 95% HPD of $T_{d,i}$ (@tbl-s2). Since we did not have direct access to the distribution in itself but rather to its lower and upper bounds (respectively $T_{d,i}^{2.5\%}$ and $T_{d,i}^{97.5\%}$), we approximated it to a normal distribution of mean $\mu = \frac{T_{d,i}^{97.5\%} + T_{d,i}^{2.5\%}}{2}$ and variance $\sigma^2 = \frac{T_{d,i}^{97.5\%}-\mu}{1.96}$. Then, for each of the 10 $T_{d,i}^{\star}$ values, we sampled the minimum and maximum ages of a virtual occurrence from $^{tr}\epsilon(\gamma)$ by setting $\alpha=0.95$, except for *Dinomys branickii*. Indeed, given that the divergence time of *D. branickii* with the rest of the extant representatives of the clade ($T_{d, branickii}$) is too ancient to be reasonably considered as an approximation of the time when the species originated (95% HPD = $[16.5, 24.8]$ Ma), we set $\alpha=0.999$ (@fig-s3). By doing so, we made it almost impossible to sample an occurrence maximum age close to $T_{d, branickii}$.
+
+All this resulted in one species-level database (536 occurrences, 124 species, including 56 singletons) and one genus-level database (769 occurrences, 61 genera, including 13 singletons), spanning the entire lifespan of the clade (from the latest Eocene to present), spread across South America and the West Indies (@fig-s1).
+
+Diversification rates obtained from the analysis of the resulting 'hybrid' temporal occurrence dataset (incorporating fossil occurrences and extant occurrences sampled following the pipeline that we went to describe) were compared to diversification rates obtained from a dataset in which extant taxa lacking fossil record were assigned a single occurrence of modern age (*i*.*e*., `min_age` = `max_age` = 0 Ma) (@fig-s1).
+
+To assess for potential heterogeneities in diversification rates across latitude, occurrences were binned into three spatial domains on the basis of their sampling location: Tropical, Extratropical and Caribbean. Due to the substantially fragmented nature of the West Indian fossil record, the latter domain -- only encompassing five species, $\dagger$*Borikenomys praecursor*, $\dagger$*Amblyrhiza inundata*, $\dagger$*Elasmodontomys obliquus*, $\dagger$*Clidomys osborni* and $\dagger$*Quemisia gravis* -- was very structured in time, only covering the Quaternary, with the notable exception of a single late early Oligocene taxon ($\dagger$*B*. *praecursor*). Analyses with and without these taxa were thus conducted.
+
+
+```{r, echo=FALSE}
+#| label: fig-ExtSampl
+#| out-width: 15cm
+#| fig-pos: 'H'
+#| fig-cap: Visual representation of the occurrence sampling scheme that we implemented for extant species lacking fossil record. We approximated the posterior distribution of the divergence times leading to a given extant species $i$ (denoted $T_{d,i}$) with a gaussian of mean and variance determined by the lower and upper boundaries of the empirical 95% HPD of $T_{d,i}$ (resp. $T_{d,i}^{2.5\%}$ and $T_{d,i}^{97.5\%}$) (**A**). Then, we randomly drew a value $T_{d,i}^{\star}$ from this distribution, serving as a lower boundary for the species' origination time (**B**). We then drew simulated occurrence's minimum and maximum ages (resp. 'MinAge' and 'MaxAge') from a truncated exponential distribution ($^{tr}\epsilon$) of rate $\gamma$ determined so that a proportion $\alpha$ of the non-truncated distribution lies between $0$ and $T_{d,i}^{\star}$ (**C--D**). Steps **B--D** were repeated $n$ times, so we finally ended up with $n$ simulated occurrences per extant species lacking fossil record. In practise, we set $n=10$ and $\alpha=0.95$, except for *Dinomys branickii*, for which we set $\alpha=0.999$. *Chinchilla chinchilla* silhouette is from [Phylopic](https://www.phylopic.org/), see Tab. S3 for additional information.
+
+include_graphics("../Chinchilloids/Figures/Main/extant_sampling/extant_sampling.png")
+```
+
+
+### Trait data collection
+
+On the basis of body mass reconstructions carried out from cranial and dental proxies detailed in @boivin2024, complemented with a literature review, species were classified in six body size categories: XS (\< 0.5kg), S (0.5--1kg), M (1--10kg), L (10--100kg), XL (100--200kg) and XXL (\> 200kg) (@fig-lifespans).
+
+We scored cheek teeth tooth growth types mainly based on the hypsodonty index (HI), which corresponds to the ratio between the crown height of an unworn tooth and its anteroposterior length or labiolingual width [@vanvalen1960; @janis1988]. We recognized four categories: brachydont (HI \< 0.9, rooted), mesodont (0.9 \< HI \< 1.1, rooted), protohypsodont (HI \> 1.1, rooted), and euhypsodont [HI \> 1.1, unrooted; @mones1982; @pérez_new_2010]. The category scoring was derived from literature sources, observations and unpublished measurements made by the authors (@fig-s7).
+
+In the end, body mass and HI estimates were obtained for nearly all species represented in our dataset (resp. 97% and 98%). Thus, this work presents the most exhaustive trait compilation so far assembled for the Chinchilloidea.
+
+### Palaeodiversity and diversification inference from the fossil record
+
+Our occurrence database was first analysed using PyRate v3.1.3 [@silvestro2014; @silvestro_improved_2019]. Species origination and extinction times (altogether forming the palaeodiversity) and the underlying diversification process (*i*.*e*., origination and extinction rates) were jointly estimated in a Bayesian framework accounting for preservation heterogeneity, and approximated through reversible-jump Markov Chain Monte Carlo (rjMCMC). We ran the rjMCMC algorithm for 10 million iterations, sampling every 10,000. We used a time-dependent preservation process allowing for preservation rate shift between geological stages (@fig-s4). In parallel, the same database was analysed using the Birth--Death model with Constrained Shifts (BDCS) [@silvestro_angiosperm_2015]. As its name indicates, this model allows diversification rates to vary across a user-defined set of bins (here, the same as those used for BDNN rate-through-time inference, see the corresponding section), thus limiting the potential impact of data incompleteness on the estimation of rate shifts across time.
+
+In either case, we used a time-dependent preservation process, in which preservation rate could vary between geological stages. We also allowed preservation rates to vary between lineages according to a *Gamma* model. These analyses were replicated 20 times after randomly sampling fossil ages between each occurrence's upper and lower age boundaries. MCMC runs that achieved convergence, *i*,*e*., with Effective Sample Size (ESS) over 200 ($n=20$, @fig-s5) were further combined. Several sensitivity analyses were conducted to assess the impact of (1) our new phylogeny-based sampling scheme for extant species lacking fossil record, (2) removing singletons and (3) incorporating recently-published taxonomic revision of a hyperdiverse dinomyid fauna located in North-East Argentina (Ituzaingó formation, @rasia2026) on the reconstructed diversification pattern. We also carried out analyses at the genus level. Parameter convergence was monitored using the pymc 5.9.2 python library, and we considered parameters achieved convergence following the same criterion as before ($ESS > 200$).
+
+In order to obtain an alternative perspective on the temporal patterns of chinchilloid diversity accounting for the incompleteness of the fossil record differently (*i*.*e*., without explicitly modelling it), we used the recently-developed fossil-based palaeodiversity reconstruction framework implemented in DeepDive v1.0.28 [@cooper2024]. DeepDive uses a biodiversity simulator based on a spatially-explicit birth--death process to simulate diversity trajectories of virtual clades. It further applies several filters (acting as fossilisation and sampling processes in a spatially-constrained manner) to 'degrade' simulated diversities and in turn simulate the fossil record. Simulation parameters (*e*.*g*., sample size, number of regions, ...) can be user-tuned so that simulated scenarios reflect more any empirical case study. Then, a deep-learning model relying on recursive neural networks is trained to predict palaeodiversity from a set of features directly extracted from the simulated fossil record (*e*.*g*., number of singletons, range-through diversity, ...) given the complete simulated diversity as a ground truth (supervised learning), within a user-defined set of time bins. Once the model achieves a satisfying training level (quantified with a loss function, see @tbl-s1), the same features are extracted from the empirical set of fossil occurrences and fed into the trained neural network to get an estimate of palaeodiversity through time. Consequently, DeepDive complements the inference of diversity through time made by PyRate very nicely, as it represents a means to overcome the complete lineage sampling assumption made by PyRate, one of the biggest limitations of the latter framework.
+
+In practice, we ran DeepDive from configuration files produced with the R package DeepDiveR v1.0 [@cooper2025]. Below, we provide an overview of our motivations behind some parameter values. Exhaustive details of the values we set for each parameter are available in the configuration files (see *Supplementary Data*).
+
+*Simulation.* We generated 150,000 training and 1,000 test sets. For each simulated dataset, the number of starting lineages was set between 30 and 150, and we chose to set the number of regions where our taxa occurred to three, reflecting our empirical trichotomy between tropical, extratropical, and Caribbean regions. We set the number of extant taxa in the simulations -- as well as in the predictions -- to 8, reflecting the number of extant chinchilloid species.
+
+*Model training.* Following @cooper2024, we tested models with variable numbers of bidirectional 'Long Short-Term Memory' (LSTM) layers, including (or not) additional fully-connected 'dense' layers, and selected the best architectures based on the mean squared error (MSE) between simulated (*i*.*e*., 'true') and predicted diversity of each set of fossil occurrences of our training set (`Evaluation loss`). Two architectures performed equally (`Evaluation loss = 0.377`, @tbl-s1): one comprised two LSTM layers (64 and 32 nodes) coupled with two dense layers (64 and 32 nodes) (@fig-s18), the other three LSTM layers (128, 64 and 32 nodes) coupled with two dense layers (64 and 32 nodes) (@fig-s19). Consequently, we selected the least complex architecture (*i*.*e*., the one with two LSTM layers).
+
+*Empirical predictions.* We made 100 replicates of age assignment for occurrences in our fossil database.
+
+### Drivers behind macroevolutionary patterns
+
+*Since insular and continental taxa are not subject to the same evolutionary constraints, we excluded the five West Indian taxa*[^4] from our environment-dependent diversification analyses. In particular, this avoided to test spurious relationships, for instance, the effect of the Andean uplift on the diversification of Caribbean taxa.
+
+[^4]: $\dagger$*Amblyrhiza inundata*, $\dagger$*Borikenomys praecursor*, $\dagger$*Clidomys osborni*, $\dagger$*Elasmodontomys obliquus*, $\dagger$*Quemisia gravis*.
+
+#### Environmental variable selection {.unnumbered}
+
+To make sense of the macroevolutionary patterns that we reconstructed in terms of environmental process, we incorporated two regional and one global abiotic variables in our workflow (@fig-s23). First, as illustrated by many studies, the Andean uplift has often been identified as a key driver for the build-up of South American ecosystems from the Neogene to the present [@hoorn1995; @antonelli2009; @hoorn2010; @tarquini2022; @vallejos-garrido2023; @solórzano2024]. Thus, we incorporated the multi-proxy reconstruction of the pace of the Andean uplift produced by [@boschman2021] -- averaged across the entire continent. Another abiotic factor frequently retrieved as significantly influencing diversification in a wide array of clades is temperature [*e*.*g*., @condamine2018; -@condamine2019; @flannery-sutherland2022; @weppe2023]. So far, studies testing the effect of palaeotemperature on clade diversification have often used global proxy-derived temperature reconstructions [*e*.*g*., @westerhold2020]. The main limitation of this approach is that it poorly reflects regional climatic idiosyncrasies. We therefore used the regional South American average temperature reconstructions recently produced by @tardif2025. Also, South America biomes have been highly influenced by hydrographic reorganisations, tightly related to the Andean orogeny, but also to eustatism [@hoorn2022; @guayasamin2024]. We therefore incorporated the sea level reconstructions of @miller2020 in our analyses. Last, diversity-dependent effects have been illustrated many times as important drivers for changes in macroevolutionary rates [*e*.*g*., @etienne_DDD_2012; @condamine2019; -@condamine2020] in a wide range of clades. Therefore, we allowed for diversity-dependence in our environment-dependent diversification (EDD) analyses.
+
+#### Multivariate birth--death (MBD) analyses {.unnumbered}
+
+At first, we carried out EDD analyses using the Multivariate birth--death (MBD) model implemented in PyRate [@lehtonen2017]. Given species-specific origination and extinction times inferred by PyRate (see previous part), the MBD model *de novo* estimates origination and extinction rates (resp. $\lambda$ and $\mu$) using a birth--death process where $\lambda$ and $\mu$ are functions of environmental variables. Given a set of environmental correlates of size $n$ (in our case, $n=4$), the model assumes either a linear or an exponential dependency between $\lambda$ (or $\mu$) and the environment correlates -- here, we only tested for exponential dependencies. Therefore, to a given rate, $n$ correlation parameters -- one per environment variable -- are estimated (resp. $G_{\lambda,i}$ or $G_{\mu,i}$), plus a baseline rate. As recommended by @lehtonen2017, given our low number of predictors, each $G_{\lambda,i}$ and $G_{\mu,i}$ was assigned a gamma prior. An MCMC algorithm approximating the posterior distribution of each model parameter was run across 10 million generations with a sampling frequency of 10,000, and parameter convergence was monitored using pymc.
+
+Prior to their incorporation as correlates in the MBD model, environmental variables were manually scaled. In addition, we ensured to match them all to the same time scale (last 36 Ma with a 0.5 My time step). Not doing the latter step significantly increased computing time, and the resulting model had lower support than the model incorporating predictors matched to the same time scale. Model support was assessed by approximating 2\*log Bayes Factor (BF) as two times the difference in harmonic means of the sampled log likelihood across MCMC iterations (after removing burn-in) of the two models (*i*.*e*., with and without matching predictors' time scale), as done by @lehtonen2017. The resulting metric was compared to the thresholds set by @kass1995, and turned out to provide strong support in favour of the model incorporating predictors matched to the same time scales ($2*log(BF)=7.24>6$, *Supplementary Data*).
+
+#### Birth--Death Neural Networks (BDNN) analyses {.unnumbered}
+
+We consolidated our EDD analyses by using the Birth--Death Neural Networks (BDNN) model [@hauffe2024]. BDNN uses PyRate's framework to estimate preservation-aware times of origination and extinction for each taxon of the occurrence database. Given these times, it further extends the birth--death process used in PyRate to model origination and extinction rate dynamics by allowing rates to vary not only across time, but also across lineages. One of the key advances of BDNN is that it uses an unsupervised neural network to estimate these rates as a function of a user-provided set of external predictors, such as environmental covariates or biological traits. It therefore does not assume any predefined dependency between diversification rates and the variables tested -- contrary to the linear *vs*. exponential dichotomy usually offered by model-based EDD. Consequently, these dependencies can be complex, going beyond linearity. The so-estimated rates are then directly incorporated in the likelihood function of the birth--death process implemented in PyRate. Noteworthy, BDNN provides the ability to test for the combined effect (*i*.*e*., interaction) of multiple variables, and further ranks the predictors according to their respective contribution to the modelled macroevolutionary pattern by using explainable AI metrics [for additional details, see @hauffe2024].
+
+All model parameters were estimated using an MCMC algorithm that we ran for 50 million generations, sampling every 50,000. As in our PyRate analyses, we used a time-dependent preservation process allowing preservation rate shift between geological stages, and between lineages according to a *Gamma* model. We constrained the time effects of the BDNN to vary between the following set of bins: latest Eocene--Oligocene (35--23.04 Ma), Early Miocene (23.04--15.97 Ma), Middle Miocene (15.97--11.63 Ma), Late Miocene (11.63--6 Ma), latest Miocene--Pliocene (6--2.58 Ma) and Quaternary (\<2.58 Ma). The choice of these bins was informed by prior knowledge on rate variation provided by our PyRate analyses, and allowed us to cope with the paucity of our fossil record, particularly in the Early Miocene. Predictors (*i*.*e*., environmental covariates and categorical traits) were scaled prior to their incorporation in the model. All the BDNN results presented thereafter were obtained with the default network architecture (2 layers with 16 and 8 nodes). As BDNN cannot handle missing data, we imputed trait values of taxa for which either body mass and/or crown height category could not be determined[^5]. For a given species, the imputation procedure consisted of sampling a trait value at random. Since the taxa in question were all nested within clades not having contemporaneous species with small body sizes (XS and S) (@fig-lifespans) and low crown heights (brachydont and mesodont) (@fig-s7), we only allowed missing taxa to have moderate-to-large body sizes (M, L or XL) with high-crowned (un)rooted cheek teeth (protohypsodont or euhypsodont). Trait drawings were independent between species. Due to the stochasticity of this procedure, we replicated it 10 times. Hence, the results presented thereafter for BDNN were obtained from a consensus of the independent analyses of these 10 imputed datasets, each set of analysis itself replicated 10 times after re-sampling fossil ages within the range of the occurrences.
+
+[^5]: The species that had missing body size and/or crown height category are: $\dagger$*Agnomys formosus*, $\dagger$*Eusigmomys friasensis*, $\dagger$*Perimys pueraster* and $\dagger$*Perimys oemulus*.
+
+#### Age-Dependent Extinction (ADE) model {.unnumbered}
+
+To investigate the potential effect of species age on their extinction probabilities, we used the Age-Dependent Extinction (ADE) model [@hagen2018]. This model uses a Weibull distribution to model the relationship between species age and their probability to go extinct. The shape parameter ($\phi$) of the distribution informs about the direction of such a relationship, with $\phi<1$ indicating decreasing extinction probability decreases with species age, $\phi>1$ increasing extinction probability with species age, and $\phi=1$ no relationship between species age and extinction probability. We fitted the ADE model to our fossil occurrence database, approximating the posterior distribution of the model parameters with an MCMC algorithm that we ran across 40 million MCMC generations, sampling every 40,000. Parameter convergence was assessed using pymc, and we considered parameters achieved convergence if their ESS was above 200.
+
+## Results
+
+### The waxing-and-waning diversity and body size evolution of chinchilloid rodents
+
+Either relying on a Bayesian preservation-aware framework (PyRate) or supervised neural networks (DeepDive), macroevolutionary modelling of the fossil record evidenced a Late Miocene increase in chinchilloid diversity followed by a sharp decline from *ca*. 6 Ma (@fig-diversityBM A--B). At their maximum, median sampled and corrected diversities exhibit a three-fold difference between each other, respectively peaking at 22 and 62. Four additional -- though more attenuated -- peaks may be reported from the sampled diversity curve (PyRate) : one in the late Oligocene (Deseadan SALMA), two in the Early Miocene (Colhuehuapian and Santacrucian SALMAs) and one in the late Middle Miocene (Laventan SALMA) (@fig-diversityBM A). These peaks are barely recovered from the corrected diversity curve (@fig-diversityBM B). The overall pattern of sampled diversity was conserved when conducting genus-level analyses (@fig-s10 C) or when excluding singletons from the species-level dataset (@fig-s8 C), though we may report that the amplitude of changes in diversity was attenuated in either case when compared to the analysis of the complete species-level dataset.
+
+This diversity pattern elegantly matched the temporal dynamics of body size across the history of the clade made from the body mass estimations that we obtained for nearly all species (97%) represented in our occurrence dataset (@fig-diversityBM C, Dataset SX). Indeed, median chinchilloid body size was slightly above 100 g at the beginning of the evolutionary history of the clade (latest Eocene--earliest Oligocene), peaked around 35 \[1.90, 233\] kg in the late Miocene and further declined until the present (1.9 \[0.45, 12.6\] kg). Overlaying body mass estimates with species-specific origination and extinction times reconstructed with PyRate clearly highlights a coordinated temporal trend towards body mass increase among several chinchilloid lineages until the latest Miocene (@fig-lifespans). Small-bodied species (\< 1kg) are mostly restricted to Palaeogene--Early Miocene basal ('stem') forms, with the notable exception of Early Miocene chinchillids ($\dagger$*Peruchinchilla prima*, $\dagger$*Pliolagostomus notatus* and $\dagger$*Pl. obliquidens*) and neoepiblemids ($\dagger$*Perimys dissimilis*, $\dagger$*P. erutus* and $\dagger$*P. pacificus*), and the two extant *Chinchilla* species. From the early Middle to the latest Miocene, a gradual increase in body mass is to be reported, mostly within the two families $\dagger$Neoepiblemidae and Dinomyidae, with the first giant taxa (\>100 kg) originating *ca*. 10 Ma. Then, in continental South America, most of this flourishing large-sized diversity disappeared at *ca*. 6 Ma, and only persisted the lineages that gave birth to the extant moderate-sized representatives of the group. In the West Indies, Quaternary deposits yielded remains of large-sized taxa (grouped into the likely non-monophyletic family $\dagger$*?Heptaxodontidae*), that went extinct very recently, thus well after the previously reported latest Miocene decline.
+
+```{r, echo=FALSE}
+#| label: fig-diversityBM
+#| out-height: 15cm
+#| out-width: 5.25cm
+#| fig-pos: 'H'
+#| fig-cap: The joint temporal trends in diversity and clade-wise body size evolution of Chinchilloidea. Occurrence-based diversity reconstructions were either produced in a bayesian preservation-aware framework jointly assessing the times of speciation and extinction of each species (@fig-lifespans) from the temporal occurrence database (PyRate) (*i*.*e*., sampled diversity, **A**), or using a simulation-based deep-learning framework incorporating a wide variety of biases to reconstruct the temporal variations of the 'true' (*i*.*e*., corrected) diversity in 1-Myr time bins (DeepDive) **(B)**. Body mass through time reconstructions (**C**, log scale) were produced after binning our body mass estimates of each species in 1-Myr time bins. The body mass of a taxon was included within a given bin if its reconstructed lifepan overlapped with it. The black dot at the right of the plot shows the median body mass of the extant chinchilloids, and the red line shows its range. In all cases, full lines represent median estimates. In **(A)**, the ribbon shows the 95% HPD interval of the dievrsity estimate across MCMC iterations. In **(B)**, the lighter and darker ribbons respectively encompass 95% and 50% of the per-bin diversity distribution across the 100 DeepDive prediction replicates. In **(C)**, the ribbon depicts the total range of values.
+
+include_graphics("../Chinchilloids/Figures/Main/Diversity_and_BM_through_time.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-lifespans
+#| out-height: 23cm
+#| fig-pos: 'H'
+#| fig-cap: "*Caption on next page*"
+
+include_graphics("../Chinchilloids/Figures/Main/Lifespans/lifespans_distribs.png")
+```
+
+Figure 3.4. Bayesian reconstruction of the longevities of the 124 chinchilloid species considered in our dataset. Each segment depicts the longevity of a given species, that is, the interval between species' speciation and extinction times averaged across PyRate runs that achieved convergence. Segments and taxonomic names were coloured according to the body mass category to which species were assigned. The histogram at the centre of the plot shows the number of species within each body mass class. The 8 extant species names are highlighted in bold with a star at the end. Except *Lagostomus maximus*, these taxa had almost no fossil record. Consequently, their age of origination was estimated with the method presented in @fig-ExtSampl. The first four silhouettes (from top to bottom) are from Phylopic (credits available in @tbl-s3). The last two silhouettes ($\dagger$*Elasmodontomys obliquus* and $\dagger$*Borikenomys praecursor*) were designed by L.M. for a previous work [@marivaux_early_2020].
+
+### Diversification dynamics of Chinchilloidea : a cautionary tale on extant sampling scheme and taxonomy
+
+Our findings revealed that the aforementioned changes in diversity were due to changes in extinction, not speciation rate during the evolutionary history of the clade.
+
+Indeed, the analyses we conducted using PyRate (rjMCMC algorithm and BDCS model) suggest that the speciation rate of Chinchilloidea remained constant during their evolutionary history (@fig-diversification A and C, @fig-s6 A). This result aligns with the output of the MBD model, in which speciation rate estimated with exponential correlations with environmental variables also remained constant across the evolutionary history of the group (@fig-diversification G), and was not found significantly associated with any of the variables (@fig-s20). The results obtained with the BDNN model also corroborate this conclusion. Indeed, when plotted against time, BDNN-inferred marginal speciation rate remained overall stable across the study period (@fig-diversification E, [@fig-s16]--[-@fig-s17]). Also, the coefficients of rate variation across the ten imputation replicates, not differing from expectations under a constant-rate birth--death model (0.23 *vs*. 0.23, @tbl-s4), suggest an absence of significant speciation rate variation across lineages.
+
+On the other hand, we found compelling evidence for extinction rate variation, both across time (@fig-diversification B, D, F, H) and lineages (@fig-ExtinctionDrivers and @tbl-s5). A single significant extinction rate shift was captured by the rjMCMC model *ca*. 6 Ma (@fig-diversification B, @fig-s5 B), coinciding with the onset of the diversity decline described in the previous section (@fig-diversityBM). The significance of this shift was nevertheless altered as we updated our temporal occurrence dataset accounting for recent taxonomic revisions among the Late Miocene rodent fauna of the Ituzaingó formation (Entre Ríos Province, Argentina, @fig-s12) [@rasia2026]. This single-shift extinction pattern persisted at the genus level, but with a 2--3 million-year delay towards the present, instead occurring in the late Pliocene (*ca*. 3 Ma, [@fig-s10]--[-@fig-s11]). This shift was also detected by the BDCS, BDNN and the MBD models, these three models capturing a possible additional increase in extinction rate during the Middle Miocene (labelled '?' on @fig-diversification D, F, H). That being said, removing singleton from our diversification analyses totally eroded the pattern that we described (Figures S7-S8).
+
+Following our phylogenetically-informed occurrence sampling for the seven extant species lacking fossil record (see *Methods*), the resulting origination ages of the focal species subsequently estimated with PyRate were slightly younger than divergence ages from the phylogeny (@fig-s3) -- except for *D. branickii*, for which the difference was way more pronounced, as we tailored our sampling scheme to (see *Methods*). This sampling scheme (leading to the 'newly-combined' dataset) had minor effects on upstream reconstructions of diversity when compared to inferences carried out from datasets either exclusively encompassing fossil occurrences ('fossil-only') or in which extant taxa were incorporated by means of a single occurrence of modern age (*i*.*e*., `min_age` = `max_age` = 0 Ma, 'biased sampling') (@fig-s2 G--I). The only noticeable change was the inflation of diversity in the last few million years, sharp in the 'biased sampling' case, smooth in the 'newly-combined' case, absent in the 'fossil-only' case. However, reconstructed diversification rates through time were highly sensitive to the extant sampling scheme. Indeed, as described before, analyses of the 'newly-combined' dataset retrieved no significant change in speciation rate, whereas a shift was detected *ca*. 2.5 Ma with the alternative datasets, either significant ('fossil-only' dataset) or strongly-supported ('biased sampling' dataset) (@fig-s2 A--C). Also noteworthy, the magnitude of the late Miocene increase in chinchilloid extinction rate was three times higher in the analysis of the two alternative datasets (@fig-s2 D--F).
+
+```{r, echo=FALSE}
+#| label: fig-diversification
+#| out-width: 15cm
+#| fig-pos: 'H'
+#| fig-cap: Comparative chinchilloid speciation and extinction rates reconstructed using four Bayesian fossil-based birth--death models. Speciation and extinction rates are respectively depicted in blue and red. **(A--B)** show the rates estimated by PyRate, using the rjMCMC algorithm [@silvestro_improved_2019]. The star indicates a significant rate shift (see @fig-s6). **(C--D)** show the rates estimated with the Birth--Death model with Constrained Shifts (BDCS) [@silvestro_angiosperm_2015]. **(E--F)** show the marginal rates estimated with BDNN. These were obtained after imputing missing values for taxa with missing trait estimate. As this procedure was repeated 10 times randomly (see *Methods*), the rates presented here come from a replicate chosen arbitrarily (replicate 8), but marginal rates through time did not differ across replicates (@fig-s16--S17). Last, **(G--H)** show the rates through time estimated by the MBD model as linear combinations of environmental variables. 
+
+include_graphics("../Chinchilloids/Figures/Main/Diversification_rates.png")
+```
+
+
+### Heterogeneous extinction selectivity across body size classes and latitude, likely enhanced by the Andean uplift and sea-level changes, shaped the decline of Chinchilloidea
+
+Our BDNN analyses revealed that the three best predictors of extinction rate variations across lineages are the (1) Andean uplift, (2) body mass and (3) latitude (@tbl-s6). We document a non-linear relationship between extinction rate and the Andean uplift. Lineages from intervals where average Andean elevation was relatively low (900--1400 m) are indeed associated with nearly stable extinction rates. On the contrary, we report a positive relationship between the Andean elevation and extinction rate of lineages from intervals of higher average elevation (\>1500 m, @fig-ExtinctionDrivers C). Tropical and extratropical species respectively show a similar response to increasing uplift (@fig-s24). This overall pattern of uplift-dependent extinction was also conserved across body size classes, except for the smallest taxa (XS, @fig-s25). Furthermore, we evidenced that larger-bodied species had higher extinction rates than smaller-bodied species, with up to a 1.84-fold difference in average values (@fig-ExtinctionDrivers A, @tbl-s7). The independent rjMCMC analyses that we conducted for each body size class confirmed the higher susceptibility of large-sized taxa to go extinct (@fig-s14 B). These analyses also indicate that the aforementioned Late Miocene increase in chinchilloid extinction rate was mainly driven by these large body-size classes (@fig-s15). Note that chinchilloid assemblages at *ca*. 6 Ma were mostly composed of large taxa (@fig-diversityBM C and @fig-lifespans). Last, on average, tropical species were found to have 1.5-times lower extinction rates than extra-tropical species (@fig-ExtinctionDrivers C, @tbl-s8). This difference in extinction rate between tropical and extratropical taxa were particularly pronounced in moderate-to-large classes (*i*.*e*., M, L, XL; @fig-s26). We might precise that, in our BDNN analyses, time was always ranked as the least important predictor (@tbl-s6), suggesting our environmental and trait variables effectively captured signals of rate variation.
+
+Also, depending on the imputation replicate, hypsodonty was sometimes ranked at the third position among the most important extinction rate predictors (@tbl-s6). Our findings indeed highlight differential extinction sensitivities within high-crowned taxa. Extinction rate was indeed on average 1.59 times higher for protohypsodont (rooted) than for euhypsodont (unrooted) species (@tbl-s9, @fig-s27). Given their very restricted number of species, it is hard to reliably interpret extinction rate estimations for the two other crown height categories (*i*.*e*., brachydont and mesodont, @fig-s7).
+
+The best predictor for inter-lineage extinction rate variations in the Chinchilloidea drastically differ from the factors identified by the MBD model as most influencing extinction rate variations across time. Indeed, our MBD analyses revealed that the only factor significantly associated to the temporal variations of extinction rate is sea-level changes (@fig-ExtinctionDrivers D). This factor was always ranked as the second-to-least important predictor by BDNN (@tbl-s6). On the contrary, our MBD analyses failed at relating the pace of chinchilloid extinction to the Andean uplift, which is yet suggested by our BDNN analyses.
+
+Last, our findings revealed a sustained age-dependent extinction pattern over chinchilloid evolutionary history, in which extinction rate decreases with increasing species age (Weibull shape $\Phi<1$), both before and after the extinction rate shift that we detected *ca*. 6 Ma (@fig-s13 and @tbl-s11).
+
+
+
+
+```{r, echo=FALSE}
+#| label: fig-ExtinctionDrivers
+#| out-height: 14cm
+#| fig-pos: 'H'
+#| fig-cap: "Trait and environmental drivers of chinchilloid extinction rate variations across lineages and time. Plots **(A--C)** depict the effects of the three best predictors of extinction rate variations across lineages according to the BDNN model (@tbl-s6). These include body mass **(A)**, latitude (*i*.*e*., tropical *vs*. extratropical) **(B)** and the Andean uplift **(C)**. 'FC' means 'Fold Change'. These findings are shown along with the outcome of the MBD analyses, showing the posterior distributions of correlation coefficients between the temporal variations of extinction rate and four biotic and abiotic variables **(D)**. These four variables (from top to bottom) are: sea level changes [@miller2020], Andean uplift [@boschman2021], regional temperature [@tardif2025] and self-diversity (*i*.*e*., diversity of the group). Significant correlations, *i*.*e*., of which the 95% HPD interval does not significantly overlap with zero, are shown in dark red, and non-significant correlations are shown in light red. Vertical bars show the median correlation coefficient and the boundaries of the associated 95% HPD. Note that Caribbean taxa were excluded from all the analyses presented in this figure."
+
+include_graphics("../Chinchilloids/Figures/Main/Drivers/Combined_driver_figure.png")
+```
+
+## Discussion
+
+### The coupled dynamics of chinchilloid diversity and body size disparity
+
+Our findings highlight the coordinated dynamics of body mass evolution and species diversity in the Chinchilloidea. From the late Eocene--early Oligocene to the Late Miocene, chinchilloids experienced a steady increase in median body size and body size range (@fig-diversityBM C). Such an increase may elegantly illustrate a long-recognised tendency for lineages to increase in body size over evolutionary time, known as Cope's rule [@cope1896]. A similar increase is suggested by our reconstructions of diversity through time, particularly from the Middle Miocene (@fig-diversityBM A--B). The largest body mass range -- together with the largest clade-wise median body mass -- were concomitantly achieved when the clade diversity peaked, in the Late Miocene (@fig-diversityBM). Species diversity and body mass disparity then subsequently declined (@fig-diversityBM). This coupled diversity-disparity pattern aligns with seminal macroevolutionary theories, having long postulated the existence of a positive relationship between the dynamics of clade diversity/diversification and morphological evolution. These notably include the adaptive radiation theory [@simpson1953], the concept of punctuated equilibria [@gould1977] or the 'versatility' hypothesis [@vermeij1973; @vermeij_pnas_1973]. A positive relationship between diversity and disparity was supported by empirical case studies on several vertebrate clades [*e*.*g*., @hughes2013; @rabosky2013; @cooney2021]. However, evidence from a diverse array of study models, including therapsids [@ruta2013], muroid rodents [@alhajeri2016; @maestri2017; @missagia2023; @rowe2011] or equids [@cantalapiedra2017] challenged such a relationship, illustrating a decoupling between species diversity and morphological disparity. In that respect, though with a more restricted taxonomic sampling (and associated trait reconstructions, see *Limitations & Perspectives*), a recent study analysed the patterns of diversity and morphological (body size and cranio-dental) evolution of Chinchilloidea and their sister group, Octodontoidea [@carrillo2026]. They evidenced a striking pairwise decoupling between the dynamics of disparity and diversity of the two clades, with chinchilloids always maintaining a larger morphological (and particularly body size) disparity with a lower species diversity than octodontoids. We propose that, beyond contradiction, our study illustrates the scale-dependence of the disparity-diversity relationship. Despite the fact that, over their evolutionary history, chinchilloids have been unquestionably more morphologically-diverse but less species-diverse than their sister clade (octodontoids), suggesting an inter-clade decoupling between diversity and disparity, at the intra-clade scale, chinchilloid dynamics of species diversity and body size disparity were undoubtedly correlated. The dependence of the diversity-disparity relationship to the phylogenetic scale was already illustrated by @cooney2021, finding that the positive relationship between rates of diversification and morphological evolution preferentially arose from large phylogenetic scales.
+
+### Drivers of an evolutionary decline
+
+Our findings revealed that chinchilloid evolutionary history was best summarised by a birth--death model with constant speciation and time-variable extinction (@fig-diversification; @fig-s6). The absence of temporal variation in speciation rate suggests that the 'Ent wives' model of clade demise due to a decrease in speciation/origination rate [@quental2013] fails to explain the macroevolutionary dynamics of chinchilloids, though such a model was found to accurately reflect the decline of several clades [*e*.*g*., @condamine2019; @condamine_climate_2019]. However, recent findings reaffirmed the importance of species-level extinction over speciation in shaping clade diversity trajectories [@quintero_loss_2025].
+
+The extinction rate increase that we evidenced *ca*. 6 Ma did not apply uniformly to all species of the clade. Rather, extinction rates were higher for larger-bodied and extratropical taxa (@fig-ExtinctionDrivers A--B; @fig-s14 B, S26). The size selectivity of extinction over chinchilloid evolution explains the 32 kg-decline in median body size quantified from the Late Miocene to the present (@fig-diversityBM C). Extinction has traditionally been viewed as a limitation to morphological innovation [*e*.*g*., @foote1993], though recent findings suggested that it can also act as a creative engine depending on the zones of the morphospace where it operates [@balseiro2025; @esteve2025]. In the case of Chinchilloidea, our results suggest that extinction eroded large-sized regions of the body mass distribution, in turn echoing the long-recognised tendency for large taxa to have higher extinction rates [@raup1986; @liow2008]. Regarding the latitudinal selectivity of extinction, our findings provided support to the historical 'Tropical stability' hypothesis, postulating that the environmental stability offered by tropical regions would buffer tropical taxa against extinction [@wallace1878]. Such a hypothesis received substantial support in the recent literature [*e*.*g*., @meseguer2020; @quintero2023; @buffan2025]. Importantly, our findings also stress the absence of latitudinal decoupling of the factors affecting the dynamics of chinchilloid diversification (@fig-s24 and [-@fig-s26]), contrary to what has long been postulated [*e*.*g*., @carrillo2026].
+
+Also, we uncovered a sustained age-dependent extinction (ADE) pattern over the evolutionary history of Chinchilloidea, in which extinction probability decreases with increasing species age (@fig-s13). This ADE pattern conforms to many empirical findings [*e*.*g*., @finnegan2008; @condamine_climate_2019; @saulsbury2024; @kocáková2025], though the opposite trend was also sometimes evidenced [*e*.*g*., @guinot2023]. The idea that older species would be associated to larger range size, in turn buffering against extinction risk has often been considered as an explanation behind this frequent ADE pattern [*e*.*g*., @mckinney1997; @condamine_climate_2019], but has also raised some criticism [@finnegan2008]. Here, it cannot be excluded that this ADE pattern emerged as an artifact, as many of our short-living species are only known from a single occurrence (*i*.*e*., singletons), which may narrow their lifespans (@fig-lifespans).
+
+The pace of the Andean uplift was always identified as the best predictor of extinction rate variations across chinchilloid lineages, with higher elevations associated to higher extinction rates (@fig-ExtinctionDrivers C; @fig-s24 and [-@fig-s26]; @tbl-s6). The uplift of the Andes, by generating new niches and re-distributing climatic advections at the continent scale, had major repercussions on South American palaeoenvironments [@hoorn2010] and was frequently illustrated as a major driver behind the diversification of a wide range of South American groups [*e*.*g*., @boschman2022; @hoorn2023; @vallejos-garrido2023]. The common paradigm considers the Andean uplift as a positive driver behind diversification, explaining the exceptional diversity of regions such as Western Amazonia, offering an altitudinal gradient [@antonelli2018]. However, quantitative analyses of the fossil record of several clades evidenced that the Andean uplift may also promote extinction [*e*.*g*., @solórzano2024; @buffan2025], which is what our results suggest for the Chinchilloidea.
+
+Given the positive association between the temporal trends of chinchilloid extinction rate and eustatic variations that we retrieved in our MBD analyses (@fig-ExtinctionDrivers D), the effect of the Andes on the extinction rate variations across lineages can be interpreted under the lens of continent-wise hydrographic pattern remodelling -- it should nevertheless be mentioned that sea level was among the least important predictors for extinction rate variations across lineages in our BDNN analyses (@tbl-s6). Several palaeontological studies indeed evidenced that many Late Miocene chinchilloids -- and particularly large forms -- were likely semi-aquatic, suggesting their macroevolutionary dynamics to be tightly related to the hydrographic history of South America [*see* @carrillo2026 *and literature therein*]. During most of the Miocene, what is now western Amazonia was flooded by a vast wetland known as the Pebas System, recognised to have greatly favoured lineage diversification in tropical South America [@antoine2017; @hoorn2022]. Similarly, a marine introgression known as the 'Paranense sea' flooded a vast portion of southern South America during the Middle--Late Miocene [@hernández2005]. The environmental heterogeneity that emerged following the final regressive stages of the Paranense sea, during the Late Miocene, has been proposed to have favoured dinomyid diversification in the Mesopotamian region (northeastern Argentina) [@candela2013; @nasif2013]. Our results fail to quantitatively support a positive imprint of these hydrographic changes in the diversification of Chinchilloidea. That being said, the Late Miocene demise of the Pebas System, a by-product of tectonic (Andean) and eustatic factors [@hoorn2022], massively impacted low-latitude ecosystems from South America [*e*.*g*., @salas-gismondi2015; @jaramillo2017]. Our findings that the Andean elevation, together with sea-level changes, synergetically shaped the decline of Chinchilloidea may therefore be interpreted as a result from the Late Miocene disappearance of the unique South American wetlands [@hernández2005].
+
+The ecologically-selective demise of chinchilloids somewhat mirrors that of sloths (Xenarthra: Folivora), that also experienced a massive decline in both species diversity and body mass disparity over their evolutionary history [@boscaini2025]. This decline was characterised by the extinction of all species with terrestrial or semi-arboreal (and aquatic, *e*.*g*., @valenzuela-toro2025) lifestyles. The two distantly-related sloth lineages that persisted until the present are small-sized and share an arboreal lifestyle. In the case of Chinchilloidea, large-sized semi-aquatic taxa all went extinct, and the extant small-to-moderate-sized representatives of the group are either found in the Andean Cordillera (six species) or in the plains of Western Amazonia and Argentina (two species).
+
+We also evidenced heterogeneous extinction rates across hypsodonty classes, with euhypsodont (high-crowned ever-growing cheek teeth) species having attenuated extinction rates (@fig-s27). This result aligns with the common paradigm that continuously-growing cheek teeth, offering a sustainable protection against demanding food items (*e*.*g*., abrasive elements), provide more dietary flexibility to taxa that acquired this innovation [@candela2013]. High-crowned cheek teeth emerged early in the evolution of Chinchilloidea. Basal species of the early Oligocene genera $\dagger$*Eoincamys* and $\dagger$*Eoviscaccia* were already classified as protohypsodont, meanwhile euhypsodont cheek teeth emerged in the late Oligocene (Deseadan SALMA) and became conspicuous in the Early Miocene (@fig-s7). On the contrary, few chinchilloid taxa have been described with low-crowned cheek teeth (*i*.*e*., brachydont and mesodont, @fig-s7). In South America, high-crowned cheek teeth have been acquired several times independently among various lineages of native ungulates [@croft2020] and caviomorph rodents [@vucetich2015]. Growing evidence increasingly suggests that, instead of being related to grass consumption -- as it has been historically proposed [*e*.*g*., @stebbins1981; @macfadden2000] -- hypsodonty (at least in South American mammals) might be promoted by external sources of abrasive materials in the diet, such as grit or volcanic dust [*e*.*g*., @billet2009; @jardine2012; @selkin2015; @armella2026]. Our findings do not permit to conclude on the drivers that underlay the notable success of euhypsodont chinchilloids. However, by showing that euhypsodont taxa were less prone to extinction, they add another piece of evidence suggesting that this morpho-functional innovation had an adaptive value at macroevolutionary scales for this clade of rodents.
+
+Last, our analyses failed to provide support for an effect of diversity dependence and temperature change on the diversification dynamics of Chinchilloidea, both across time (@fig-ExtinctionDrivers D) and lineages (@tbl-s6). Yet, several studies proposed that climate cooling and aridification from the Late Miocene onwards affected diversification dynamics and evolution of large sizes in the Caviomorpha [*e*.*g*., @vucetich2015; @álvarez2017]. On the other hand, despite the wide recognition of the importance of (self-)diversity-dependent effects in the macroevolutionary fate of the clades [*e*.*g*., @etienne_DDD_2012; @condamine2019], recent advances in macroevolutionary modelling have challenged the importance of diversity dependence as a primary driver of diversification rates [@quintero_loss_2025].
+
+### Limitations and perspectives
+
+Over this work, we proposed a conceptual improvement of the pipeline for putting together data from the fossil record and dated molecular phylogenies of extant taxa for diversification inference introduced by @brée2022. This pipeline was initially designed for clades for which a large proportion of the extant diversity is missing from the fossil record, and paved insightful avenues to overcome long-formulated concerns around estimating extinction rates from extant timetrees [*e*.*g*., @rabosky2010] meanwhile taking advantage of the invaluable information encapsulated in the fossil record. Our improvement relied on the fact that we no longer considered divergence times leading to extant species directly as species' ages of origination ($T_s$), as done by @brée2022, but rather as upper bounds for $T_s$. This approach can unfortunately not be validated with simulations and has some part of arbitrary. Nevertheless, since node ages of phylogenies are expected to be older than actual species divergence ages [@arbogast2002], we argue that, at least conceptually, our approach makes some sense. Our analyses evidenced that reconstructions of chinchilloid diversification dynamics were highly impacted by the extant sampling scheme (@fig-s2). In particular, incorporating extant taxa using our new sampling scheme totally eroded any temporal shift in speciation rate, and significantly reduced the magnitude of the Late Miocene shift in extinction rate (@fig-s2). This must be due to the fact that the number of species concerned by this sampling procedure (seven) was actually very close to the number of fossil taxa recorded in the last 5 million years, and thus, that any change in occurrence age would have significant repercussions on the estimations of diversification rates over this time frame. We therefore encourage to take advantage of different sources of data to reconstruct macroevolutionary patterns and to perform sensitivity analyses to evaluate the robustness of the reconstructions to the input data and methodologies.
+
+In addition to the effect of this extant sampling procedure, our findings confirmed the great sensitivity of occurrence-based diversification inference to the input dataset, already evidenced by several studies [*e*.*g*., @flannery-sutherland2022; @jouault_estimating_2022; @moharrek2022]. As expected, incorporating the taxonomic revisions of @rasia2026 on the hyperdiverse dinomyid fauna from the Late Miocene (Ituzaingó Fm.) of Mesopotamia (Argentina), formerly encompassing many synonymies, significantly eroded the magnitude of the late Miocene change in extinction regime (@fig-s12). Recently, worries have been expressed about the importance of conducting thorough taxonomic revisions before carrying out occurrence-based analyses of clade diversification relying on online databases [@guinot2026]. Despite the invaluable character of such databases[^6] for the whole field of quantitative palaeobiology, the occurrences that they contain are prone to several types of errors (*e*.*g*., incorrect or non-updated age assignment, taxonomic issues). Our study primarily relies on data from The Paleobiology Database, subsequently carefully revised and completed by taxonomic experts (see *Methods*, *Supplementary text* and *Supplementary Data*). A recent work conducted similar reconstructions of the temporal trends in chinchilloid diversity from fossil occurrence data, though their taxonomic sampling was less exhaustive than ours (330 occurrences for 97 species, whereas our species-level fossil occurrence database prior incorporation of extant taxa lacking fossil evidence comprised 466 occurrences for 117 species, see *Supplementary Data*) [@carrillo2026]. Marked differences in the persistence of some species in the fossil record may be reported between our dataset and theirs (@fig-s22), overall summarised in that species tend to persist longer in their database (due to the fact that they preferentially binned occurrences in the corresponding geological stages whereas we intended to use more refined published ages of the corresponding localities/formations when available), though this trend is not statistically significant (@fig-s21). In addition, we spotted that 12 of their species had taxonomic issues or were assigned to an incorrect bibliographic reference, making them intractable (*Supplementary Data*). Despite these contrasts, the outcome of our DeepDive diversity-through-time analyses (@fig-diversityBM B) did not substantially differ from their reconstruction, both in trends and amplitude. The only noticeable difference is that they estimated higher species diversities in the Oligocene--Early Miocene compared to us. That being said, in light of all these elements and in the continuity of @guinot2026, we recall the importance of the input data -- at the foundation of any empirical study, beyond fancy methodological frameworks -- when carrying out macroevolutionary inferences. Despite significant improvements towards common practices in computer-aided occurrence data cleaning [*e*.*g*., @jones2025], taxonomic expertise remains, in our view, essential and non-substitutable when conducting quantitative analyses of the fossil record [*but see* @gardiner2026_reply *for some discussion regarding how taxonomic subjectivity may bias the cleaning process*].
+
+[^6]: *e*.*g*., The Paleobiology Database, Neotoma, NOW, Geobiodiversity database, ... see <https://palaeoverse.org/external>
+
+A broadly-recognised limitation of the PyRate framework is that it unrealistically assumes complete lineage sampling in its reconstructions of macroevolutionary processes [@silvestro2014]. We intended to overcome this limitation by reconstructing complete diversity through time using the simulation-based framework implemented in DeepDive [@cooper2024], leading to no major difference in the trends of diversity through time that we reconstructed for the Chinchilloidea (@fig-diversityBM). An additional avenue that could be explored may involve the use of a probabilistic framework incorporating a sampling parameter to test the impact of the assumption of complete sampling on diversification rate estimations [*e*.*g*., @warnock2020; @flannerysutherland2025].
+
+An additional limitation to this study is the absence of integrative phylogenetic reconstruction for our focal clade. To date, existing phylogenies incorporating extinct members of Chinchilloidea have respectively accounted for 26 [@boivin2019] and 43 [@rasia_comprehensive_2021] taxa, thus only a fraction of the 124 species recognised and used over this work. Future directions towards a better understanding of the macroevolutionary dynamics of Chinchilloidea would greatly benefit from the information provided by a phylogeny of increased completeness (*work in progress*). Information regarding phylogenetic relatedness between taxa has proven relevant in occurrence-based analyses of proboscid diversification dynamics using BDNN [@hauffe2024]. In our case, it cannot be excluded that the trait-diversification relationships that we uncovered are an artefact of phylogenetic inertia [@felsenstein1985]. In addition, phylogeny-based estimates of chinchilloid rate of body size and cranio-dental evolution were already produced by @carrillo2026, but these findings were limited by the low completeness of the phylogeny that they used [@boivin2019]. A better-resolved phylogeny would thus be of high value to better elucidate the joint dynamics of chinchilloid diversification and body mass evolution. Moreover, State-dependent Speciation and Extinction models [*reviewed in* @morlon2024] fitted to such a phylogeny could provide an elegant way to validate the extinction selectivity that we raised over this work, with larger extratropical species having greater extinction rates (@fig-ExtinctionDrivers A--B and @fig-s26). Last, recent development in phylogenetic comparative methods may provide precious insights into the likely abiotic [@clavel2017; @troyer2022] or biotic [@drury2016] factors that shaped the dynamics of chinchilloid morphological evolution.
+
+Beyond our findings, many questions around the evolutionary history of the Chinchilloidea persist. Some relate to the drivers behind the spectacular and coordinated increase in body size that many caviomorph lineages independently underwent in the Miocene. Whether this unique trajectory stems from intrinsic developmental capacities among hystricognathous rodents, ecological opportunity or a combination of both remains an open question [@vucetich2015]. Given the additional energetic requirements that such large sizes would imply [@damuth1993], further research would be needed to shed some light on the eco-trophical correlates behind the fascinating emergence of these extreme phenotypes in the framework of rodents, such as microwear texture analysis [*e*.*g*., @robinet2020; -@robinet2026; -@robinet2026diente].
+
+Last, given that the time frame of the demise of the Chinchilloidea could match the onset of the Great American Biotic Interchange [@marshall1982; @webb1985], one can also wonder whether such a demise can be related to the arrival of North American migrants, either competing for similar food resources (*e*.*g*., herbivores) or preying on them (*e*.*g*., carnivorans). Consequently, future research could quantitatively test whether chinchilloid diversification dynamics were affected by the diversity of some North American migrant clades. Seminal macroevolutionary studies highlighted that biotic interactions were among the primary drivers behind the diversification dynamics of a wide range of clades, such as North American canids [@silvestro2015], mackerel sharks [@condamine_climate_2019], gymnosperms [@condamine2020], antilocaprids [@nascimento2025] or ants [@jouault_ants_2026], thus giving some support to the idea that biotic interactions influence clade diversification, known as the 'Red Queen' hypothesis [@vanvalen1973; @barnosky2001].
+
+## Concluding remarks
+
+Here, using the South American rodent clade Chinchilloidea as a case study, we provide an illustration of how traits and abiotic factors synergised to shape an evolutionary decline. Applying a multi-approach framework involving Bayesian birth--death models and neural networks to an unprecedented dataset, we show that, over their evolutionary history, the dynamics of chinchilloid diversity and body size disparity were coupled, portraying how the phylogenetic scale impacts the diversity/disparity relationship. The demise of Chinchilloidea resulted from a Late Miocene change in extinction regime, selective against large-sized and extratropical taxa. The involved increase in extinction rate was likely mediated by the Andean uplift and sea-level changes, possibly pointing towards an implication of the Late Miocene tectonically- and eustatically-controlled collapse of South American large wetlands. We also pinpoint the sensitivity of occurrence-based approaches to reconstruct clade diversification dynamics to the input data, emphasising the importance of cleaning as well as combining several sources of data (*i*.*e*., the fossil record and phylogenies of extant taxa) to adress macroevolutionary issues.
+
+## Acknowledgements
+
+We are grateful to Torsten Hauffe, Rebecca B. Cooper and Bethany J. Allen for their helpful methodological advice. We also thank Guillaume Guinot for useful feedbacks and recommendations. L.B. was funded by a grant offered by the École Normale Supérieure de Lyon.
+
+{{< pagebreak >}}
+
+## Supporting Information Appendix
+
+### Supplementary text
+
+Age ranges of the Miocene occurrences from the Río Santa Cruz (Santacrucian SALMA) were sharpened based on their assigned locality [@arnal2019]. Hence, occurrence from Barrancas Blancas were respectively assigned the 16.3--17.21 and 15.3--16.47 Ma intervals.
+
+Given that *Lagostomus (Lagostomopsis)* is a subgenus [@rasia2012], we set the `genus` column of each *Lagostomus (Lagostomopsis)* occurrence to *Lagostomus*, and switched their `genus_level_status` from `extinct` to `extant`.
+
+All specimens referred to as *Lagostomus minimus*, *L. cavifrons*, *L. heterogenidens*, *L. debilis* and *L. egenus* were synonymised with *Lagostomus maximus*, following [@ubilla2016; @rasia_vizcacha_2024].
+
+The single occurrence assigned to *Lagostomus striatus* was removed as considered *nomen nodum* by @rasia2016.
+
+Uncertain age of the Ituzáingo formation was set to Huayquerian SALMA (Late Miocene), *ca*. 5--8 Ma.
+
+Age range of occurrences from @bucher2021 were set to the one of the original publication: 14.86--12.75 Ma when coming from the "Cruces Infinitos" and "Los Yeguarizos localities", 12.75--12 Ma when coming from the "La Gloria" and "La Hoyada" localities.
+
+Based on @brandoni2016, the age range of the occurrences from the Pinturas fauna (*e*.*g*., [@kramarz2002; -@kramarz2004; -@kramarz2006]), Burdigalian, were set between 20 and 16.8 Ma.
+
+According to [@esteban2014; @esteban2019], the age range of the occurrences belonging to the Andalhualá formation was set to Huayquerian--Chapadmalalan (*c*. 7.14--3.66 Ma).
+
+*Perimys perpinguis* and *Perimys impactus* were lumped in *Perimys onostus* according to @mcgrath2022.
+
+Age range of the occurrence belonging to the Sierra Baguales (Santa Cruz formation, Magallanes, Chile) were set to 19--17.8 Ma according to the isotopic constraints provided in @bostelmann2013.
+
+Age range of the occurrences reported from the Cerro Boleadoras Formation was set to 16.5--15.1 Ma, according to @vizcaino2022.
+
+Added two occurrences of *Saremmys ligcura* from the two localities of Bryn Gwyn and Gran Barranca (Chubut, Argentina), according to @busker2019.
+
+We acknowledge the proposition of synonimisation between *Telicomys gigantissimus* and *Telicomys giganteus* made by @rasia2025. However, in the light of phylogenetic analyses that are currently in progress, we decided not to account for it, therefore treating *T. gigantissimus* and *T. giganteus* as two distinct taxa.
+
+We incorporated four occurrences -- corresponding to four different taxa -- from the AMD-45 locality (18.9--17.1 Ma) published by @arnal2026: *Maquiamys praecursor*, *Manumys materdei*, *Marianamys altadens* and *Peruchinchilla prima*.
+
+We followed the latest taxonomic revisions proposed by @rasia2026 regarding the hyperdiverse dinomyid fauna from the Ituzaingó Formation (Late Miocene).
+
+Additional details are provided in the `Remark` column of *Dataset S1*.
+
+\newpage
+
+### Supplementary Figures
+
+```{r, echo=FALSE}
+library(knitr)
+```
+
+```{r, echo=FALSE}
+#| label: fig-s1
+#| out-width: 16cm
+#| fig-cap: Location of the chinchilloid bearing sites that yielded the material used in this study ($N=177$, but note that some localities have been amalgamated for visual purpose).
+
+include_graphics("../Chinchilloids/Figures/Supp/Occurrence_map_Chinchilloidea.png")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s2
+#| out-width: 17.5cm
+#| fig-cap: Impact of the sampling scheme of extant species lacking fossil record on upstream macroevolutionary inferences with PyRate (rjMCMC algorithm). (**A**, **D**, **G**) show speciation rate, extinction rate and sampled diversity estimated from a database only encompassing fossil taxa. In (**B**, **E**, **H**), extant taxa were included by means of an occurrence with origination and extinction ages ($T_e$ and $T_e$) set to 0 Ma (*i*.*e*., 'biased incorporation'). In (**C**, **F**, **I**), extant taxa were included or with our newly-introduced pipeline relying on ages extracted from dated phylogenies. Full lines indicate median rate estimation (blue for speciation, red for extinction), and ribbons their associated 95% HPD interval. Grey histograms in the background depict the frequency of rate shift per 1-My time bins. The two horizontal lines labelled \* and \*\*\* respectively indicate significant and strongly supported rate shift.
+
+include_graphics("../Chinchilloids/Figures/Supp/Age_combination_effect/age_comb_effect_RTT.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s3
+#| out-width: 13cm
+#| fig-cap: Correspondance between divergence times leading to extant species estimated from our phylogeny ('Ts Phylogeny') and the times of species origination de novo estimated ('Ts PyRate') after implementing our sampling scheme for extant species absent from the fossil record (*Main text*, Figure 2). For each species, we set $\alpha=0.95$, except for *D. branickii*, for which we set $\alpha=0.999$. Dots show median estimates and error bars the associated 95% HPD. Dashed line shows the line with equation $y=x$.
+
+include_graphics("../Chinchilloids/Figures/Supp/corr_Ts_phylo_PyRate.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s4
+#| out-height: 9cm
+#| fig-cap: Preservation rate through time in our species-level dataset estimated with PyRate. The solid line represents the mean posterior estimate and the shaded area the associated 95% HPD interval.
+
+include_graphics("../Chinchilloids/Figures/Supp/Preservation_through_time.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s5
+#| out-height: 8cm
+#| fig-cap: Convergence of the PyRate runs (rjMCMC algorithm) for the analysis of the species-level temporal occurrence database. The plot (A) the ESS of the model posterior probability for all the 20 replicates we ran. ESS greater than 200 (first-scale indicator of a run that converged, $n=20$ in that case) are displayed in green. The proportion of origination and extinction times (resp. $T_S$ and $T_E$) that converged (i.e., with $ESS > 200$) are shown in (B), for each of our 20 replicates. The plot (C) shows the posterior estimates of the mean root age of our group, together with their lower and upper boundaries of the 95% HPD interval, across the 20 replicates.
+
+include_graphics("../Chinchilloids/Results/RJMCMC/species/1-Full/pyrate_mcmc_logs/ESS_plot.png")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s6
+#| out-height: 8cm
+#| fig-cap: Histogram showing the frequency of speciation (**A**) and extinction (**B**) rate shifts in our species-level chinchilloid dataset estimated by PyRate (rjMCMC algorithm). This quantity indicates, within 1My time bins, the support given to a model with rate shift compared to a model with constant rates. The two dashed lines respectively labelled $2log(BF)>2$ and $2log(BF)>6$ respectively indicate significant and strongly supported rate shift.
+
+include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_species_Full_frequency_of_rate_shift.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s7
+#| out-height: 18cm
+#| fig-cap: "Bayesian reconstruction of the longevities of the 124 chinchilloid species considered in our dataset. Each segment depicts the longevity of a given species, that is, the interval between species' speciation and extinction times averaged across PyRate runs that achieved convergence. Segments and taxonomic names were coloured according to the crown height category to which species were assigned. The histogram at the centre of the plot shows the number of species within each crown height class. The first four silhouettes (from top to bottom) are from Phylopic (credits available in @tbl-s3). The last two silhouettes (*Elasmodontomys obliquus* and *Borikenomys praecursor*) were designed by L.M. for a previous work [@marivaux_early_2020]." 
+
+include_graphics("../Chinchilloids/Figures/Supp/Lifespans_hypso/Lifespans_HI_Chinchi.png")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s8
+#| out-height: 10cm
+#| fig-cap: Joint estimation of origination (blue) and extinction (red) rates (**A**), net diversification rate (**B**), diversity through time (**C**) and preservation rates (**D**) from our species-level chinchilloid database made my PyRate (rjMCMC algorithm) after removing singletons.
+
+include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_species_Singleton_Recap_figure.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s9
+#| out-height: 8cm
+#| fig-cap: Frequency of origination (**A**) and extinction (**B**) rates estimated by the rjMCMC analysis of our species-level database after removing singletons.
+
+include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_species_Singleton_frequency_of_rate_shift.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s10
+#| out-height: 10cm
+#| fig-cap: Joint estimation of origination (blue) and extinction (red) rates (**A**), net diversification rate (**B**), diversity through time (**C**) and preservation rates (**D**) from the genus-level chinchilloid database made my PyRate (rjMCMC algorithm).
+
+include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_genus_Full_Recap_figure.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s11
+#| out-height: 8cm
+#| fig-cap: Frequency of origination (**A**) and extinction (**B**) rates estimated by the rjMCMC analysis of our genus-level database.
+
+include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_genus_Full_frequency_of_rate_shift.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s12
+#| out-height: 19cm
+#| fig-cap: Impact of occounting for the revision of the dinomyid fauna of the Ituzaingó formation (Entre Ríos province, Argentina) on the estimation of the temporal dynamics of chinchilloid extinction rate [@rasia2026]. (**A**) Lifespans of species making up the 'Mesopotamiense' fauna (Ituzaingó Fm.) before (*left*) and after (*right*) the taxonomic revision. Removed taxa were coloured in red (five taxa lost). (**B**) Chinchilloid extinction rates estimated from our temporal occurrence database before (*left*) and after (*right*) incorporating the aforementioned revision. The histogram in background shows the frequency of rate shift estimated by the rjMCMC model, that is, for a given time frame (by default set to 1My), how likely it is to consider that the reconstructed extinction rate experienced a shift. The dashed lines labelled (\*) and (\*\*\*) respectively indicate significant and strongly supported rate shift.
+
+include_graphics("../Chinchilloids/Figures/Supp/Effect_Rasia2026/rasia_effect.pdf")
+```
+
+```{r, echo = FALSE}
+#| label: fig-s13
+#| out-height: 7.5cm
+#| out-width: 15cm
+#| fig-cap: Posterior estimate of the shape parameter of the Weibull distribution for the ADE analyses of the 'Early' (> 6 Ma) and 'Late' (< 6 Ma) occurrence datasets, each with constant extinction rate (@fig-s6). 2.5%, 50% and 97.5% quantiles are indicated in the distribution of each parameter by black horizontal lines, respectively from bottom to top.
+
+include_graphics("../Chinchilloids/Figures/ADE/Weibull_shape_species.png")
+```
+
+| 
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: fig-s14
+#| fig-cap: Speciation (**A**) and extinction (**B**) rates through time per body mass class as inferred by the rjMCMC model.
+
+include_graphics("../Chinchilloids/Figures/Supp/RTT_per_BM/RTT_plot_per_BM.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s15
+#| fig-cap: "Frequency of speciation and extinction rate shifts per body size class as estimated by the analysis of our species-level chinchilloid occurrence dataset with the rjMCMC model. Dashed horizontal lines indicate 2 * log(Bayes factor) of 2 and 6, respectively suggesting significant and strongly-supported rate shifts."
+
+include_graphics("../Chinchilloids/Figures/Supp/RTT_per_BM/freq_rate_shift_per_BM.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s16
+#| fig-cap: Marginal chinchilloid speciation (blue) and extinction (red) rates through time as estimated by our BDNN analyses of the datasets with random trait (*i*.*e*., body mass and/or hypsodonty index) imputation for taxa with missing trait reconstruction ($n=11$). Caribbean taxa were excluded. Full lines show median rate estimates and ribbons their associated 95% Highest Posterior Density (HPD) interval, assessed acrossed the 10 independent BDNN runs randomising fossil ages under a uniform law made for each trait imputation. This panel only depicts the rates through time from replicate 1 to 5.
+
+include_graphics("../Chinchilloids/Figures/Supp/RTT_imputation/RTT_imput_full_NoCar15.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s17
+#| fig-cap: Marginal chinchilloid speciation (blue) and extinction (red) rates through time as estimated by our BDNN analyses of the datasets with random trait (*i*.*e*., body mass and/or hypsodonty index) imputation for taxa with missing trait reconstruction ($n=11$). Caribbean taxa were excluded. Full lines show median rate estimates and ribbons their associated 95% Highest Posterior Density (HPD) interval, assessed acrossed the 10 independent BDNN runs randomising fossil ages under a uniform law made for each trait imputation. This panel only depicts the rates through time from replicate 1 to 5.
+
+include_graphics("../Chinchilloids/Figures/Supp/RTT_imputation/RTT_imput_full_NoCar610.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s18
+#| out-height: 7.5cm
+#| out-width: 20cm
+#| fig-cap: Training and validation loss across training epochs for a DeepDive network comprising two LSTM units (64 and 32 nodes) connected to two dense layers (64 and 32 nodes) before the output layer. The red vertical line indicates the "early stopping point", *i*.*e*., when the validation loss starts increasing, indicative of overfitting. It determines the optimal value of number of iterations, at which we derive the training and validation loss values depicted between parenthesis.
+
+include_graphics("../Chinchilloids/Results/DeepDive/species_extant_extended/species_extant_extended_models/simulation_species_extant_extended_ET_20260224_lstm128_64_32_d64_32_conditional/history_plotsimulation_species_extant_extended_ET_20260224_lstm128_64_32_d64_32_conditional.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s19 
+#| out-height: 7.5cm
+#| out-width: 20cm
+#| fig-cap: Training and validation loss across training epochs for a DeepDive network comprising three LSTM units (128, 64 and 32 nodes) connected to two dense layers (64 and 32 nodes) before the output layer. The red vertical line indicates the "early stopping point", *i*.*e*., when the validation loss starts increasing, indicative of overfitting. It determines the optimal value of number of iterations, at which we derive the training and validation loss values depicted between parenthesis.
+
+include_graphics("../Chinchilloids/Results/DeepDive/species_extant_extended/species_extant_extended_models/simulation_species_extant_extended_ET_20260224_lstm64_32_d64_32_conditional/history_plotsimulation_species_extant_extended_ET_20260224_lstm64_32_d64_32_conditional.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s20
+#| fig-cap: Bayesian estimation of correlation coefficients of extinction (*left*) and speciation (*right*) rates with a selected set of environmental variable carried out by the MBD model (*see Methods in the main text*). A gamma prior was set to correlation parameters. Light colours (respectively blue for speciation and red for extinction) indicate non-significant correlations, and plain colours indicate significant correlations. A correlation was considered to be significant if 0 was not included in the parameter 95% HPD interval.
+
+include_graphics("../Chinchilloids/Figures/Main/Drivers/MBD_species_complete_scaled_hsp0.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s21
+#| out-height: 10cm
+#| fig-cap: "Comparative persistence (*i*.*e*., FAD minus LAD) of the 84 taxa in common between our database (in blue) and @carrillo2026. Mean persistences between the two studies were compared with a paired Wilcoxon test."
+
+include_graphics("../Chinchilloids/Results/comparing_with_Carrillo/persistence_violin.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s22
+#| out-height: 25cm
+#| out-width: 20cm
+#| fig-cap: Persistence in the fossil record of the 84 species shared between our database (in blue) and @carrillo2026 (in red). Persistence is assessed as the interval between the First and Last Appearance Data (resp. FAD and LAD) of each taxon.
+
+include_graphics("../Chinchilloids/Results/comparing_with_Carrillo/comparative_LAD_FAD.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s23
+#| out-width: 16cm
+#| fig-cap: Abiotic variables used in the environment-dependent diversification analyses carried out over this study. These have been temporally scaled to the same resolution (500ky-step). Andean uplift was from @boschman2021, South American regional temperature was from @tardif2025 and sea-level changes were from @miller2020.
+
+include_graphics("../Chinchilloids/Figures/Supp/Abiotic_correlates.pdf")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s24
+#| out-width: 13cm
+#| fig-cap: Interaction between latitude and Andean uplift in shaping chinchilloid extinction rate variations across lineages, *i*.*e*., how the relationship between the Andean uplift and extinction rate changes between tropical and extratropical species. Results were arbitrarily taken from the third imputation replicate.
+
+include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/Upl_Tropicality.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s25
+#| out-width: 13cm
+#| fig-cap: Interaction between body mass and Andean uplift in shaping chinchilloid extinction rate variations across lineages, *i*.*e*., how the relationship between the Andean uplift and extinction rate changes between body mass categories. Body mass categories are numbered from 1 to 6 by increasing order (*i*.*e*., from XS to XXL). Results were arbitrarily taken from the third imputation replicate.
+
+include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/Upl_BM.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s26
+#| out-width: 13cm
+#| fig-cap: Interaction between latitude and body mass in shaping chinchilloid extinction rate variations across lineages, *i*.*e*., how sentitive to extinction body size classes are with respect to their tropical or extratropical origin. Body mass categories are numbered from 1 to 6 by increasing order (*i*.*e*., from XS to XXL). Results were arbitrarily taken from the third imputation replicate. 
+
+include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/BM_Tropicality.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s27
+#| out-width: 13cm
+#| fig-cap: "How extinction rate varies across crown height categories (0: brachydont, 1: mesodont, 2: protohypsodont and 3: euhypsodont). Results were arbitrarily taken from the third imputation replicate."
+
+include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/Hypsodonty.pdf")
+```
+
+{{< pagebreak >}}
+
+### Supplementary Tables
+
+```{r, echo=FALSE}
+# Load kableExtra library
+library(kableExtra)
+# Function to convert elements of a table cell to bold
+convert_bold <- function(el){
+  return(paste0("**", el, "**"))
+}
+# Load additional libraries
+library(readxl)
+library(dplyr, warn.conflicts = FALSE)
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: tbl-s1
+#| tbl-cap: "Performance of the different network architectures tested in our DeepDive analyses. `LSTM Layers` and `Fully-connected` are respectively the number of Long Short Term Memory and Fully-connected units of the network (3: 128, 64 and 32 nodes; 2: 64 and 32 nodes; 1: 32 nodes). `Dropout` represents the Monte-Carlo dropout fraction, that is, the proportion of connections between neurons randomly toggled off between two learning epochs -- one epoch being characterised by a complete pass through the entire training dataset −, preventing from overfitting. `Nb. training epochs` is the optimal number of training epochs. `Training loss` and `Validation loss` are the values of the Mean Squared Error (MSE) estimated between the 'true' diversity of each simulated dataset (resp. from the training or the validation set), and the predicted diversity made by the network after $n$ rounds of optimisation, where $n$ is the optimal number of training epochs. `Evaluation loss` represent the MSE between each true and its associated predicted diversity trajectory from the test datset, once the is trained (*i*.*e*., after $n$ rounds of optimisation, where $n$ is the optimal number of training epochs). The optimal number of epochs is determined when the `Validation loss` starts increasing (see @fig-s18 and @fig-s19). Architectures resulting in the smallest evaluation loss values, *i*.*e*., generating the most accurate predictions, are depicted in bold."
+
+tbl_dd <- read.csv("../Chinchilloids/Data/supp_tbl/dd_network_perf.csv")
+colnames(tbl_dd) <- c("LSTM layers", "Fully-connected", "Dropout", "Nb. training epochs", "Training loss", "Validation loss", "Evaluation loss")
+# Turn to bold best architectures
+tbl_dd[1,] <- sapply(tbl_dd[1,], FUN = convert_bold)
+tbl_dd[3,] <- sapply(tbl_dd[3,], FUN = convert_bold)
+# Display
+kable(tbl_dd, align = 'c')
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: tbl-s2
+#| tbl-cap: Table representing the lower and upper bounds of the 95% HPD (resp. 'q_2.5%' and 'q_97.5%') of the distribution of the divergence ages leading to all the extant chinchilloid species absent from the fossil record -- *i*.*e*., all species but *Lagostomus maximus*. Ages are expressed in Ma.
+
+tbl <- read.table("../Chinchilloids/Data/supp_tbl/95pct_HPD_tbl.txt", header = T)
+# Add space and italicise species names
+colnames(tbl) <- sapply(X = colnames(tbl),
+                        FUN = function(x){
+                          gensp <- gsub(x, pattern = "_", replacement = " ")
+                          return(paste0("*", gensp, "*"))
+                          })
+# Round values
+tbl <- apply(X = tbl,
+             FUN = round,
+             MARGIN = c(1,2),
+             digits = 2)
+# Indicate row names
+rownames(tbl) <- c("q_2.5%", "q_97.5%")
+# Display
+kable(tbl, align = "c")
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: tbl-s3
+#| tbl-cap: References of the silhouettes used in Figure 1, from [Phylopic](https://www.phylopic.org/).
+
+
+tbl <- read_xlsx("../Chinchilloids/Data/supp_tbl/phylopic_ID_table.xlsx")
+# Italicise species names
+tbl$Silhouette <- sapply(X = tbl$Silhouette, FUN = function(x){paste0("*", x, "*")})
+# Header in bold
+colnames(tbl) <- sapply(X = colnames(tbl), FUN = function(x){paste0("**", x, "**")})
+
+# Display
+kable(tbl, align = "c")
+```
+
+```{r, echo=FALSE}
+#| label: tbl-s4
+#| tbl-cap: "Coefficient of speciation rate variation across the 10 BDNN replicates with random trait (*i*.*e*., body mass and/or hypsodonty index) imputation for taxa with missing trait reconstruction ($n=11$), excluding caribbean taxa. Simulated values (`cv_simulated`) were obtained from the analysis of 100 simulated datasets matching the empirical datasets in terms of number of traits, clade age and (approximately) number of extant species, generated under a constant-rate birth-death model. Empirical values (`cv_empirical`) were obtained from the analysis of the empirical dataset. *Note: significant variations of speciation rate across lineages imply `cv_empirical` > `cv_expected`*."
+
+# Load and adapt table
+cv_tbl_sp <- readRDS("../Chinchilloids/Data/supp_tbl/BDNN_imputation_NoCar/coeff_speciation_rate_variation_across_replicates_NoCar.RDS")
+colnames(cv_tbl_sp)[3] <- "Replicate"
+cv_tbl_sp <- cv_tbl_sp %>% 
+  mutate(cv_empirical = as.numeric(cv_empirical), cv_expected = as.numeric(cv_expected)) %>% 
+  mutate(cv_empirical = sapply(X = cv_empirical, FUN = round, digits = 2)) %>% 
+  mutate(cv_expected = sapply(X = cv_expected, FUN = round, digits = 2))
+cv_tbl_sp[nrow(cv_tbl_sp), ] <- sapply(X = cv_tbl_sp[nrow(cv_tbl_sp), ],
+                                       FUN = convert_bold)
+
+# Display
+kable(cv_tbl_sp, align = "c")
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: tbl-s5
+#| tbl-cap: "Coefficient of extinction rate variation across the 10 BDNN replicates with random trait (*i*.*e*., body mass and/or hypsodonty index) imputation for taxa with missing trait reconstruction ($n=11$), excluding caribbean taxa. *Note: significant variations of speciation rate across lineages imply `cv_empirical` > `cv_expected`*."
+
+# Load and adapt table
+cv_tbl_ex <- readRDS("../Chinchilloids/Data/supp_tbl/BDNN_imputation_NoCar/coeff_extinction_rate_variation_across_replicates_NoCar.RDS")
+colnames(cv_tbl_ex)[3] <- "Replicate"
+cv_tbl_ex <- cv_tbl_ex %>% 
+  mutate(cv_empirical = as.numeric(cv_empirical), cv_expected = as.numeric(cv_expected)) %>% 
+  mutate(cv_empirical = sapply(X = cv_empirical, FUN = round, digits = 2)) %>% 
+  mutate(cv_expected = sapply(X = cv_expected, FUN = round, digits = 2))
+cv_tbl_ex[nrow(cv_tbl_ex), ] <- sapply(X = cv_tbl_ex[nrow(cv_tbl_ex), ],
+                                       FUN = convert_bold)
+# Display
+kable(cv_tbl_ex, align = "c")
+
+```
+
+{{< pagebreak >}}
+
+```{r, echo=FALSE}
+#| label: tbl-s6
+#| tbl-cap: Predictor importance on extinction rate across the 10 BDNN replicates with random trait (*i*.*e*., body mass and/or hypsodonty index) imputation for taxa with missing trait reconstruction ($n=11$) after excluding caribbean taxa. We highlighted in bold the three factors that contribute the most to variations in extinction rates across species.
+
+# Load
+pred_imp_tbl_ex <- readRDS("../Chinchilloids/Data/supp_tbl/BDNN_imputation_NoCar/BDNN_predictor_importance_ex_rate_NoCar.RDS")
+pred_imp_tbl_ex <- pred_imp_tbl_ex[order(pred_imp_tbl_ex$OverallRank), ]
+rownames(pred_imp_tbl_ex) <- 1:nrow(pred_imp_tbl_ex)
+# Make it clearer
+colnames(pred_imp_tbl_ex) <- gsub("^Replicate_", "R. ", colnames(pred_imp_tbl_ex))
+pred_imp_tbl_ex <- pred_imp_tbl_ex %>% rename(Rank = "OverallRank")
+# Highlight the podium
+pred_imp_tbl_ex[1:3, c("Predictor", "Rank")] <- apply(X = pred_imp_tbl_ex[1:3, c("Predictor", "Rank")],
+                                                      FUN = convert_bold,
+                                                      MARGIN = c(1,2))
+# Display
+kable(pred_imp_tbl_ex, align = "c")
+```
+
+```{r, echo=FALSE}
+#| label: tbl-s7
+#| tbl-cap: Magnitude of the change in extinction rate (*i*.*e*., `Fold Change`) between the two extreme body size classes showing the most pronounced extinction rate variation (S and XL) across the 10 trait-imputed replicates without Caribbean taxa. `Upper CI` and `Lower CI` respectively show the uppper and lower boundaries of the associated 95% HPD interval. The 'Total' row shows the averaged values across the 10 replicates.
+
+tbl <- readRDS("../Chinchilloids/Data/supp_tbl/BDNN_imputation_NoCar/Fold_change_S_XL_across_replicates.RDS")
+# Change column names
+colnames(tbl) <- c("Replicate", "Fold Change", "Upper CI", "Lower CI")
+# Numericise
+tbl[, 2:ncol(tbl)] <- apply(X = tbl[, 2:ncol(tbl)], MARGIN = c(1,2), FUN = as.numeric)
+# Round
+tbl[, 2:ncol(tbl)] <- apply(X = tbl[, 2:ncol(tbl)], MARGIN = c(1,2), FUN = round, digits = 2)
+# Highlight last row ('total')
+tbl[nrow(tbl), ] <- sapply(X = tbl[nrow(tbl), ], FUN = convert_bold)
+# Display
+kable(tbl, align = "c")
+```
+
+```{r, echo=FALSE}
+#| label: tbl-s8
+#| tbl-cap: Magnitude of the change in extinction rate (*i*.*e*., fold change) between tropical and extratropical taxa across the 10 trait-imputated replicates without Caribbean taxa. `Upper CI` and `Lower CI` respectively show the uppper and lower boundaries of the associated 95% HPD interval. The 'Total' row shows the averaged values across the 10 replicates.
+
+tbl <- readRDS("../Chinchilloids/Data/supp_tbl/BDNN_imputation_NoCar/Fold_change_Trop_Etrop_across_replicates.RDS")
+# Change column names
+colnames(tbl) <- c("Replicate", "Fold Change", "Upper CI", "Lower CI")
+# Numericise
+tbl[, 2:ncol(tbl)] <- apply(X = tbl[, 2:ncol(tbl)], MARGIN = c(1,2), FUN = as.numeric)
+# Round
+tbl[, 2:ncol(tbl)] <- apply(X = tbl[, 2:ncol(tbl)], MARGIN = c(1,2), FUN = round, digits = 2)
+# Highlight last row ('total')
+tbl[nrow(tbl), ] <- sapply(X = tbl[nrow(tbl), ], FUN = convert_bold)
+# Display
+kable(tbl, align = "c")
+```
+
+```{r, echo=FALSE}
+#| label: tbl-FC_hypso
+#| tbl-cap: Magnitude of the change in extinction rate (*i*.*e*., fold change) between protohypsodont and euhypsodont taxa across the 10 trait-imputated replicates without Caribbean taxa. `Upper CI` and `Lower CI` respectively show the uppper and lower boundaries of the associated 95% HPD interval. The 'Total' row shows the averaged values across the 10 replicates.
+
+tbl <- readRDS("../Chinchilloids/Data/supp_tbl/BDNN_imputation_NoCar/Fold_change_Proto_Euhypsodont_across_replicates.RDS")
+# Change column names
+colnames(tbl) <- c("Replicate", "Fold Change", "Upper CI", "Lower CI")
+# Numericise
+tbl[, 2:ncol(tbl)] <- apply(X = tbl[, 2:ncol(tbl)], MARGIN = c(1,2), FUN = as.numeric)
+# Round
+tbl[, 2:ncol(tbl)] <- apply(X = tbl[, 2:ncol(tbl)], MARGIN = c(1,2), FUN = round, digits = 2)
+# Highlight last row ('total')
+tbl[nrow(tbl), ] <- sapply(X = tbl[nrow(tbl), ], FUN = convert_bold)
+# Display
+kable(tbl, align = "c")
+```
+
+```{r, echo=FALSE}
+#| label: tbl-s9
+#| tbl-cap: Posterior estimates of the multivariate birth--death (MBD) correlation parameters with the extinction rate ($G_{\mu}$, median), shown along with their 95% Highest Posterior Density (HPD) interval, for each of the four environmental variable tested. The only significant correlation, *i*.*e*., of which the 95% HPD of the associated coefficient does not significantly overlap with 0, is shown in bold.
+
+tbl <- readRDS("../Chinchilloids/Data/supp_tbl/MBD_recap_tbl/MBD_extinction_recap_tbl.RDS")
+tbl[4,] <- sapply(X = tbl[4,], FUN = convert_bold)
+# Display
+kable(tbl, align = "c")
+```
+
+```{r, echo=FALSE}
+#| label: tbl-s10
+#| tbl-cap: Posterior estimates of the multivariate birth--death (MBD) correlation parameters with the speciation rate ($G_{\mu}$, median), shown along with their 95% Highest Posterior Density (HPD) interval, for each of the four environmental variable tested. As all HPD intervals overlap with zero, no ignificant correlation was highlighted by this analysis.
+
+tbl <- readRDS("../Chinchilloids/Data/supp_tbl/MBD_recap_tbl/MBD_speciation_recap_tbl.RDS")
+# Display
+kable(tbl, align = "c")
+```
+
+```{r, echo=FALSE}
+#| label: tbl-s11
+#| tbl-cap: Median estimate and associated 95% HPD bounds of the shape parameter of the Weibull shape parameter ($\Phi$) of the Age-Dependent Extinction analysis of our species-level chinchilloid temporal occurrence dataset. Since the ADE model should be run on periods of constant extinction rate through time, `Species_Early` and `Species_After` respectively designate the species before and after the  shift in extinction rate occurring *ca*. 6 Ma.
+
+tbl_weibull <- read.table("../Chinchilloids/Figures/ADE/recap_tbl_w_shape_species.txt", sep = "\t", header = T)
+tbl_weibull <- tbl_weibull[, -c(4)]
+kable(tbl_weibull, align = "c")
+```
+
+{{< pagebreak >}}
