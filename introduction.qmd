@@ -403,3 +403,6 @@ Next, this thesis will also contribute to a better understanding of the emergenc
 Also, in its last chapter, this thesis will provide valuable mechanistic insights into what shaped a textbook example of asymmetric lineage exchange following a geodispersal event, namely, the Great American Biotic Interchange (GABI) (@sec-SAFauna). The imbalanced success of North American mammal lineages compared to South Americans in the aftermath of the closure of the isthmus of Panama has indeed yielded to a wide range of hypotheses. By means of computer experiments, this thesis will specifically assess whether such an asymmetry can be linked to palaeoclimate dynamics, a long-considered paradigm.
 
 The findings produced over this thesis will ultimately be replaced in a broader framework, discussing the likely triggers of macroevolutionary change among South American mammals, and several perspectives will be provided to enhance further macro-eco-evolutionary reflexion on the fate of this fascinating study model.
+
+
+{{< pagebreak >}}

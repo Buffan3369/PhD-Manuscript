@@ -1,4 +1,4 @@
-# Discussion {.unnumbered header-title="Discussion"}
+# Discussion {header-title="Discussion"}
 
 EOT: A mass extinction? Could this, as proposed by @bambach2006, reflect the fact that the definition of a mass extinction should incorporate degrees of freedom?
 
@@ -14,13 +14,11 @@ Traits mediate biotic interactions
 
 Defining a species?
 
-Inferring diversity/diversification patterns from the fossil record: Signor & Lipps effect @signor1982
-
 ## Perspectives
 
 ### An almost closed system: founding migrations in the Palaeogene history of South American mammals
 
-Hystricognath rodents & Platyrrhine primates. Introduce the debate. We lack fossil evidence for the earliest comers, oldest occurrences in Western Amazonia whereas most likely come from Afro-Asian ancestors, so should have arrived by the East. Polyphyletic/several crossing events? Summarised in @marivaux2023
+Hystricognathous rodents & platyrrhine primates. Introduce the debate. We lack fossil evidence for the earliest comers, oldest occurrences in Western Amazonia whereas most likely come from Afro-Asian ancestors, so should have arrived by the East. Polyphyletic/several crossing events? Summarised in @marivaux2023
 
 A recent quantitative study suggested that the diversification of rodents and primates negatively affected the diversity of the endemic groups [@pino2025].
 
