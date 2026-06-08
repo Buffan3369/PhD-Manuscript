@@ -1,6 +1,6 @@
-\pagenumbering{roman}
-
 # Foreword and Acknowledgements {.unnumbered header-title="Foreword and Acknowledgements"}
+
+\pagenumbering{roman}
 
 ## Foreword
 

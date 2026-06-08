@@ -2,7 +2,7 @@
 
 ## A deep-time perspective on the Cenozoic history of South American mammals
 
-### On the status of the Eocene--Oligocene boundary
+### On the status of the Eocene--Oligocene boundary: towards a new definition of mass extinctions?
 
 EOT: A mass extinction? Could this, as proposed by @bambach2006, reflect the fact that the definition of a mass extinction should incorporate degrees of freedom?
 
@@ -22,6 +22,8 @@ How about neutral theory?
 
 ### Future directions towards an improved understanding of the emergence and dynamics of South American ecosystems
 
+Neogene
+
 DIACHRONANDES, PHENOMENA
 
 ## Dealing with the Devil: uncertainties in the large-scale study of biodiversity
@@ -32,13 +34,26 @@ Traits mediate biotic interactions
 
 Defining a species?
 
-### Apples, oranges and brushes: some of those biases that work forces at 
+Reconciling the fossil record and molecular phylogenies?
+
+### Detecting the legacy of deep-time environmental dynamics in the diversification of clades
+
+The idea that clade macroevolutionary dynamics are influenced by environmental changes -- encompassing both biotic and abiotic factors [*e*.*g*., @barnosky2001] -- has been central to this doctoral work. As detailed in the \textcolor{Blue}{General Introduction}, testing the hypotheses relating clade diversification dynamics to environmental changes yielded substantial methodological improvements in the field of macroevolution [*e*.*g*., @condamine2013; @lehtonen2017; @palazzesi2022]. That being said, the philosophy behind nay model-based approach has always been to chose the 'least worst' model  following a given criterion (*e*.*g*., likelihood-based approaches)
+
+It is easy to draw biologically-irrelevant correlations, hence the importance of having clearly defined hypotheses prior any analysis.
+
+Avenue: mechanistic modelling. Can be Mechanistic Eco-Evolutionary Simulations, but also causal inference, such as structural equation models or phylogenetic path analyses.
+
+The uncertainty may never be solved. However, one approach to resolve it lies in combining several approaches [*e*.*g*., @toussaint2025]. That's what we intended to do with MBD/BDNN in \textcolor{Blue}{Chapter 2}.
+
+Phylogenies are the big absent
+
+### Apples, oranges and brushes: some of those biases that work forces at altering macroevolutionary pipelines
 
 Data cleaning !
 
 Lack of time-continuous proxy for precipitations.
 
 ### Simulating biodiversity : expanding or narrowing the field of possibilities?
-
 
 {{< pagebreak >}}

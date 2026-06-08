@@ -1,5 +1,13 @@
 # Chapter 1. The fate of South America's endemic mammalian fauna in response to the most dramatic Cenozoic climate disruption {header-title="Chapter 1 -- The Eocene--Oligocene Transition in South America"}
 
+Lucas Buffan$^{1,*}$, Fabien L. Condamine$^1$, Narla S. Stutz$^1$, François Pujos$^2$, Pierre-Olivier Antoine$^1$, Laurent Marivaux$^1$
+
+$^1$ Institut des Sciences de l’Evolution de Montpellier, Université de Montpellier, CNRS, IRD, Place Eugène Bataillon, 34095 Montpellier cedex 5, France
+
+$^2$ IANIGLA, CCT–CONICET–Mendoza, Avenida Ruiz Leal s/n, Parque General San Martín, 5500 Mendoza, Argentina
+
+**Keywords**: Biological crisis; Eocene--Oligocene transition; Diversification dynamics; Multivariate analyses; Bayesian inference
+
 ## Foreword
 
 ```{r, echo=FALSE}

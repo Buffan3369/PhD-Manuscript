@@ -59,4 +59,3 @@ format:
         
         % Add page numbers
         \fancyfoot[C]{\thepage}
-        
