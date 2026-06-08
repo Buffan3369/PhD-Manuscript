@@ -1,4 +1,429 @@
-# Chapter 3. Palaeoclimate alone fails to explain the asymmetry of the Great American Biotic Interchange {header-title="Chapter 3"}
+# Chapter 3. Palaeoclimate alone fails to explain the asymmetry of the Great American Biotic Interchange {header-title="Chapter 3 -- Eco-Evolutionary Simulations, Palaeoclimate and the GABI"}
+
+Authors: Lucas Buffan¹*, Fabien L. Condamine¹, Philip B. Holden², Sara Varela³
+
+¹ Institut des Sciences de l’Evolution de Montpellier, Université de Montpellier, CNRS, IRD, Place Eugène Bataillon, 34095 Montpellier cedex 5, France
+
+² Environment, Earth and Ecosystem Sciences, The Open University, Walton Hall, Milton Keynes, MK7 6AA, UK
+
+³ Centro de Investigación Mariña, Departamento de Ecoloxía e Bioloxía Animal, Universidade de Vigo, Campus Lagoas-Marcosende, 36310 Vigo, Spain
+
+\* Corresponding author: lucas.l.buffan\@gmail.com
+
+
+Keywords: Biotic Interchange; Eco-evolutionary simulations; Macroecology; Palaeoclimate
+
+
+## Abstract
+
+Asymmetric colonisation patterns often arise from large-scale biotic exchanges involving two source areas. In the Pliocene, the closure of the isthmus of Panama facilitated the admixture between North and South American faunas, an event termed Great American Biotic Interchange (GABI). The ecological mechanisms underlying the asymmetry of the GABI, incontestably in favour of North American lineages, remain debated. Here, coupling a mechanistic eco-evolutionary simulator with palaeoclimatic reconstructions, we test fundamental hypotheses relating this biogeographic imbalance to palaeoclimate dynamics. When climate is the only constraint to species' dispersal, our simulations yield more South-to-North than North-to-South dispersal events, mostly within the tropical biome. Also, our models fail to explain the migrant diversity desequilibrium between the two continents, as well as temperate specialists' over-representation in the fossil record of successfully-exchanged taxa. Hence, we argue that spatio-temporal palaeoclimate dynamics alone cannot explain the asymmetry of the GABI, suggesting additional factors fashioned this macroecological enigma.
+
+## Introduction
+
+The Great American Biotic Interchange (GABI) refers to the large-scale biotic exchange that occurred between the Americas and intensified after the closure of the isthmus of Panama [@webb1976; @marshall1982; @stehli_great_1985]. Though the exact timing of the appearance of such a landbridge is not entirely resolved [@montes2015; @jaramillo2018; @odea2016; @bourke2025], palaeontological evidence and molecular phylogenies both agree with a late Miocene onset of (non-volant) biotic exchange between the Americas [@verzi2008; @tedford2004; @carrillo2015], with effective exchange pulses occurring during the Plio-Pleistocene [@marshall1982; @woodburne2010; @bacon2015; @bacon2016]. Among land mammals, a puzzling feature of the GABI is that it impacted the North and South continental faunas very differently. Although evidence from the fossil record indicates that the early phases of the GABI were marked by reciprocal land mammal exchanges between the Americas [@webb1976; @marshall1982; @woodburne2010], during the Pleistocene, the ability of migrant lineages to maintain and diversify in the newly-colonised continent became greater in South America [@woodburne2010]. Many native South American lineages concomitantly declined, some of which even going totally extinct [@webb1991; @cione2015; @carrillo2020; @croft2020; @boscaini2025]. Hence, this intercontinental faunal exchange was asymmetric.
+
+Although this macroecological imbalance is unquestionable, no clear consensus regarding the drivers underlying this asymmetry has yet been established. On the one hand, biotic interactions involving migrant and native species have often been proposed to explain such an asymmetry. These would include competition [@webb1976; @simpson1980; @domingo2020] or predation of predator-naive preys [@webb1976; @marshall1990; @faurby2016; @fernández-monescillo2025]. However, their contribution to the asymmetry of the GABI has been increasingly called into question [*e*.*g*., @freitas-oliveira_no_2024; @marsà2025; @prevosti2013; @tarquini2022; @vrba1992]. On the other hand, several studies proposed that the asymmetry of the GABI emerged from palaeoclimate dynamics [*e*.*g*., @bacon2016; @freitas-oliveira_temperature_2024; -@freitas-oliveira2025; @marshall1990; @vrba1992; @webb1991]. The prevailing views consist of relating pulses of transcontinental mammal exchanges with Pleistocene climatic oscillations, promoting the transition from tropical rainforest to savannah-like environments in Central America as climate cooled down (@fig-hypotheses). Based on consideration of the migrant fossil record across both sides of the isthmus of Panama, @webb1991 proposed that this climate-driven landscape opening would have facilitated the dispersal of open-adapted taxa. As those were assumed to be more numerous in North than in South America -- the former continent offering more high-latitude temperate-to-cold environments than the latter --, a larger number of North American taxa would be predicted to disperse to the South than the other way around (@fig-hypotheses A). The resulting exchanges would have been periodically interrupted by intervals of warming, promoting the reverse transition to rainforest in the isthmian region, with rainforests acting as a barrier for species dispersal (tropical 'holding pen' hypothesis) [@woodburne2010]. In addition, @vrba1992 proposed the contraction of tropical habitats towards the equator promoted by the aforementioned periodical climatic cooling to have mechanically attracted taxa suited to tropical environments southwards (@fig-hypotheses B). However, studies supporting these views have only been descriptive, tackling the issue from a pattern-oriented perspective driven by fossil data but, to our knowledge, never from a process-oriented perspective.
+
+Recent improvements in process-explicit modelling have marked a turning point in the study of biodiversity [@pilowsky2022]. By combining a landscape including palaeoenvironmental variables and a set of eco-evolutionary rules according to which virtual species are simulated, mechanistic eco-evolutionary models offer the unique opportunity to causally explore how biodiversity patterns arise and are maintained through evolutionary times [@hagen2023]. Recently, this class of models has provided unprecedented insights into the underlying forces behind widely-recognised biodiversity patterns, such as the latitudinal biodiversity gradient [@hagen2021; @lorcery2025], the diversity desequilibrium between tropical rainforests across the globe [@hagen2021b], the build-up of the unique biodiversity along the Wallace line [@skeels_paleoenvironments_2023] and many others [*e*.*g*., @boschman2023; @liu2024; @skeels2023].
+
+Here, we test Webb and Vrba's hypotheses on the role of palaeoclimate dynamics in the asymmetry of the GABI (@fig-hypotheses) using a spatially-explicit mechanistic biodiversity simulator coupled with palaeoclimate reconstructions across the last 5 million years. Our simulations tracked the diversification of a clade originating either in North or South America. The ability of a virtual species to survive at a given place was only mediated by climatic factors. We hypothesise that (i) simulations starting from a North American ancestor would be more successful at reaching the other continent than the other way around, (ii) successful simulations starting from a North American ancestor would result in a more diverse and spatially spread radiation in the newly-colonised continent, (iii) niche evolvability and (iv) initial biome would significantly impact exchange frequencies, with higher values obtained for adaptive-niche simulations, or fixed-niche simulations with temperate or arid rather than tropical affinity.
+
+```{r, echo=FALSE}
+#| label: fig-hypotheses
+#| out-height: 15cm
+#| out-width: 12.5cm
+#| fig-pos: 'H'
+#| fig-cap: The two nonmutually-exclusive hypotheses relating the asymmetry of the GABI to the Pleistocene climatic oscillations, formulated in the framework of land mammals. Both involve biome transition from close tropical rainforest (green) during interglacial periods − warm and humid − to open savannah/desert (dark yellow) during glacial maxima − cold and dry − in the isthmian region. The first one (A), formulated by @webb1991 views the asymmetry of the GABI as the result from the fact that North America had a higher pool of open-adapted taxa than South America. The opening of the isthmian region acted as an ecological filter favouring the dispersal of these open-adapted taxa to the detriment of the others. Hence, given the imbalance in open-adapted pool size between the two continents, more species would have been expected to disperse to the South than the other way around. The second one (B), formulated by @vrba1992, proposes that the contraction of the tropical biome towards the equator triggered by the interglacial-glacial transition would have mechanically attracted tropical specialists southwards, irrespective of their continent of origin. Silhouettes are from phylopic, credits are available in @tbl-s3. Note that the purpose of this figure is to illustrate our working hypotheses. Thus, we do not pretend these maps to accurately reflect inter-American biome dynamics between glacial and interglacial periods. A more accurate picture of these dynamics is available on @fig-s13.
+
+knitr::include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_intro/Figure_hypotheses.png")
+```
+
+{{< pagebreak >}}
+
+## Material and Methods
+
+Beforehand, it has to be noticed that, across the entire study, 'North America' actually refers to the current North and Central American continents. The delimitation between North and South America was arbitrarily set as a straight line connecting two points located along the eastern and western coasts of present Panama ($82.882°$ W, $7.138°$ N and $81.369°$ W and $9.008°$ N) (see @fig-s1).
+
+### Palaeoclimate data
+
+We used the spatio-temporal terrestrial palaeoclimate series from the PALEO-PGEM emulator [@holden2019] of the PLASIM-GENIE intermediate-complexity atmosphere-ocean general circulation model [@holden2016]. This reconstruction covers the last 5 Million years (My) downscaled to a 1 $\times$ 1 ° spatial resolution [@barreto2023]. For the scope of this work, we used two bioclimatic variables: mean annual temperature (MAT, BIO1) and mean annual precipitation (MAP, BIO12). To avoid an intractably-high number of simulation time steps, we reduced the temporal resolution of the climate simulations from a 1000-years to a 10,000-years time step by sampling corresponding time slices. This procedure did not alter the overall climatic trends. In particular, Pleistocene climatic oscillations clearly remained after downscaling (@fig-s12).
+
+In order to discriminate simulations based on the biome where the initial species originates, we reclassified monthly palaeoclimate layers for the starting time ($t=5$ My ago) according to Köppen-Geiger broad climate types [@beck2018; @galván2023]. This classification divides the world into five broad climatic regions: Polar, Cold, Temperate, Arid and Tropical, following the criteria proposed by @köppen1900.
+
+### Simulation model and modelling schemes
+
+We performed spatially-explicit simulations of biodiversity using gen3sis v1.5.11 [@hagen2021]. Simulations, moving forward-in-time with a 10ky time step, tracked the radiation of a clade arising from a single ancestral population, either originating in North or in South America, throughout the last 5 My. In gen3sis, virtual species are modelled with individual populations evolving independently, following a set of four rules: dispersal, speciation, environmental filtering and trait evolution. All simulation scenarios that we implemented only differed on the last rule (trait evolution), the first three being common to all models.
+
+We elaborated a gridded landscape from the time-series of the two palaeoclimatic layers. Within this landscape, populations making up virtual species inhabited a set of connected cells. At each time step, inter-cell dispersal could occur with an intensity sampled in a Weibull distribution (repeated independently for each species-cell combination). As done by @skeels2023; [-@skeels_paleoenvironments_2023], the cost of moving from a cell to another was made twice harder if the target cell was not habitable (*i*.*e*., ocean or sea). If, by chance, two populations become disconnected, they accumulate divergence as long as they remain disconnected, at a rate ruled by a divergence factor, here set to $0.05$ (@tbl-s1). Once passed a divergence threshold, speciation would occur -- note that, consequently, the only mode of speciation allowed by gen3sis is allopatry.
+
+As our goal was to evaluate the extent to which palaeoclimate change may have shaped the unequal success of North American taxa establishing southwards compared to South American taxa establishing northwards, local climate was set as the only constraint for a population to survive in a given cell. Each species was therefore assigned a two-dimensional climatic niche, one axis corresponding to temperature suitability and the other to precipitation suitability. The abundance of a species along an environmental gradient was determined by two parameters -- that we also call traits -- : a population- and species-specific optimum (resp. $P_{k,l}$ and $T_{k,l}$ for the precipitation and temperature optima of the population $k$ of the species $l$) and a breadth (or tolerance) (resp. $\omega_P$ and $\omega_T$; within a simulation, all populations and species had the same breadths). A population could survive in a given cell only if the difference between its optima and local climate (both temperature and precipitation) was less than its tolerance. Therefore, given a site $i$ with local precipitation and temperature at time $t$ being $P_i(t)$ and $T_i(t)$, this translates in
+
+$$\begin{cases}
+\lvert P_i(t) - P_{k,l} \rvert < \omega_P \\
+\lvert T_i(t) - T_{k,l} \rvert < \omega_T
+\end{cases}$$
+
+We implemented various simulation scenarios (also called modelling schemes) where we modulated the ability of species to cope with climate change. In the adaptive niche model ($M1$), climatic optima ($P_{k,l}$ and $T_{k,l}$) were able to evolve in the direction of local climate change. To isolate the effect of a single environmental covariate on the resulting simulated biodiversity pattern, alternative versions of this model consisted of either removing the temperature ($M2$) or the precipitation ($M3$) constraint on species ecology. Besides, we also implemented a fixed niche model ($M0$), where niche optima could not evolve and were therefore held constant (to their initial value) across all simulations. 500-member simulation ensembles were performed for each simulation scenario, and for both North and South America as ancestral area. For details about initialisation of a simulation and parameter values, please refer to *Supplementary text*.
+
+Importantly, simulations generated under the fixed niche model ($M0$) originating in the tropical biome of either continent allowed to assess fundamental hypotheses related to the concept of tropical niche conservatism [@wiens2004]. This concept has often been invoked to explain the high diversity of tropical compared to temperate regions. In the framework of the Americas, @smith2012 evidenced that the extant vertebrate biodiversity across the Americas resulted from an asymmetric niche conservatism. They indeed showed that taxa of North American origin were a significant compound of the high Neotropical biodiversity, whereas taxa with a southern ascent were little represented in temperate North America, therefore arguing that South American taxa exhibit an higher niche conservatism (in favour of tropical areas) than North American taxa. Thus, our modelling schemes also provide the ability to test whether palaeoclimate is a sufficient driver behind this observed niche conservatism asymmetry across the Americas.
+
+Across the 500-member ensembles, we varied 6 key parameters: (1) the divergence threshold above which speciation occurred ($S$, range = $[1, 3]$), (2) the rate of environmental niche evolution -- only in models in which we allowed climatic niche to evolve ($\sigma_e$, $[0.005, 0.15]$), (3) the shape ($\phi$, $[0.5, 3]$) and (4) scale ($\psi$, $[0.1, 1]$) of the Weibull distribution acting as a dispersal kernel, (5) the strength of environmental filtering (*i*.*e*., niche breadth) for temperature ($\omega_T$, $[0.01, 0.1]$) and (6) precipitation ($\omega_P$, $[0.05, 0.3]$). To explore the sensitivity of the simulated pattern to temperature breadth, three different ranges of $\omega_T$ were tested: $[0.01, 0.1]$, $[0.01, 0.6]$ and $[0.01, 1]$. As done by many authors, we ensured an even sampling of the resulting multidimensional parameter space via a quasirandom sampling technique relying on Sobol' sequences [*e*.*g*., @hagen2021b; @skeels_paleoenvironments_2023]. Parameter ranges were determined on the basis of a literature review, ensuring their biological relevance. These ranges were further adjusted to limit the prevalence of crashing simulations. In addition to these varying parameters, we specified the value of several fixed parameters (@tbl-s1). Identical parameter values were used in each of the eight 500-member ensembles.
+
+Each individual simulation started with a single ancestral species. The range of this ancestral species was randomly selected within the desired ancestral area (*i*.*e*., North or South America). To avoid oversampling high latitudes, we merged the ancestral landscape with the centroids of an equal-area grid (\~100km spacing) generated using the R package *h3jsr* [@obrien2023]. We then sampled a centroid at random and retrieved the corresponding cell in our landscape (@fig-s5 *left* and *right*). The climate optima parameters of the ancestor were set to those of the local environment. However, due to the geometry of the two continents, this sampling scheme resulted in ancestral species starting from South America originating on average closer to the isthmus of Panama than those from North America (@fig-s2 *top*). To control for this spatial bias, we assessed the distance to the isthmus of each cell of the North American portion of our 1 $\times$ 1° landscape. We then carried out other batches of simulations starting from North America, constraining the initial distance to the isthmus of the ancestral species of the simulation $i$ to be as close as possible to the same distance involving the ancestral species of the simulation $i$ starting from South America (@fig-s2 *bottom*, @fig-s5 *middle*).
+
+Throughout the study period, a vast proportion the South American landmass was dominated by relatively stable tropical climatic conditions whereas the overall North American climate was dominated by temporal fluctuations (@fig-s1). Consequently, we expect that lineages generated under fixed-niche simulations ($M0$, high conservatism) originating in South America to be less intensively exchanged than those generated under evolving-niche simulations starting in North America ($M1−3$, attenuated conservatism). Such an imbalance would be in line with the empirical pattern of exchange asymmetry that took place during the GABI.
+
+Last, it is important to notice that, since the palaeoclimate reconstructions that we used ignored tectonic plate motion -- a reasonable assumption for a 5-My time frame -- continental position in our landscapes was held constant across simulations. Therefore, in that framework, changes in connectivity between North and South America could only arise from climate.
+
+### Quantification and statistical analyses
+
+At every time step, for each run of each simulation, we used a function released by @skeels_paleoenvironments_2023 to save presence-absence matrices. Given a time $t$, such matrices stored on their columns the presence of each simulated species that have existed from the onset of the simulation to $t$ within each cell of the landscape (rows of the matrix) as a binary variable -- $1$: the species inhabits that cell, $0$: it does not.
+
+Given a batch of simulations, after discarding those that crashed -- *i*.*e*., that led to no living representative -- we quantified four metrics reflecting the occurrence, magnitude and efficiency of an eventual transcontinental exchange based on the presence-absence matrix of the last time step of each successful run (hereafter called $t_{end}$). First, we assessed the exchange success, a binary variable set to one if at least one pixel of the area to colonise (hereafter called $\mathcal{A}_{col}$, *e*.*g*., South America if the simulation started in North America) recorded a presence. Then, we recorded the biome in which the initial ancestor occurs (*i*.*e*., Tropical, Arid, Temperate, Cold, Polar) as well as the distance of this initial ancestor to a point arbitrarily located on the zone of the isthmus of Panama, ($-84°$lon, $10°$lat). Last, in the case of a successful exchange, we quantified the number of virtual taxa recorded in $\mathcal{A}_{col}$ at $t_{end}$ -- referred to as "colonised diversity" -- and the proportion of $\mathcal{A}_{col}$ actually colonised at $t_{end}$ as the ratio between the number of cells occupied by the colonisers and the total number of available cells (*i*.*e*., surface of $\mathcal{A}_{col}$).
+
+## Results
+
+### South-to-North dispersal events are made easier by climate
+
+Our results suggest that the proportion of simulations successfully reaching the other continent is always higher -- by approximately a factor of two -- when starting from South America than from North America (@fig-propsuccess). This imbalance holds whether we allow species climatic niche to evolve following the direction of local climatic change ($44\pm6\%$ vs. $87\pm3\%$, model $M1$) or not ($29\pm6\%$ vs. $59\pm5\%$, $M0$), although we can notice that overall transcontinental exchange frequencies are lower in the latter case. When allowing climatic niches to evolve, amputation of either their temperature ($47\pm7\%$ vs. $88\pm3\%$, $M2$) or precipitation ($38\pm4\%$ vs. $89\pm3\%$, $M3$) compounds did not alter the pattern. We emphasise the fact that, contrary to our expectations, fixed-niche simulations originating in South America always yielded to a greater exchange intensity than evolving-niche simulations starting in North America. The simulated imbalance persisted after standardising initial distances to the isthmus of Panama for simulated species originating in North America to those of simulated species from South America, except for simulations generated under the fixed-niche model ($50\pm6\%$ vs. $59\pm5\%$) (@fig-s4). Last, we stress that the simulated pattern was also robust to thermal breadth expansion for lineages originating in North America, up to 10 times broader than for simulations originating in South America (@fig-s14 A).
+
+Out of the 500 runs carried out for each initial landmass-modelling scenario combination, the proportion of simulations leading to no living representative (=crash) was on average three times higher for simulations starting from North America, except for model $M3$, recording almost no crash (@tbl-s2). This difference, although attenuated, persisted after the spatial standardisation procedure, but fully disappeared when we increased the thermal breadth of simulations originating in North America (@fig-s14 B).
+
+
+```{r, echo=FALSE}
+#| label: fig-propsuccess
+#| out-height: 10.5cm
+#| out-width: 10cm
+#| fig-pos: 'H'
+#| fig-cap: Proportion of simulations leading to a successful exchange to the other continent, computed as the ratio, given an initial continent and a modelling scenario, between the number of simulations leading to a transcontinental exchange and the total number of simulations resulting in at least one living species at the final state. From left to right are depicted the outcome of the fixed-niche model ($M0$, species climatic niche does not change through time), adaptive-niche model ($M1$, species climatic niche evolves following local changes in temperature and precipitations) and alternative versions of $M1$ where species ecological niche is only determined by precipitation ($M2$) or temperature ($M3$). Each individual plot shows the outcome of simulations starting in North (red) and South (cyan) America. Dots represent mean proportion estimates and error bars show their associated Binomial-derived 95% confidence interval.
+
+
+knitr::include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_PropSuccess/Figure_PropSuccess.png")
+```
+
+
+### Successful establishment on the newly-colonised continent
+
+Irrespective of the initial continent, our findings highlight that successful simulations generated under models allowing species climatic niches to evolve ($M1-M3$) colonised a larger area on the newly-colonised continent than those generated under the $M0$ model -- where climatic niche evolution was not allowed (@fig-metrics A). Furthermore, species of North American origin that successfully made it to South America generally colonised a greater area than those of South American origin reaching North America (@fig-metrics A). This pattern is particularly striking for simulations generated under the $M0$ model ($36.5\pm3.5\%$ vs. $11.7\pm0.4\%$), and holds for all but the $M3$ model -- relaxing the precipitation constraint on species' niche --, the latter suggesting an opposite trend ($69.9\pm3.3\%$ vs. $79.4\pm3.9\%$). However, due to the difference in size (*i*.*e*., number of pixels) between the two continents (@fig-s1), the actual colonised area was greater when simulations generated under the $M1-3$ models started from South than North America, but remained larger when simulations were generated under $M0$ started from North America (@fig-s11).
+
+Besides, contrary to the proportion of colonised area for a given ancestral continent, colonised diversity does not vary significantly across our four models. However, a significant decrease is evident in simulations starting from North America generated under the $M3$ model (@fig-metrics B). Moreover, ancestral continent does not seem to affect mean colonised diversity values in the case of the $M1$ ($212\pm61$ vs. $170\pm25$ species respectively retrieved in the newly-colonised continent after starting from North or South America) and $M2$ ($161\pm48$ vs. $171\pm27$ species) models. It does however have an effect for simulations generated under $M0$, with higher average values obtained for simulations starting from North America ($247\pm85$ vs. $79\pm20$ species).
+
+In addition, successful simulations starting from North America generally started from an ancestor located closer to the isthmus of Panama than those starting from South America (@fig-metrics C), again except for simulation generated under $M3$. Also, we can highlight a general trend that ancestral species originated closer to the isthmus in the case of successful simulations compared to unsuccessful ones ([@fig-s7]--[-@fig-s8]). Interestingly enough, the results obtained for this metric, just like those obtained for the other two, hold for simulations generated after standardising the initial distances to the isthmus of North American virtual species with those starting from South America (@fig-s4).
+
+```{r, echo=FALSE}
+#| label: fig-metrics
+#| out-height: 12cm
+#| out-width: 14cm
+#| fig-align: "left"
+#| fig-pos: 'H'
+#| fig-cap:  A few metrics summarising climate-mediated interchange given our four modelling schemes. These metrics were assessed for successful simulations only, i.e., simulations that resulted in a transcontinental faunal exchange. **(A)** Proportion of continent’s newly-colonised area, quantified as the ratio between the number of pixels recording a presence in the landmass to colonise and the total number of pixels offered by this landmass. **(B)** Colonised diversity, expressed as the natural logarithm of the number of lineages within the colonised area. **(C)** Distance between simulation starting pixel and the isthmus of Panama. Mean estimates and their associated Student-derived 95% confidence intervals are displayed over their distribution.
+
+
+knitr::include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_metrics/Figure_metrics.png")
+```
+
+
+
+### Biome selectivity of the simulated faunal exchanges
+
+Due to the unequal area occupied by each biome between the two continents, the number of simulations starting within each biome was largely uneven across biome classes and continents (@fig-biome B). The majority of North American ancestral species originated in the cold biome ($57\%$), whereas the tropical biome recorded the largest proportion of ancestral species originating in South America ($58\%$). Standardising initial distances to the isthmus of Panama for simulations originating in North America increased the proportion of simulations originating under low latitudes, to the detriment of those originating in high latitude, less represented in South America (@fig-biome A and @fig-s5). Consequently, this increased the representativity of the tropical (from $5\%$ to $10\%$) and arid (from $16\%$ to $26\%$) biomes in the starting ranges of simulations originating in North America, and decreased the proportion of simulations originating in the cold (from $57\%$ to $40\%$) and polar (from $4\%$ to $2\%$) biomes (@fig-s10).
+
+Despite this initial imbalance, when simulations were generated under the $M0$ model, our results suggest similar exchange intensity patterns between simulations starting from North and South America (@fig-biome C, first row). Fixed-niche simulations with tropical affinity (*i*.*e*., originating in the tropical biome and evolving under $M0$) were largely more frequently exchanged than fixed-niche simulations tied to another biome, with on average $90 [77,100]\%$ successful exchanges southwards (*i*.*e*., from simulations originating in North America) and $66\pm5\%$ northwards (*i*.*e*., from simulations originating in South America). Such proportions were significantly reduced when originating in the arid ($26\pm6\%$ southwards, $18\pm9\%$ northwards) and temperate biomes ($26\pm10\%$ southwards, $29\pm8\%$ northwards). Almost no fixed-niche simulation originating in the cold or polar biome, no matter where it started, resulted in a successful inter-continental exchange. The exact same pattern is obtained for southwards dispersal events occurring after standardising initial distances to the isthmus of Panama (@fig-s9, $M0$).
+
+Regarding simulations generated under the adaptive-niche models ($M1-3$), those starting from North America maintained the same pattern of exchange intensities as simulations generated under $M0$. The proportion of exchange success was higher among those originating in the tropical biome ($89 [75, 100]\%$ for $M1$), followed by those originating in the temperate ($40\pm10\%$, $M1$) and arid ($34\pm11\%$, $M1$) biomes. Also, almost no adaptive-niche simulation originating in the cold or polar biomes made it to South America (@fig-biome C $M1-2$). Note that removing the precipitation constraint on species climatic niche (*i*.*e*., model $M3$) attenuated this imbalance (@fig-biome C $M3$). These results hold after standardising initial distances to the isthmus of Panama of simulations starting from North America to those starting from South America (@fig-s9, $M1-3$). Conversely, the adaptive-niche disparity in proportion of successful exchanges across biomes was largely attenuated when simulations started in South America. In that case, successful exchanges appear almost equally-likely, regardless of the biome where simulations originate (@fig-biome C $M1-3$).
+
+```{r, echo=FALSE}
+#| label: fig-biome
+#| out-height: 15cm
+#| out-width: 15cm
+#| fig-pos: 'H'
+#| fig-cap: Initial biome where each ancestral species leading to successful simulations is recorded at the time of the onset of the simulations (5 Ma). **(A)** Global main climate zones based on Köppen-Geiger biome classification at $t=5$ Ma. **(B)** Biome where the ancestral species of each of the 500 simulations originated, for each continent and each scenario. We removed simulations starting from a cell that could not be assigned a biome from our counts, hence the reason why some are not exactly summing to 500. **(C)** Proportion of successful simulations based on the biome where ancestral species originates, for each modelled scenario-ancestral continent combination. This proportion is expressed as the ratio between the number of successful simulations and the total number of simulations starting from a given biome. Coloured dots and error bars respectively show proportion estimates and their associated Binomial-derived 95% confidence intervals.
+
+knitr::include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_biomes/Figure_biomes.png")
+```
+
+## Discussion
+
+### An inverse asymmetry of exchange driven by climate
+
+Throughout this work, we investigated the role of palaeoclimate in the asymmetry of the GABI through the use of eco-evolutionary simulations. Probably one of our most striking findings is that, under climatic constraints alone, simulated South American lineages dispersed to the North with a significantly greater intensity than the other way around (@fig-propsuccess). This therefore clearly contrasts with the long-recognised imbalanced success of North American mammal taxa compared to South Americans in the aftermath of the GABI [@simpson1980]. Seminal works primarily interpreted the empirically-derived asymmetry of the GABI under the lens of a continent-wide extension of MacArthur & Wilson's equilibrium theory [@macarthur1967]. The latter theory establishes that, on evolutionary timescales, diversity within a given area should tend towards an equilibrium value proportional to the size of this area. Therefore, its continent-wide extension predicts the equilibrium diversity of North America to be larger than that of South America, given the differences in size between the two continents ($24$ vs. $18\times10^6$ km²). Following this framework, @marshall1982 argued that the continent offering the largest pool of taxa -- which, according to this prediction, would be North America -- would in turn have resulted in the larger number of species exchanged in the end. It might be noticed that species pool imbalance between two source areas has been identified as a key driver in the faunal exchange asymmetry that contributed to the build-up of the unique biodiversity along the Wallace line [@skeels_paleoenvironments_2023]. Nonetheless, following such a reasoning, the probability for a given taxon to cross the Panamanian landbridge is assumed to be independent from the side of the isthmus where it came from, which, interestingly, is not supported by our findings (@fig-propsuccess). In addition, this theory does not align with the actual imbalance in extant mammal species-level diversity between the Americas, being way larger in South than in North America [@raven2020].
+
+Although the inverse asymmetry in climate-driven exchange across both sides of the Isthmus suggested by our findings goes in contradiction with the mammal fossil record [*e*.*g*., @marshall1982], it actually echoes inter-American exchange patterns suggested by other groups of vertebrates. For instance, the extant South American amphibian fauna is almost entirely endemic [@lomolino2006]. By contrast, the North American frog fauna is composed of four families of southern origin, and only three of northern origin [@lomolino2006]. Just like herpetofauna, tropical North American ichtyofauna has long been recognised as mainly composed of groups that originated in South America and further dispersed to the North, although most likely multiple dispersal events occurred, some of which pre-dating the closure of the isthmus [*e*.*g*., @chakrabarty2011; @lomolino2006; @smith2012]. It should however be noted that, due to the requirement for connected freshwater networks, the magnitude of the faunal admixture among freshwater fishes has been greatly limited compared to land groups. Next, despite the higher dispersal abilities of birds, phylogenetic evidence has shown a significant influence of the closure of the Panamanian Seaway in the rates of exchange between both continent's avifaunas [@weir2009; @smith2010]. In particular, these studies suggested that transcontinental exchanges occurred symmetrically among clades inhabiting tropical regions, but interestingly, just like land mammals, diversification of extra-tropical groups to tropical regions and further dispersal to the other landmass was strongly asymmetrical in favour of North American groups [@smith2010; @smith2012]. That being said, notable exceptions of South American bird groups that successfully diversified in North America (including within temperate regions) exist, such as crown hummingbirds [*e*.*g*., @wallace1878]. However, the lack of fossil record for all the aforementioned groups may hamper the understanding of the processes behind their biogeographic history. Last, the Central American flora has been characterised as a mixture of lineages of North and South American origins, but phylogenetic evidence has suggested that the arrival of taxa from South America largely predated the established timeline of the GABI [*e*.*g*., @cody2010]. Nevertheless, the orchid flora of the Chocó region, bridging the north-western coast of South America and southern Panama, was found to be primarily made up with Andean − thus, South American − lineages that radiated locally not earlier than 5 million years ago [@pérez-escobar2019].
+
+### Revisiting climatic paradigms of the Great American Biotic Interchange
+
+One of the predictions of Vrba’s resource-use hypothesis, formulated within the framework of her Habitat Theory and applied to the GABI, is that species with tropical affinity would have been naturally attracted towards the equator following the contraction of the tropical belt in the aftermath of the global cooling occurring at the Plio-Pleistocene boundary (@fig-hypotheses B; @fig-s1, from *ca*. 3 Ma). This would have actively promoted the establishment of North American tropical-suited taxa in South America [@vrba1992]. Here, our virtual experiments partially corroborate these historical predictions. Indeed, fixed-niche simulations with tropical affinity of North American origin -- coming from simulations starting in tropical North America and of which climatic niche could not evolve, model $M0$ -- were found to have a high prevalence of crossing the isthmus (@fig-biome C, model $M0$). However, the frequency of successful exchange obtained for fixed-niche tropical-suited simulations starting in South America was found to be almost equally-high, largely exceeding that of fixed-niche simulations tied to another biome and originating in the same continent (@fig-biome C, model $M0$). This goes against Vrba's seminal hypothesis, instead predicting that fewer mammals -- only biome generalists or those suited to open habitats -- from South America would be expected to roam the other way around in case of tropical contraction towards the equator. This finding could reflect an attenuated magnitude of the climatic fragmentation of the Panamanian region when compared to historical biome reconstructions [*e*.*g*., @webb1991], with the persistence of a tropical corridor in turn promoting the exchange of tropical specialists between both landmasses.
+
+On average, one simulated radiation of open biome -- *i*.*e*., arid or temperate -- specialists out of four resulted in a successful exchange, irrespective of its ancestral continent (@fig-biome C, model $M0$). This proportion is significantly lower than that obtained for tropical specialists. Yet, it has long been acknowledged that the migrant fossil record across both sides of the isthmus was essentially composed of taxa showing affinity with open biomes [*e*.*g*., @vrba1992]. Among the most emblematic, we find for instance equids or camelids on the South American side, and ground sloths, toxodontids or glyptodontids on the North American side. The co-occurrence of distinct taxa in temporally well-delimited fossil assemblages led palaeontologists to postulate that the GABI was in fact a succession of exchange pulses punctuated by phases of interruption, further related to the climate-driven oscillations between savannah and rainforest in Central America during the Pleistocene [@webb1991]. Under such an assumption, the majority of exchanged taxa would therefore have ecologies suited to open habitats, and would have preferentially dispersed during Pleistocene glaciations [@woodburne2010; @bacon2016] (@fig-hypotheses A). As mentioned by @weir2009, the American mammal fossil record is highly biased, with few occurrences coming from low-latitude tropical regions, which is particularly striking in South America [*e*.*g*., @ugarte2025]. Furthermore, evidence from extant mammal taxa suggest a strong tropical niche conservatism, that is, the trend according to which newly-originated tropical taxa would remain inhabiting under tropical climates [@wiens2004; @smith2012]. Thus, the fossil-derived number of mammal exchanges must have been greatly underestimated, with little fossil evidence of interchange constrained to the tropical biome, as stressed by @carrillo2020. Thus, one can wonder: could the empirically-derived migration imbalance in favour of North American taxa dispersing southwards be altered by the tropical niche conservatism of South-to-North migrants, thereby obscuring the actual number of intercontinental exchanges?
+
+Our findings revealed that radiations following a colonisation of South America were more spatially spread than those arising from a northwards dispersal, except for simulations generated under the $M3$ model (@fig-metrics A). The spatial spread of a migrant radiation was measured by the proportion of cells occupied within the newly-colonised continent relative to the size of the latter. When focusing on the absolute number of cells colonised -- therefore without controlling for the area, in terms of number of cells, of the newly-colonised continent -- such a finding only holds for successful simulations generated under $M0$ (@fig-s11). This mirrors the fact that simulated tropical specialists from South America were more intensively exchanged than other simulated biome specialists (@fig-biome C, S6). The imposed tropical niche conservatism therefore constrained them to remain in tropical regions of North America, that are less represented in tropical North America than in South America (@fig-biome A). This adds some evidence supporting the fact that climate would have permitted South-to-North tropical exchanges to take place, but might have been obscured by a subsequent taphonomic bias in the fossil record, as suggested by studies relying on dated phylogenies [@bacon2015; @carrillo2020]. Hence, our study calls for thinking about the distinction between the ability to disperse towards, and ability to maintain within the newly-colonised area. Those two distinct processes may have been ruled by different factors.
+
+### Geographic contingency and the Great American Biotic Interchange
+
+Our findings leave room for possible random effects related to geography. Indeed, irrespective of the initial landmass, successful simulations originated on average closer to the isthmus of Panama than unsuccessful ones (Figures S6--7). This suggests that some simulations were unsuccessful not only due to climatic filters, but also because they simply started too far from the landbridge, preventing them from reaching it during the simulation. The relationship between a taxon’s success in reaching the other continent and the distance between its geographic range and the isthmus of Panama has long been postulated in the literature [*e*.*g*., @simpson1980]. @webb1991 illustrated this view with the example of antilocaprids, which "were probably capable of living somewhere in the Andes, \[but\] were simply too far from the isthmian link to make the exodus". Following this line, a recent study characterised a negative correlation between the proportion of migrant taxa within fossil assemblages of either North or South America and the distance of the fossil assemblage to the Panamanian landbridge [@motta2025]. Therefore, geographic contingency must also have played a significant role in the asymmetry of the GABI.
+
+### Limitations and perspectives
+
+Differences in the pace at which migrant and native lineages diversified have long been proposed to play a significant role in the asymmetry of the GABI. By reconstructing raw macroevolutionary dynamics from the fossil record, @marshall1982 highlighted that northern immigrant genera experienced notoriously higher origination and lower extinction rates than native lineages in South America. More recently, using a Bayesian framework accounting for preservation heterogeneities to infer fossil-based macroevolutionary trends, @carrillo2020 showed that, in their home continent, native South American lineages experienced higher extinction rates than migrant lineages. In our simulations, for a species to go extinct, it needs to disappear from each cell across the landscape. As environmental filtering -- in our case, the only force driving diversification -- acts at the scale of a pixel, species extinction is therefore very rare. As a result, our framework did not allow us to relate the simulated environment-dependent inter-American faunal exchange with any diversification process. Realistic modelling of macroevolutionary processes is therefore an avenue towards improvements among mechanistic eco-evolutionary simulators, particularly in the framework of the GABI.
+
+Also, we evidenced a nuance between the proportion of colonised area and the absolute colonised area (*Main text*, Figure 3 and @fig-s11) simply comes from the imbalanced number of pixels between the two landmasses, being around two times larger for North America than for South America (@fig-s1). A possible avenue to avoid such confusions when carrying eco-evolutionary simulations at such a broad spatial scale (here from *ca*. 80° N to *ca*. 40° S lat) would be to use equal-area landscapes. In our case, this would require conversions in the palaeoclimate simulations that we use, as well as adapting dispersal probabilities based on actual distances rather than equal-degree pixels.
+
+In addition, the results presented over this study are biased by the use of a single palaeoclimatic reconstruction. @holden2019 include a discussion section on the main issues for PALEO-PGEM, considering the limitations of low-resolution and intermediate-complexity climate models, the use of limited climate forcing, the assumption of a fixed relationship between global sea-level reconstructions and the spatial configuration of ice sheets, and limitations of anomaly-based spatial downscaling. Ideally, given these uncertainties, the robustness of the results from the application of this -- or indeed any -- climate model should be tested, for instance by using an alternative climate reconstruction. However, to our knowledge, PALEO-PGEM-Series is the only palaeoclimate dataset that has both sub-orbital temporal resolution and extends back to 5 Ma, as needed for our study. One alternative dataset that comes close to our needs is the 3 Ma transient coupled simulation with CESM1.2 [@yun2023], made tractable by splicing together 42 simulations that were run in parallel. Unfortunately, this does not encompass the Pliocene and would thus only allow to test for biotic exchange occurring during the Quaternary, narrowing the scope of the present paper. In contrast, the Oscillayers dataset [@gamisch2019] does extend back to 5.4 Ma, but the approach of pattern scaling LGM anomalies does not represent orbital variability -- the dominant driver of climate variability at 10 ka. Furthermore, it unrealistically assumes that Pliocene warming has the same spatial pattern as LGM cooling. Similar concerns were expressed by @brown2020. Although Oscillayers superficially meets our requirements, this dataset is not fit for our purpose, and in our view should not be used in the Pliocene for any application. Consequently, at time of writing, the sensitivity of our pipeline to the palaeoclimate reconstruction used cannot be evaluated, which represents a strong limitation to our work.
+
+The main message of our study is that climate alone is not sufficient to explain the asymmetry of the GABI. Thus, other factors unaccounted here might have been at play to shape the uneven faunal exchange that occurred across the Americas during the GABI. Among them, one can think about biotic interactions. Convinced that the overwhelming success of North American mammals in South America could "*not be pure coincidence*", @simpson1950 proposed the asymmetry of the GABI to stem from the different levels of exposure to competition between the North and South American faunas. Throughout the Cenozoic, exposure to competition had indeed been much larger for North than South American mammal taxa, due to the isolated charcter of South America, contrasting with the several connections of North America with other continents (*e*.*g*., Eurasia). In addition, some studies proposed the asymmetry of the GABI to result from prey-predator interactions, with Northern lineages preying on Southern ones [*e*.*g*., @faurby2016]. However, several process-based analyses of the fossil record provided no evidence for biotic interactions involving native South American mammals and their northern counterparts [*e*.*g*., @prevosti2013; @tarquini2022]. Hence, incorporating biotic compounds in mechanistic frameworks such as the one we have implemented here would be a worthy avenue for future studies tackling the asymmetry behind the GABI.
+
+Last, the landscape designed for the purpose of this study (@fig-s1) only permitted transcontinental faunal exchange via the isthmus of Panama, the closure of which being assumed to be the main trigger of the GABI [@marshall1982]. Yet, the fossil record of the Caribbean Islands has provided evidence for faunal supply both from the South and the North American landmasses, in particular since the late Miocene [*e*.*g*., @morgan1993; @macphee2011]. Although over-water dispersal has long been regarded as the prevailing mechanism [@morgan1993], recent geological advances have provided evidence for (1) the emergence of land bridges connecting South America to Caribbean Islands and (2) the formation of mega-islands -- during Pleistocene glacial maximum episodes -- several times since the Mio-Pliocene boundary @cornée2021. Hence, it would make sense to consider the Caribbean Islands as an alternative dispersal pathway between the Americas, as shown to be the case in earlier time frames, for instance, near the Eocene--Oligocene boundary (*i*.*e*., GAARlandia hypothesis) [@cornée2021; @marivaux_early_2020]. However, due to the idiosyncratic eco-evolutionary processes shaping insular systems [*e*.*g*., @warren2015] as well as the poor mention of the Caribbean Islands as a stepping-stone in the literature of the GABI, we believe that considering this alternative route in our framework would rather deserve to be the topic of another study.
+
+In summary, our findings do not support the hypotheses exclusively relating the asymmetry of the GABI to palaeoclimate dynamics. Rather, our virtual experiments suggest that palaeoclimate would not have prevented reciprocal exchanges between the faunas of the two continents, especially within tropical areas. This stresses that the tropics did not act as a barrier as previously stated. Given the scarcity of fossil material in the tropical areas of the Americas, hypotheses relating the asymmetry of the GABI to palaeoclimate dynamics could have been affected by taphonomic bias, as they largely rely on the land mammal fossil record. This ultimately suggests that, although endemic land mammals from South America were virtually able to reach the other landmass, other unconsidered factors must have prevented their establishment on the other continent, in turn shaping the widely-recognised asymmetry of this textbook example of biotic interchange.
+
+## Acknowledgements
+
+We are grateful to the Editor and the three anonymous referees who carefully reviewed our study, providing thoughtful comments that greatly improved the quality of the present work. We also thank Adrián Castro Insua for his useful guidelines and recommendations at the onset of the project, as well as  Céline Devaux, Pierre-Olivier Antoine and Fabrice Lihoreau for their useful feedbacks at different stages of the project. L.B. was funded by a grant offered by the École Normale Supérieure de Lyon. P.B.H. was supported by the Leverhulme Trust Research Project Grant RPG-2024-076 (‘SABER’). This work received support from the European Research Council under the European Union's Horizon 2020 research and innovation program (grant agreement 947921) as part of the MAPAS project, and benefited from an "Investissements d’Avenir" program managed by the Agence Nationale de la Recherche (CEBA, ref. ANR-10-LABX-25-01).
+
+R scripts for generating, analysing and visualising the data are available at <https://github.com/Buffan3369/GABI-gen3sis.git>. Simulation landscapes and config files are available at <https://doi.org/10.6084/m9.figshare.31160704>.
 
 
 {{< pagebreak >}}
+
+
+## Supporting Information Appendix
+
+## Details regarding the palaeoclimate dataset used in this study
+
+The PALEO-PGEM series [@barreto2023] relies on the runs of Atmosphere-Ocean General Circulation Model (GCM) PLASIM-GENIE [@holden2016] temporally interpolated between each other across the last 5 million years with a 1000-year interval by the statistical emulator PALEO-PGEM [@holden2019]. The PALEO-PGEM emulator also involves a spatial downscaling step, improving the spatial resolution of the runs from PLASIM-GENIE to a $1 \times 1$° resolution, by interpolating climate anomalies onto fine-resolution climate data. The underlying philosophy of PALEO-PGEM is firstly that complex non-linear Earth system model feedbacks to external forcings can be described by decomposing those responses into a collection of orthogonal patterns (principal components), and secondly that the relative magnitudes of those patterns can be estimated as scalar functions of the forcing [@holden2010] . The approach was motivated by the widely used method of pattern-scaling [@mitchell1999], but instead of approximating the response by a single pattern, it extends this idea by combining many patterns together, therefore allowing the capture of non-linear responses. Different patterns might, for instance, arise from the effects of changing CO$_2$ concentration, or changing orbit, or of interactions between those changes. In PALEO-PGEM, ten principal components were included for each emulated variable, sufficient to explain 99% of the variance of simulated temperature and 90% of the variance of simulated precipitation [@holden2019].
+
+In detail, PALEO-PGEM applies Gaussian process emulation of the singular value decomposition of ensembles of runs from the intermediate complexity fully 3D atmosphere– ocean coupled model PLASIM-GENIE [@holden2016]. The emulator was built from two 50-member quasi-equilibrium simulation ensembles, one of which varied orbital forcing and CO$_2$ , while the other repeated this ensemble with the addition of a varying ice sheet, so that the effect of ice sheets was treated as a (non-linear) anomaly that was combined with the response to other forcings. Spatial fields of monthly temperature and precipitation were emulated at 1000-year intervals, driven by time series of scalar boundary-condition forcing of CO$_2$ concentration [@lüthi2008], the three orbital parameters [@berger1991] and ice volume [@stap2017]. The native resolution climate data (\~5° × 5°) was downscaled to a spatial resolution of 1°×1° [@barreto2023] using anomaly adjustments from the climate baseline of CHELSA [@karger2017].
+
+{{< pagebreak >}}
+
+### Supplementary Figures
+
+All across the study, metrics computed out of simulations starting from North America are shown in coral red, and those starting from South America in cyan.
+
+```{r, echo=FALSE}
+library(knitr)
+```
+
+```{r, echo=FALSE}
+#| label: fig-s1
+#| out-height: 11cm
+#| out-width: 11cm
+#| fig-pos: 'H'
+#| fig-cap: Average palaeoclimate histories within our studied landmasses. North America is displayed in coral red and South America in cyan. Spatially-averaged climate variables (Annual Temperature and Precipitation) are taken from the PALEO-PGEM series @barreto2023. This series being spatialised at a 1 x 1° resolution, numbers inside the continents represent the quantity of overlaying pixels from the climate grid within each continent. On climate plots, the time frame of the onset of significant land mammal exchange across the americas [@bacon2016; @woodburne2010] is indicated by the light purple vertical bands. The empirically-derived asymmetry of the transcontinental land mammal exchange is represented by the thickness of the two arrows, the thicker the arrow, the more intense the exchange.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_framework/Figure_framework.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s2
+#| out-height: 8cm
+#| out-width: 17cm
+#| fig-pos: 'H'
+#| fig-cap: Initial distances to the isthmus of all simulations ($n=500$), either starting from North or South America. On the top row, locations of simlation's ancestral species resulted from a random landmass-scale equal-area sampling scheme, both starting from North and South America. On the bottom row, initial distances to the isthmus of simulations originating in North America were standardised to those of South America (see *Methods*). Note that no change was made for simulations starting from South America.
+ 
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/metrics_std/panel_all_starting_distances.png")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s3
+#| out-width: 16cm
+#| fig-pos: 'H'
+#| fig-cap: Proportion of simulations leading to a successful exchange to the other continent after standardising initial distances to the isthmus of simulated species originating in North America to those of simulated species from South America (see *Methods*). This proportion is computed as the ratio, given an initial continent and a modelling scenario, between the number of simulations leading to a transcontinental exchange and the total number of simulations resulting in at least one living species at the final state -- *i*.*e*., excluding crashes, see @tbl-s2. From left to right are depicted the outcome of the fixed-niche model ($M0$, species climatic niche does not change through time), adaptive-niche model ($M1$, species climatic niche evolves following local changes in temperature and precipitations) and alternative versions of $M1$ where species ecological niche is only determined by precipitation ($M2$) or temperature ($M3$). Dots represent mean success proportion estimates and error bars show their associated Binomial-derived 95% confidence interval.
+
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/metrics_std/prop_successful_col_STD.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s4
+#| out-height: 15cm
+#| out-width: 21cm
+#| fig-pos: 'H'
+#| fig-cap: A few metrics summarising climate-mediated interchange after standardising initial distances to the isthmus of simulations starting from North America to those starting from South America. Each individual plot shows the outcome of simulations starting in North (red) and South (cyan) America. (*top*) Proportion of foreign continent's colonised area. (*middle*) Diversity within the colonised area. (*bottom*) Distance to the isthmus. The first two metrics have been computed out of successful simulations, *i*.*e*., that resulted in a transcontinental faunal exchange.
+ 
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/metrics_std/panel_area_div_dist_std.png")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s5
+#| out-height: 22cm
+#| out-width: 17cm
+#| fig-pos: 'H'
+#| fig-cap: Starting range of all simulations either starting from North America (*left*), North America after standardising initial distances to the isthmus with those from South America (*middle*) or South America (*right*).
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/starting_ranges/Initial_ranges_All_runs.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s6
+#| out-height: 22cm
+#| out-width: 17cm
+#| fig-pos: 'H'
+#| fig-cap: Starting range of successful simulations generated under each model (from $M0$ to $M3$), either starting from North America (*left*), North America after standardising initial distances to the isthmus with those from South America (*middle*) or South America (*right*).
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/starting_ranges/Initial_ranges_successful_runs.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s7
+#| out-height: 8cm
+#| out-width: 16cm
+#| fig-pos: 'H'
+#| fig-cap: Comparison of the initial distance to the isthmus between successful and unsuccessful simulations of each of our four models, either starting from North (top) or South (bottom) America. Successful simulations ($Exchange$ $Sucess=1$) are displayed in green, whereas unsuccessful simulations ($Exchange$ $Sucess=0$) are displayed in yellow. Dashed lines on top and bottom of the distribution represent the 25% and 75% quantiles whereas the thicker full line in the middle shows the median (50% quantile).
+
+include_graphics("../GABI-gen3sis/Figures/dist_to_isthm/distance_violin_panel_NoCRASH.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s8
+#| out-height: 8cm
+#| out-width: 16cm
+#| fig-pos: 'H'
+#| fig-cap: Comparison of the initial distance to the isthmus between successful and unsuccessful simulations of each of our four models including simulations that crashed (*i*.*e*., resulted in no living representative at the final time step), either starting from North (top) or South (bottom) America.  Successful simulations ($Exchange$ $Sucess=1$) are displayed in green, unsuccessful simulations ($Exchange$ $Sucess=0$) in yellow and simulation that crashed ($Exchange$ $Sucess=-1$) in grey. Dashed lines on top and bottom of the distribution represent the 25% and 75% quantiles whereas the thicker full line in the middle shows the median (50% quantile).
+
+include_graphics("../GABI-gen3sis/Figures/dist_to_isthm/distance_violin_panel_CRASH.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s9
+#| out-height: 8cm
+#| out-width: 17.5cm
+#| fig-pos: 'H'
+#| fig-cap: Proportion of successful simulations starting from North America -- after standardising initial distances to the isthmus with simulations starting from South America (see *Methods* and @fig-s2) -- for each scenario. Coloured dots and error bars respectively show proportion estimates -- ratio between number of successful simulations and total number of simulations starting for a given biome -- and their associated Binomial-derived 95% confidence intervals.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/biomes/starting_biome_EXCH_PROP_STD.png")
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: fig-s10
+#| out-height: 8cm
+#| out-width: 17.5cm
+#| fig-pos: 'H'
+#| fig-cap: Biome where the ancestral species of each of the 500 simulation originated, for each modelling scenario, starting from North America after standardising initial distance to isthmus with that of simulations starting from South America (see *Methods* and @fig-s2). We removed simulations starting from a cell that could not be assigned a biome from our counts, hence the reason why some are not exactly summing to 500.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/biomes/starting_biome_STD.png")
+```
+
+{{< pagebreak >}}
+
+```{r, echo=FALSE}
+#| label: fig-s11
+#| out-height: 8cm
+#| out-width: 17.5cm
+#| fig-pos: 'H'
+#| fig-cap: Absolute colonised area, expressed as the number of foreign continent's occupied cells for each successful simulation generated under each model ($M0$--$M3$).
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/abs_col_area.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s12
+#| out-height: 7.5cm
+#| out-width: 10cm
+#| fig-cap: Effect of climatic variable temporal upscaling. Continent-averaged temperature estimates were produced for both North and South America, with the original time step of the climate emulator (1 ky, **A**) or after downscaling to a 10 ky time step (**B**).
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/Downscaled_temp.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-s13
+#| out-height: 9cm
+#| out-width: 19cm
+#| fig-pos: 'H'
+#| fig-cap: Snapshots of the two bioclimatic variables used in this study (Annual Temperature and precipitations, respectively called Bio1 and Bio12 in the climate model) from the PALEO-PGEM series [@barreto2023], together with the corresponding biome reconstructions that we carried out following @galván2023 (using broad climate classes), at key time steps. Last Interglacial corresponds to t=120ka and Last Glacial Maximum to t=21ka. In the bottom row, the "Tropical" class was subdivided into "Tropical forest", incorporating closed Rainforest and Moist forest (Monsoon), and "Tropical savannah", associated with a more open landscape. Last Interglacial corresponds to t=120ka and Last Glacial Maximum to t=21ka.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/Clim_snapshots/Climatic_snapshots_panel_PALEO-PGEM_biomes_savannah.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-s14
+#| out-height: 12cm
+#| out-width: 18cm
+#| fig-pos: 'H'
+#| fig-cap: Comparative proportion of successful simulations (**A**) and of simulations that crashed (*i*.*e*., leading to no living representative at the end of the simulation) (**B**). Simulations were generated in a landscape based on the PALEO-PGEM series, either under the fixed-niche ($M0$) or the (full) adaptative-niche ($M1$) models. `w_max` indicates the upper bound of the thermal breadth parameter ($\omega_T$) associated to the corresponding batch of simulations.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/niche_expanded/NA_vs_SA-PPGEM-diff_w.pdf")
+
+```
+
+{{< pagebreak >}}
+
+### Supplementary Tables
+
+```{r, echo=FALSE}
+library(kableExtra)
+```
+
+```{r, echo=FALSE}
+#| label: tbl-s1
+#| tbl-cap: Fixed parameter values for gen3sis simulations.
+ 
+names <- c("`divergence_factor`", "`max_species`", "`max_coex_species`", "`start_species`", "`init_ab`", "`grid_cell_distance`")
+values <- c(0.05, 10000, 1000, 1, 500, 111)
+descr <- c("How much divergence disconnected populations accumulate across iterations",
+           "Maximum number of simulated species a simulation can handle (if falls above, the simulation crashes)",
+           "Cell carrying capacity",
+           "Number of species to start with",
+           "Initial abundance of the start species",
+           "Distance (in km) between two grid cells of the landscape at the equator"
+           )
+
+fixed_params <- data.frame(Name = names, 
+                           Value = values,
+                           Description = descr)
+
+# Display
+kable(fixed_params, align = 'c')
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: tbl-s2
+#| tbl-cap: Proportion of simulations that crashed -- *i*.*e*., leading to no living representative at the end of the simulation -- for each modelling scenario ($M0-3$) depending on the ancestral area (`Start` column). "North America Standardised" refers to simulations carried out from a North American ancestor after standardising initial distances to Isthmus with simulations starting from South America (see *Methods*). Simulations were obtained with a narrow temperature niche ($\omega_T \in [0.01, 0.1]$).
+
+prop_crash_unstd <- readRDS("../GABI-gen3sis/Results/Exchanged_metrics/Crash_counter.RDS")
+
+kable(prop_crash_unstd, align = "c")
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: tbl-s3
+#| tbl-cap: Proportion of simulations that crashed depending on the ancestral area when varying thermal niche breadth, with the upper bound of the thermal breadth range (`w_max` column) ranging from 0.1, 0.6 to 1.
+
+prop_crash <- readRDS("../GABI-gen3sis/Results/Exchanged_metrics/Crash_counter_diff_w.RDS")
+colnames(prop_crash) <- c("Start", "w_max", "Model", "Proportion")
+
+kable(prop_crash, align = "c")
+```
+
+{{< pagebreak >}}
+
+```{r, echo=FALSE}
+#| label: tbl-s4
+#| tbl-cap: References for the silhouettes used in Figure 1, from Phylopic.
+
+library(readxl)
+tbl <- read_xlsx("../GABI-gen3sis/Manuscript/phylopic_ID_table.xlsx")
+# Italicise species names
+tbl$Silhouette <- sapply(X = tbl$Silhouette, FUN = function(x){paste0("*", x, "*")})
+# Header in bold
+colnames(tbl) <- sapply(X = colnames(tbl), FUN = function(x){paste0("**", x, "**")})
+
+# Display
+kable(tbl, align = "c")
+```
+
+
+{{< pagebreak >}}
+

@@ -1,4 +1,4 @@
-# Discussion {header-title="Discussion"}
+# General Discussion {header-title="General Discussion"}
 
 ## A deep-time perspective on the Cenozoic history of South American mammals
 
@@ -14,7 +14,7 @@ A recent quantitative study suggested that the diversification of rodents and pr
 
 There is still some work to do to accurately elucidate continent-scale macroevolutionary dynamics of Caviomorph rodents (others than Chinchilloids, a contribution of this thesis): set the scene for GIGARAT
 
-### If climate didn't: what drove the asymmetry of the GABI?
+### If climate didn't, what drove the asymmetry of the GABI?
 
 Set the scene for IMBALANCE
 
@@ -32,7 +32,7 @@ Traits mediate biotic interactions
 
 Defining a species?
 
-### Apples, oranges and brushes: impact of the inherent biases 
+### Apples, oranges and brushes: some of those biases that work forces at 
 
 Data cleaning !
 

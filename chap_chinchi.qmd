@@ -307,7 +307,8 @@ library(knitr)
 
 ```{r, echo=FALSE}
 #| label: fig-s1
-#| out-width: 16cm
+#| out-height: 18cm
+#| fig-pos: 'H'
 #| fig-cap: Location of the chinchilloid bearing sites that yielded the material used in this study ($N=177$, but note that some localities have been amalgamated for visual purpose).
 
 include_graphics("../Chinchilloids/Figures/Supp/Occurrence_map_Chinchilloidea.png")
@@ -317,6 +318,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Occurrence_map_Chinchilloidea.pn
 ```{r, echo=FALSE}
 #| label: fig-s2
 #| out-width: 17.5cm
+#| fig-pos: 'H'
 #| fig-cap: Impact of the sampling scheme of extant species lacking fossil record on upstream macroevolutionary inferences with PyRate (rjMCMC algorithm). (**A**, **D**, **G**) show speciation rate, extinction rate and sampled diversity estimated from a database only encompassing fossil taxa. In (**B**, **E**, **H**), extant taxa were included by means of an occurrence with origination and extinction ages ($T_e$ and $T_e$) set to 0 Ma (*i*.*e*., 'biased incorporation'). In (**C**, **F**, **I**), extant taxa were included or with our newly-introduced pipeline relying on ages extracted from dated phylogenies. Full lines indicate median rate estimation (blue for speciation, red for extinction), and ribbons their associated 95% HPD interval. Grey histograms in the background depict the frequency of rate shift per 1-My time bins. The two horizontal lines labelled \* and \*\*\* respectively indicate significant and strongly supported rate shift.
 
 include_graphics("../Chinchilloids/Figures/Supp/Age_combination_effect/age_comb_effect_RTT.png")
@@ -325,6 +327,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Age_combination_effect/age_comb_
 ```{r, echo=FALSE}
 #| label: fig-s3
 #| out-width: 13cm
+#| fig-pos: 'H'
 #| fig-cap: Correspondance between divergence times leading to extant species estimated from our phylogeny ('Ts Phylogeny') and the times of species origination de novo estimated ('Ts PyRate') after implementing our sampling scheme for extant species absent from the fossil record (*Main text*, Figure 2). For each species, we set $\alpha=0.95$, except for *D. branickii*, for which we set $\alpha=0.999$. Dots show median estimates and error bars the associated 95% HPD. Dashed line shows the line with equation $y=x$.
 
 include_graphics("../Chinchilloids/Figures/Supp/corr_Ts_phylo_PyRate.pdf")
@@ -334,6 +337,7 @@ include_graphics("../Chinchilloids/Figures/Supp/corr_Ts_phylo_PyRate.pdf")
 ```{r, echo=FALSE}
 #| label: fig-s4
 #| out-height: 9cm
+#| fig-pos: 'H'
 #| fig-cap: Preservation rate through time in our species-level dataset estimated with PyRate. The solid line represents the mean posterior estimate and the shaded area the associated 95% HPD interval.
 
 include_graphics("../Chinchilloids/Figures/Supp/Preservation_through_time.pdf")
@@ -341,16 +345,19 @@ include_graphics("../Chinchilloids/Figures/Supp/Preservation_through_time.pdf")
 
 ```{r, echo=FALSE}
 #| label: fig-s5
-#| out-height: 8cm
+#| out-height: 12cm
 #| fig-cap: Convergence of the PyRate runs (rjMCMC algorithm) for the analysis of the species-level temporal occurrence database. The plot (A) the ESS of the model posterior probability for all the 20 replicates we ran. ESS greater than 200 (first-scale indicator of a run that converged, $n=20$ in that case) are displayed in green. The proportion of origination and extinction times (resp. $T_S$ and $T_E$) that converged (i.e., with $ESS > 200$) are shown in (B), for each of our 20 replicates. The plot (C) shows the posterior estimates of the mean root age of our group, together with their lower and upper boundaries of the 95% HPD interval, across the 20 replicates.
 
 include_graphics("../Chinchilloids/Results/RJMCMC/species/1-Full/pyrate_mcmc_logs/ESS_plot.png")
 
 ```
 
+{{< pagebreak >}}
+
 ```{r, echo=FALSE}
 #| label: fig-s6
 #| out-height: 8cm
+#| fig-pos: 'H'
 #| fig-cap: Histogram showing the frequency of speciation (**A**) and extinction (**B**) rate shifts in our species-level chinchilloid dataset estimated by PyRate (rjMCMC algorithm). This quantity indicates, within 1My time bins, the support given to a model with rate shift compared to a model with constant rates. The two dashed lines respectively labelled $2log(BF)>2$ and $2log(BF)>6$ respectively indicate significant and strongly supported rate shift.
 
 include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_species_Full_frequency_of_rate_shift.pdf")
@@ -360,6 +367,7 @@ include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloid
 ```{r, echo=FALSE}
 #| label: fig-s7
 #| out-height: 18cm
+#| fig-pos: 'H'
 #| fig-cap: "Bayesian reconstruction of the longevities of the 124 chinchilloid species considered in our dataset. Each segment depicts the longevity of a given species, that is, the interval between species' speciation and extinction times averaged across PyRate runs that achieved convergence. Segments and taxonomic names were coloured according to the crown height category to which species were assigned. The histogram at the centre of the plot shows the number of species within each crown height class. The first four silhouettes (from top to bottom) are from Phylopic (credits available in @tbl-s3). The last two silhouettes (*Elasmodontomys obliquus* and *Borikenomys praecursor*) were designed by L.M. for a previous work [@marivaux_early_2020]." 
 
 include_graphics("../Chinchilloids/Figures/Supp/Lifespans_hypso/Lifespans_HI_Chinchi.png")
@@ -369,6 +377,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Lifespans_hypso/Lifespans_HI_Chi
 ```{r, echo=FALSE}
 #| label: fig-s8
 #| out-height: 10cm
+#| fig-pos: 'H'
 #| fig-cap: Joint estimation of origination (blue) and extinction (red) rates (**A**), net diversification rate (**B**), diversity through time (**C**) and preservation rates (**D**) from our species-level chinchilloid database made my PyRate (rjMCMC algorithm) after removing singletons.
 
 include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_species_Singleton_Recap_figure.pdf")
@@ -378,6 +387,7 @@ include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloid
 ```{r, echo=FALSE}
 #| label: fig-s9
 #| out-height: 8cm
+#| fig-pos: 'H'
 #| fig-cap: Frequency of origination (**A**) and extinction (**B**) rates estimated by the rjMCMC analysis of our species-level database after removing singletons.
 
 include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_species_Singleton_frequency_of_rate_shift.pdf")
@@ -387,6 +397,7 @@ include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloid
 ```{r, echo=FALSE}
 #| label: fig-s10
 #| out-height: 10cm
+#| fig-pos: 'H'
 #| fig-cap: Joint estimation of origination (blue) and extinction (red) rates (**A**), net diversification rate (**B**), diversity through time (**C**) and preservation rates (**D**) from the genus-level chinchilloid database made my PyRate (rjMCMC algorithm).
 
 include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_genus_Full_Recap_figure.pdf")
@@ -396,6 +407,7 @@ include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloid
 ```{r, echo=FALSE}
 #| label: fig-s11
 #| out-height: 8cm
+#| fig-pos: 'H'
 #| fig-cap: Frequency of origination (**A**) and extinction (**B**) rates estimated by the rjMCMC analysis of our genus-level database.
 
 include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloidea_genus_Full_frequency_of_rate_shift.pdf")
@@ -405,6 +417,7 @@ include_graphics("../Chinchilloids/Figures/recap_figures_RJMCMC/New/Chinchilloid
 ```{r, echo=FALSE}
 #| label: fig-s12
 #| out-height: 19cm
+#| fig-pos: 'H'
 #| fig-cap: Impact of occounting for the revision of the dinomyid fauna of the Ituzaingó formation (Entre Ríos province, Argentina) on the estimation of the temporal dynamics of chinchilloid extinction rate [@rasia2026]. (**A**) Lifespans of species making up the 'Mesopotamiense' fauna (Ituzaingó Fm.) before (*left*) and after (*right*) the taxonomic revision. Removed taxa were coloured in red (five taxa lost). (**B**) Chinchilloid extinction rates estimated from our temporal occurrence database before (*left*) and after (*right*) incorporating the aforementioned revision. The histogram in background shows the frequency of rate shift estimated by the rjMCMC model, that is, for a given time frame (by default set to 1My), how likely it is to consider that the reconstructed extinction rate experienced a shift. The dashed lines labelled (\*) and (\*\*\*) respectively indicate significant and strongly supported rate shift.
 
 include_graphics("../Chinchilloids/Figures/Supp/Effect_Rasia2026/rasia_effect.pdf")
@@ -414,6 +427,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Effect_Rasia2026/rasia_effect.pd
 #| label: fig-s13
 #| out-height: 7.5cm
 #| out-width: 15cm
+#| fig-pos: 'H'
 #| fig-cap: Posterior estimate of the shape parameter of the Weibull distribution for the ADE analyses of the 'Early' (> 6 Ma) and 'Late' (< 6 Ma) occurrence datasets, each with constant extinction rate (@fig-s6). 2.5%, 50% and 97.5% quantiles are indicated in the distribution of each parameter by black horizontal lines, respectively from bottom to top.
 
 include_graphics("../Chinchilloids/Figures/ADE/Weibull_shape_species.png")
@@ -425,6 +439,7 @@ include_graphics("../Chinchilloids/Figures/ADE/Weibull_shape_species.png")
 
 ```{r, echo=FALSE}
 #| label: fig-s14
+#| fig-pos: 'H'
 #| fig-cap: Speciation (**A**) and extinction (**B**) rates through time per body mass class as inferred by the rjMCMC model.
 
 include_graphics("../Chinchilloids/Figures/Supp/RTT_per_BM/RTT_plot_per_BM.pdf")
@@ -432,6 +447,7 @@ include_graphics("../Chinchilloids/Figures/Supp/RTT_per_BM/RTT_plot_per_BM.pdf")
 
 ```{r, echo=FALSE}
 #| label: fig-s15
+#| fig-pos: 'H'
 #| fig-cap: "Frequency of speciation and extinction rate shifts per body size class as estimated by the analysis of our species-level chinchilloid occurrence dataset with the rjMCMC model. Dashed horizontal lines indicate 2 * log(Bayes factor) of 2 and 6, respectively suggesting significant and strongly-supported rate shifts."
 
 include_graphics("../Chinchilloids/Figures/Supp/RTT_per_BM/freq_rate_shift_per_BM.pdf")
@@ -439,6 +455,7 @@ include_graphics("../Chinchilloids/Figures/Supp/RTT_per_BM/freq_rate_shift_per_B
 
 ```{r, echo=FALSE}
 #| label: fig-s16
+#| fig-pos: 'H'
 #| fig-cap: Marginal chinchilloid speciation (blue) and extinction (red) rates through time as estimated by our BDNN analyses of the datasets with random trait (*i*.*e*., body mass and/or hypsodonty index) imputation for taxa with missing trait reconstruction ($n=11$). Caribbean taxa were excluded. Full lines show median rate estimates and ribbons their associated 95% Highest Posterior Density (HPD) interval, assessed acrossed the 10 independent BDNN runs randomising fossil ages under a uniform law made for each trait imputation. This panel only depicts the rates through time from replicate 1 to 5.
 
 include_graphics("../Chinchilloids/Figures/Supp/RTT_imputation/RTT_imput_full_NoCar15.pdf")
@@ -446,6 +463,7 @@ include_graphics("../Chinchilloids/Figures/Supp/RTT_imputation/RTT_imput_full_No
 
 ```{r, echo=FALSE}
 #| label: fig-s17
+#| fig-pos: 'H'
 #| fig-cap: Marginal chinchilloid speciation (blue) and extinction (red) rates through time as estimated by our BDNN analyses of the datasets with random trait (*i*.*e*., body mass and/or hypsodonty index) imputation for taxa with missing trait reconstruction ($n=11$). Caribbean taxa were excluded. Full lines show median rate estimates and ribbons their associated 95% Highest Posterior Density (HPD) interval, assessed acrossed the 10 independent BDNN runs randomising fossil ages under a uniform law made for each trait imputation. This panel only depicts the rates through time from replicate 1 to 5.
 
 include_graphics("../Chinchilloids/Figures/Supp/RTT_imputation/RTT_imput_full_NoCar610.pdf")
@@ -455,6 +473,7 @@ include_graphics("../Chinchilloids/Figures/Supp/RTT_imputation/RTT_imput_full_No
 #| label: fig-s18
 #| out-height: 7.5cm
 #| out-width: 20cm
+#| fig-pos: 'H'
 #| fig-cap: Training and validation loss across training epochs for a DeepDive network comprising two LSTM units (64 and 32 nodes) connected to two dense layers (64 and 32 nodes) before the output layer. The red vertical line indicates the "early stopping point", *i*.*e*., when the validation loss starts increasing, indicative of overfitting. It determines the optimal value of number of iterations, at which we derive the training and validation loss values depicted between parenthesis.
 
 include_graphics("../Chinchilloids/Results/DeepDive/species_extant_extended/species_extant_extended_models/simulation_species_extant_extended_ET_20260224_lstm128_64_32_d64_32_conditional/history_plotsimulation_species_extant_extended_ET_20260224_lstm128_64_32_d64_32_conditional.pdf")
@@ -464,6 +483,7 @@ include_graphics("../Chinchilloids/Results/DeepDive/species_extant_extended/spec
 #| label: fig-s19 
 #| out-height: 7.5cm
 #| out-width: 20cm
+#| fig-pos: 'H'
 #| fig-cap: Training and validation loss across training epochs for a DeepDive network comprising three LSTM units (128, 64 and 32 nodes) connected to two dense layers (64 and 32 nodes) before the output layer. The red vertical line indicates the "early stopping point", *i*.*e*., when the validation loss starts increasing, indicative of overfitting. It determines the optimal value of number of iterations, at which we derive the training and validation loss values depicted between parenthesis.
 
 include_graphics("../Chinchilloids/Results/DeepDive/species_extant_extended/species_extant_extended_models/simulation_species_extant_extended_ET_20260224_lstm64_32_d64_32_conditional/history_plotsimulation_species_extant_extended_ET_20260224_lstm64_32_d64_32_conditional.pdf")
@@ -471,6 +491,7 @@ include_graphics("../Chinchilloids/Results/DeepDive/species_extant_extended/spec
 
 ```{r, echo=FALSE}
 #| label: fig-s20
+#| fig-pos: 'H'
 #| fig-cap: Bayesian estimation of correlation coefficients of extinction (*left*) and speciation (*right*) rates with a selected set of environmental variable carried out by the MBD model (*see Methods in the main text*). A gamma prior was set to correlation parameters. Light colours (respectively blue for speciation and red for extinction) indicate non-significant correlations, and plain colours indicate significant correlations. A correlation was considered to be significant if 0 was not included in the parameter 95% HPD interval.
 
 include_graphics("../Chinchilloids/Figures/Main/Drivers/MBD_species_complete_scaled_hsp0.pdf")
@@ -479,6 +500,7 @@ include_graphics("../Chinchilloids/Figures/Main/Drivers/MBD_species_complete_sca
 ```{r, echo=FALSE}
 #| label: fig-s21
 #| out-height: 10cm
+#| fig-pos: 'H'
 #| fig-cap: "Comparative persistence (*i*.*e*., FAD minus LAD) of the 84 taxa in common between our database (in blue) and @carrillo2026. Mean persistences between the two studies were compared with a paired Wilcoxon test."
 
 include_graphics("../Chinchilloids/Results/comparing_with_Carrillo/persistence_violin.pdf")
@@ -488,6 +510,7 @@ include_graphics("../Chinchilloids/Results/comparing_with_Carrillo/persistence_v
 #| label: fig-s22
 #| out-height: 25cm
 #| out-width: 20cm
+#| fig-pos: 'H'
 #| fig-cap: Persistence in the fossil record of the 84 species shared between our database (in blue) and @carrillo2026 (in red). Persistence is assessed as the interval between the First and Last Appearance Data (resp. FAD and LAD) of each taxon.
 
 include_graphics("../Chinchilloids/Results/comparing_with_Carrillo/comparative_LAD_FAD.pdf")
@@ -496,6 +519,7 @@ include_graphics("../Chinchilloids/Results/comparing_with_Carrillo/comparative_L
 ```{r, echo=FALSE}
 #| label: fig-s23
 #| out-width: 16cm
+#| fig-pos: 'H'
 #| fig-cap: Abiotic variables used in the environment-dependent diversification analyses carried out over this study. These have been temporally scaled to the same resolution (500ky-step). Andean uplift was from @boschman2021, South American regional temperature was from @tardif2025 and sea-level changes were from @miller2020.
 
 include_graphics("../Chinchilloids/Figures/Supp/Abiotic_correlates.pdf")
@@ -504,6 +528,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Abiotic_correlates.pdf")
 ```{r, echo=FALSE}
 #| label: fig-s24
 #| out-width: 13cm
+#| fig-pos: 'H'
 #| fig-cap: Interaction between latitude and Andean uplift in shaping chinchilloid extinction rate variations across lineages, *i*.*e*., how the relationship between the Andean uplift and extinction rate changes between tropical and extratropical species. Results were arbitrarily taken from the third imputation replicate.
 
 include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/Upl_Tropicality.pdf")
@@ -513,6 +538,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/Upl_Tropical
 ```{r, echo=FALSE}
 #| label: fig-s25
 #| out-width: 13cm
+#| fig-pos: 'H'
 #| fig-cap: Interaction between body mass and Andean uplift in shaping chinchilloid extinction rate variations across lineages, *i*.*e*., how the relationship between the Andean uplift and extinction rate changes between body mass categories. Body mass categories are numbered from 1 to 6 by increasing order (*i*.*e*., from XS to XXL). Results were arbitrarily taken from the third imputation replicate.
 
 include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/Upl_BM.pdf")
@@ -522,6 +548,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/Upl_BM.pdf")
 ```{r, echo=FALSE}
 #| label: fig-s26
 #| out-width: 13cm
+#| fig-pos: 'H'
 #| fig-cap: Interaction between latitude and body mass in shaping chinchilloid extinction rate variations across lineages, *i*.*e*., how sentitive to extinction body size classes are with respect to their tropical or extratropical origin. Body mass categories are numbered from 1 to 6 by increasing order (*i*.*e*., from XS to XXL). Results were arbitrarily taken from the third imputation replicate. 
 
 include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/BM_Tropicality.pdf")
@@ -531,6 +558,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/BM_Tropicali
 ```{r, echo=FALSE}
 #| label: fig-s27
 #| out-width: 13cm
+#| fig-pos: 'H'
 #| fig-cap: "How extinction rate varies across crown height categories (0: brachydont, 1: mesodont, 2: protohypsodont and 3: euhypsodont). Results were arbitrarily taken from the third imputation replicate."
 
 include_graphics("../Chinchilloids/Figures/Supp/Drivers_interaction/Hypsodonty.pdf")
