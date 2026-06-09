@@ -1,10 +1,28 @@
 # General Discussion {header-title="General Discussion"}
 
+Over this thesis, several aspects of the evolution of South American mammals across the Cenozoic have been explored, using a diverse array of data and quantitative methods.
+
+First, attention has been dedicated to the extent to which Palaeogene South American mammalian assemblages have been affected by the vast climatic disruption that occurred near the Eocene--Oligocene Transition (EOT, *ca*. 33.9 Ma). This geological boundary was indeed associated with significant waves of extinctions in the land mammalian faunas of the Northern Hemisphere. In South America, despite some considerations that a faunal turnover did occur near the EOT based on regional-scale qualitative observations from patagonian localities, until this thesis, no quantitative assessment of the status of the EOT at the continent-scale had ever been conducted in the framework of land mammals -- or, actually, any other taxonomic group. To this end, an unprecedented genus-level fossil occurrence dataset was assembled, encompassing 3,378 occurrences (distributed in 1,115 species, 536 genera, 96 families, and 18 orders). Data were primarily downloaded from The Paleobiology Database, and further intensively revised. This dataset was analysed using a Bayesian occurrence-based framework for diversification inference. Multivariate methods to infer the relationship between the reconstructed diversification dynamics and a set of relevant environmental predictors were subsequently applied. Surprisingly, these analyses did not retrieve a strong extinction signal at the Eocene--Oligocene boundary. Rather, a gradual decrease in diversity was recovered during most of the Eocene, following the long-term climate cooling that operated from the Early Eocene climate optimum onwards. A significant turnover was however detected, but occurring at *ca*. 37 Ma, thus largely predating the EOT. A sustained positive relationship between the Andean uplift and South American mammal extinction rate was also evidenced over the study period, together with diversity-dependent effects. Finally, tropical and extratropical faunas were found to be tied to distinct evolutionary regimes, notably, with an absence of rate variation in the tropics. Overall, these findings suggest that the status of the EOT as a global pattern should be reconsidered, and more generally, that regional idiosyncrasies should be accounted for prior any attempt to upscal a large-scale evolutionary pattern. Also, the findings produced over this study provided support for the long-standing 'Tropical Stability' hypothesis, stemming from the thought of A. R. Wallace in the late XIX century, thus contributing to the understanding of the evolution of the unique tropical diversity.
+
+In a second chapter, some efforts were devoted to elucidate the evolutionary history of an endemic group of South American rodents that underwent a recent decline in taxonomic diversity, namely, the Chinchilloidea (Hystricognathi:Caviomorpha). This charismatic rodent superfamily today accounts for eight species, but its fossil record documents a much larger diversity in the past -- notably encompassing the largest rodents ever recorded, weighting up to 300 kg. The causes behind chinchilloid evolutionary decline remain uncertain, and despite several proposed hypotheses, have never been properely quantified. By means of an outstanding temporal occurrence dataset synthesising palaeontological and neontological data for 124 extinct and extant species and cutting-edge trait- and environment-dependent diversification methodologies, the macroevolutionary dynamics of Chinchilloidea were reconstructed. It stood out that chinchilloid diversification was best summarised by a birth--death model with constant speciation and time-variable extinction, the latter markedly increasing *ca*. 6 Ma. This shift in extinction rate was selective against large-sized and extratropical taxa. A prominent role of the Andean uplift and eustatic variations was highlighted in shaping chinchilloid extinction rate, possibly suggesting an implication of the Late Miocene vanishing of large South American wetlands in the demise of this clade. Additionally, this work highlights several caveats related to input data while conducting occurrence-based macroevolutionary analyses, and discusses the crucial need to embrace uncertainty.
+
+In a final chapter, emphasis was placed on the asymmetry behind the Great American Biotic Interchange (GABI), a vastly enigmatic feature of this inter-american faunal exchange, in which North American taxa were undoubtedly more successful at colonising the South than the other way around. Using eco-evolutionary simulations coupled with high-resolution palaeoclimate reconstructions covering the last five million years, the contribution of palaeoclimate, often proposed as a major driver behind such an asymmetry, was mechanistically tested. These simulations failed to reproduce the empirical pattern of exchange asymmetry. When climate was the only factor constraining virtual species' niche, across 500-member simulations either starting from North or South America, more South-to-North than North-to-South exchanges were obtained, mostly within the tropical biome. This finding interestingly suggests that, beyond climate, additional factors must have been at play to shape the striking imbalance behind the GABI. Over this chapter, the strengths of using a simulation approach to investigate the mechanisms underlying the emergence and the dynamics of biodiversity patterns are also discussed, notably as a means to circumvent the intrinsic biases of the fossil record.
+
 ## A deep-time perspective on the Cenozoic history of South American mammals
 
-### On the status of the Eocene--Oligocene boundary: towards a new definition of mass extinctions?
+### On the status of the Eocene--Oligocene boundary: mass extinction or ... ?
 
 EOT: A mass extinction? Could this, as proposed by @bambach2006, reflect the fact that the definition of a mass extinction should incorporate degrees of freedom?
+
+Regional idiosyncrasies
+
+### On the macroevolutionary status of the tropics
+
+Cradle vs. museum debate
+
+Sampling issues
+
+'Holding pen'?
 
 ### An almost closed system: founding migrations in the Palaeogene history of South American mammals
 
@@ -53,6 +71,10 @@ Phylogenies are the big absent
 Data cleaning !
 
 Lack of time-continuous proxy for precipitations.
+
+### A matter of scales
+
+Species of genera?
 
 ### Simulating biodiversity : expanding or narrowing the field of possibilities?
 

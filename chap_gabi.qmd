@@ -8,13 +8,13 @@ Lucas Buffan¹, Fabien L. Condamine¹, Philip B. Holden², Sara Varela³
 
 ³ Centro de Investigación Mariña, Departamento de Ecoloxía e Bioloxía Animal, Universidade de Vigo, Campus Lagoas-Marcosende, 36310 Vigo, Spain
 
-
 **Keywords**: Biotic Interchange; Eco-evolutionary simulations; Macroecology; Palaeoclimate
-
 
 ## Abstract
 
 Asymmetric colonisation patterns often arise from large-scale biotic exchanges involving two source areas. In the Pliocene, the closure of the isthmus of Panama facilitated the admixture between North and South American faunas, an event termed Great American Biotic Interchange (GABI). The ecological mechanisms underlying the asymmetry of the GABI, incontestably in favour of North American lineages, remain debated. Here, coupling a mechanistic eco-evolutionary simulator with palaeoclimatic reconstructions, we test fundamental hypotheses relating this biogeographic imbalance to palaeoclimate dynamics. When climate is the only constraint to species' dispersal, our simulations yield more South-to-North than North-to-South dispersal events, mostly within the tropical biome. Also, our models fail to explain the migrant diversity desequilibrium between the two continents, as well as temperate specialists' over-representation in the fossil record of successfully-exchanged taxa. Hence, we argue that spatio-temporal palaeoclimate dynamics alone cannot explain the asymmetry of the GABI, suggesting additional factors fashioned this macroecological enigma.
+
+The content of this chapter led to a manuscript that is currently under review.
 
 {{< pagebreak >}}
 
@@ -30,15 +30,14 @@ Here, we test Webb and Vrba's hypotheses on the role of palaeoclimate dynamics i
 
 ```{r, echo=FALSE}
 #| label: fig-hypotheses
-#| out-height: 15cm
-#| out-width: 12.5cm
+#| out-height: 12.5cm
 #| fig-pos: 'H'
-#| fig-cap: The two nonmutually-exclusive hypotheses relating the asymmetry of the GABI to the Pleistocene climatic oscillations, formulated in the framework of land mammals. Both involve biome transition from close tropical rainforest (green) during interglacial periods -- warm and humid -- to open savannah/desert (dark yellow) during glacial maxima -- cold and dry -- in the isthmian region. The first one (A), formulated by @webb1991 views the asymmetry of the GABI as the result from the fact that North America had a higher pool of open-adapted taxa than South America. The opening of the isthmian region acted as an ecological filter favouring the dispersal of these open-adapted taxa to the detriment of the others. Hence, given the imbalance in open-adapted pool size between the two continents, more species would have been expected to disperse to the South than the other way around. The second one (B), formulated by @vrba1992, proposes that the contraction of the tropical biome towards the equator triggered by the interglacial-glacial transition would have mechanically attracted tropical specialists southwards, irrespective of their continent of origin. Silhouettes are from phylopic, credits are available in @tbl-3s3. Note that the purpose of this figure is to illustrate our working hypotheses. Thus, we do not pretend these maps to accurately reflect inter-American biome dynamics between glacial and interglacial periods. A more accurate picture of these dynamics is available on @fig-3s13.
-
+#| fig-cap: "*Caption on next page*."
 knitr::include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_intro/Figure_hypotheses.png")
 ```
 
-{{< pagebreak >}}
+Figure 4.1. The two nonmutually-exclusive hypotheses relating the asymmetry of the GABI to the Pleistocene climatic oscillations, formulated in the framework of land mammals. Both involve biome transition from close tropical rainforest (green) during interglacial periods -- warm and humid -- to open savannah/desert (dark yellow) during glacial maxima -- cold and dry -- in the isthmian region. The first one (A), formulated by @webb1991 views the asymmetry of the GABI as the result from the fact that North America had a higher pool of open-adapted taxa than South America. The opening of the isthmian region acted as an ecological filter favouring the dispersal of these open-adapted taxa to the detriment of the others. Hence, given the imbalance in open-adapted pool size between the two continents, more species would have been expected to disperse to the South than the other way around. The second one (B), formulated by @vrba1992, proposes that the contraction of the tropical biome towards the equator triggered by the interglacial-glacial transition would have mechanically attracted tropical specialists southwards, irrespective of their continent of origin. Silhouettes are from phylopic, credits are available in @tbl-3s3. Note that the purpose of this figure is to illustrate our working hypotheses. Thus, we do not pretend these maps to accurately reflect inter-American biome dynamics between glacial and interglacial periods. A more accurate picture of these dynamics is available on @fig-3s13.
+
 
 ## Material and Methods
 

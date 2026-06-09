@@ -8,7 +8,7 @@ $^2$ IANIGLA, CCT–CONICET–Mendoza, Avenida Ruiz Leal s/n, Parque General San
 
 **Keywords**: Biological crisis; Eocene--Oligocene transition; Diversification dynamics; Multivariate analyses; Bayesian inference
 
-## Foreword
+## Foreword {.unnumbered}
 
 ```{r, echo=FALSE}
 library(knitr)
@@ -82,6 +82,8 @@ Our results provide support for a taxonomic renewal between Eocene and Oligocene
 include_graphics("../Chapter_1/figures/Main/Figure_2/Figure2.pdf")
 
 ```
+
+{{< pagebreak >}}
 
 ### Latitudinal heterogeneity in diversification histories
 
