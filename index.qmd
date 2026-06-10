@@ -12,22 +12,159 @@ Tempérons les ardeurs des méritocrates invétérés qui verront en cet essai s
 
 :::
 
-## Acknowledgements
+## Remeriements / Acknowledgements / Agradecimientos
 
 ::: {.content-visible unless-format="pdf"}
-### People
 
-Sofía y Dani.
+### Jury
+
+Darin
+
+Erin
+
+Tiago
+
+Fred Delsuc
+
+### ISEM
 
 Merci PierrO. N'en déplaise à toute considération d'horizontalité hiérarchique, à bien des égards, t'es le boss.
 
-Fabien, alias l' "entomo-kiffeur des tropiques"
+Merci Laurent. 
 
-Guillaume pour ces échanges au détour d'un café ou autre dont je pense être sorti grandi, et, plus généralement, ton regard très intégré sur les questions de macroévolution et le registre fossile et ton appétance -- partagée -- pour les douceurs anisées.
+Fabien, *aka*. "l'entomo-kiffeur des tropiques". "Un bon chercheur, c'est avant tout un bon lecteur et un bon écrivain".
+
+Merci Guillaume pour ces quelques échanges au détour d'un café ou autre, et, plus généralement, ton regard très intégré sur les questions de macroévolution et le registre fossile et ton appétance -- partagée -- pour les douceurs anisées.
+
+Merci Manu (Douzery) pour ton soutien au détour de quelques mots dans le couloir ou en salle café, ta bonne volonté et ton entrain sincère et particulièrement insprant dès qu'il est question de sciences. L'un des plus grands regrets de ma carrière d'étudiant est de ne pas avoir eu la chance d'assister à l'un de tes cours, dont on m'a conté monts et merveilles -- à juste titre, sans aucun doute, quand on voit la facilité que tu as à amener des concepts peu triviaux au détour de conversations informelles.
+
+Obrigado Marisa. Lamento o que aconteceu. Tu és uma pessoa bonita, carinhosa e brilhante, e continuará sendo um dos mais belos encontros feitos durante minha tese.
+
+Le reste des équipes PAL et PEM.
+
+Ariane
+
+Nono
+
+Alexis
+
+Arthur
+
+Alex
+
+Narla (+ François Pujos)
+
+Céline
+
+Aubin
+
+Hugo Bouaziz
+
+Benoit
+
+Lorenzo
+
+Nico Pappalardo
+
+Amel
+
+Alba
+
+Fred Lozes-Méléro
+
+Nathan Mazet
+
+
+### Vigo
+
+Sara V.
+
+Sara G.
+
+Sofía y Dani.
+
+Tod\@s l\@s mapit\@s
+
+Osí y los cerdos de la calistenia.
+
+### Famille
+
+Papa (+ Geneviève)
+
+Maman (+ Jean-Marc)
+
+Carlito
+
+Papy & Mnamna
+
+Papy Jean
+
+Tatie Eve et tonton Yves (+ Pat & Sylvie)
+
+Lolo, Agnès, et toute la smala (+ les papas)
+
+### Amis Lyonnais
+
+Nils
+
+Jerem
+
+Thomas
+
+Max
+
+Arthur
+
+Wass
+
+Hugo Raveton
+
+Bastien Girault
+
+Cara
+
+Floriane
+
+Loanne
+
+### Amis Montpelliérains
+
+Augustin
+
+Simon & Axelle
+
+Julia (& Coco)
+
+CEFE *et al*. (Waki, Laurine, Pablo, Nico Dibot, Lisa, Erwan, Léo, ...)
+
+Les potos du MAT (Loïc, Romain, Augustin G., Nico, Théo, Pierre, Mathilde, François, Julie, ...)
+
+Simon Roy-Marsiquet
+
+### Amis d'ailleurs
+
+Bastien Ruaud
+
+P.O. et Max
+
+Lucas et Hugo
+
+Damien
+
+Le reste de l'équipe
+
+Floflo
+
+### Autres
+
+Lewis
+
+David Nogués Bravo & Ryan R. Germain
 
 Laurent Sausset, Amandine Lazarini.
 
 PBDB
+
 
 ### Funds
 
