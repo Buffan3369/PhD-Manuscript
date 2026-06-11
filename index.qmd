@@ -1,8 +1,8 @@
-# Foreword and Acknowledgements {.unnumbered header-title="Foreword and Acknowledgements"}
+# Préambule et Remerciements {.unnumbered header-title="Préambule et Remerciements"}
 
 \pagenumbering{roman}
 
-## Foreword
+## Avant-propos
 
 ::: {.content-visible unless-format="pdf"}
 Back in the days, Aristotle famously wrote that "*The more you know, the more you realise you don't know*". This statement has a particularly strong reasoning at the time I jump into the first lines of what is supposed to be the achievement of three years of intense labour on a topic on which I will apparently become an *expert* of.
@@ -12,7 +12,7 @@ Tempérons les ardeurs des méritocrates invétérés qui verront en cet essai s
 
 :::
 
-## Remeriements / Acknowledgements / Agradecimientos
+## Remerciements / Acknowledgements / Agradecimientos
 
 ::: {.content-visible unless-format="pdf"}
 
@@ -26,6 +26,10 @@ Tiago
 
 Fred Delsuc
 
++ CSI (Gilles, Ignacio, Ana Rodrigues)
+
+Myriam Boivin
+
 ### ISEM
 
 Merci PierrO. N'en déplaise à toute considération d'horizontalité hiérarchique, à bien des égards, t'es le boss.
@@ -36,9 +40,9 @@ Fabien, *aka*. "l'entomo-kiffeur des tropiques". "Un bon chercheur, c'est avant 
 
 Merci Guillaume pour ces quelques échanges au détour d'un café ou autre, et, plus généralement, ton regard très intégré sur les questions de macroévolution et le registre fossile et ton appétance -- partagée -- pour les douceurs anisées.
 
-Merci Manu (Douzery) pour ton soutien au détour de quelques mots dans le couloir ou en salle café, ta bonne volonté et ton entrain sincère et particulièrement insprant dès qu'il est question de sciences. L'un des plus grands regrets de ma carrière d'étudiant est de ne pas avoir eu la chance d'assister à l'un de tes cours, dont on m'a conté monts et merveilles -- à juste titre, sans aucun doute, quand on voit la facilité que tu as à amener des concepts peu triviaux au détour de conversations informelles.
+Merci Manu (Douzery) pour ton soutien au détour de quelques mots dans le couloir ou en salle café, ta bonne volonté et ton entrain sincère et particulièrement inspirant dès qu'il est question de sciences. L'un des plus grands regrets de ma carrière d'étudiant est de ne pas avoir eu la chance d'assister à l'un de tes cours, dont on m'a conté monts et merveilles -- à juste titre, sans aucun doute, quand on voit la facilité que tu as à amener des concepts peu triviaux au détour de conversations informelles.
 
-Obrigado Marisa. Lamento o que aconteceu. Tu és uma pessoa bonita, carinhosa e brilhante, e continuará sendo um dos mais belos encontros feitos durante minha tese.
+Obrigado Marisa.
 
 Le reste des équipes PAL et PEM.
 
@@ -74,6 +78,7 @@ Fred Lozes-Méléro
 
 Nathan Mazet
 
+Merci Mathou pour ton sourire, ta bienveillance et tes encouragements quand la fin approchait. J'espère que tu continueras à t'éclater dans ton post-doc à venir.
 
 ### Vigo
 
@@ -107,6 +112,8 @@ Lolo, Agnès, et toute la smala (+ les papas)
 
 Nils
 
+Raph
+
 Jerem
 
 Thomas
@@ -135,9 +142,11 @@ Simon & Axelle
 
 Julia (& Coco)
 
-CEFE *et al*. (Waki, Laurine, Pablo, Nico Dibot, Lisa, Erwan, Léo, ...)
+CEFE *et al*. (Waki, Nico Ponsa, Nico Dibot, Lisa, Erwan, Laurine, Pablo, Léo, Victoria, ...)
 
 Les potos du MAT (Loïc, Romain, Augustin G., Nico, Théo, Pierre, Mathilde, François, Julie, ...)
+
+La team de la piste du Jeudi midi (Fiona en grande pompe)
 
 Simon Roy-Marsiquet
 
