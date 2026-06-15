@@ -1,4 +1,4 @@
-# Chapter 3. Palaeoclimate alone fails to explain the asymmetry of the Great American Biotic Interchange {header-title="Chapter 3 -- Eco-Evolutionary Simulations, Palaeoclimate and the GABI"}
+# Chapter 3. Palaeoclimate alone fails to explain the asymmetry of the Great American Biotic Interchange {#sec-chap3 header-title="Chapter 3 -- Eco-Evolutionary Simulations, Palaeoclimate and the GABI"}
 
 Lucas Buffan¹, Fabien L. Condamine¹, Philip B. Holden², Sara Varela³
 

@@ -333,6 +333,7 @@ include_graphics("../Chinchilloids/Figures/Supp/Preservation_through_time.pdf")
 ```{r, echo=FALSE}
 #| label: fig-2s5
 #| out-height: 12cm
+#| fig-pos: 'H'
 #| fig-cap: Convergence of the PyRate runs (rjMCMC algorithm) for the analysis of the species-level temporal occurrence database. The plot (A) the ESS of the model posterior probability for all the 20 replicates we ran. ESS greater than 200 (first-scale indicator of a run that converged, $n=20$ in that case) are displayed in green. The proportion of origination and extinction times (resp. $T_S$ and $T_E$) that converged (i.e., with $ESS > 200$) are shown in (B), for each of our 20 replicates. The plot (C) shows the posterior estimates of the mean root age of our group, together with their lower and upper boundaries of the 95% HPD interval, across the 20 replicates.
 
 include_graphics("../Chinchilloids/Results/RJMCMC/species/1-Full/pyrate_mcmc_logs/ESS_plot.png")

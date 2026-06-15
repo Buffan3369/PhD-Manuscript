@@ -17,6 +17,8 @@ book:
     - ccl.qmd
     - glossary.qmd
     - references.qmd
+  appendices: 
+    - MPhil_Fred.qmd
   
 bibliography: references.bib
 #citecolor: LimeGreen
@@ -60,3 +62,6 @@ format:
         
         % Add page numbers
         \fancyfoot[C]{\thepage}
+        
+        \usepackage{pdfpages}
+

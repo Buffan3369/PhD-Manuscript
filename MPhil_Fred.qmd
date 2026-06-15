@@ -1,0 +1,17 @@
+# A Total--Evidence Dating perspective on the origin of South American anthropoid primates {.unnumbered header-title="Appendix -- TED Primates"}
+
+This work is the Master's thesis of Frédéric Lozes-Méléro (University of Toulouse), that I jointly supervised together with my two advisors from Montpellier from January to June 2025. Frédéric will start a PhD position at the Finnish Museum of Natural History (Helsinki, Finland) in September 2026, working on the macroevolution and phenotypic diversification of dung beetles, under the supervision of Dr. Sergei Tarasov, curator of the museum.
+
+For the sake of his MSc project, Frédéric integrated molecular and morphological data (upon availability) for a large number of extinct and extant primates to reconstruct the most complete total--evidence dated phylogeny of Anthropoidea, with a focus on South American representatives and basal anthropoid clades. This tree was used to achieve three main goals
+
+1. To assess the topological placement of basal Late Oligocene / Early Miocene taxa, either within the crown group ['Long-Lineage hypothesis', @rosenberger2010] or as stem of the Platyrrhini ['Stem platyrrhine hypothesis', @kay2008].
+
+2. To take advantage of the total--evidence dating (TED) framework to estimate the divergence ages of the nodes leading to the lineages that colonised South America, and assess whether these are compatible with a single or several dispersal time frames, either matching the temporality of the Middle Eocene Climatic Optimum [@marivaux2023] or the Eocene--Oligocene Transition [@seiffert2020].
+
+3. To evaluate the most likely dispersal routes towards South America by means of historical biogeographic reconstructions.
+
+This work still comprises a wealth of caveats, and consequently, may not be published in its current form -- but is still in progress. The main drawback is that reconciling the signals carried by molecular and morphological characters in that particular case study was achieved with difficulty. The analyses presented in this Master's thesis excluded 10 fossil taxa identified as 'rogue', *i*.*e*., with highly labile phylogenetic placement over the posterior distribution of trees. By excluding these taxa, we also excluded invaluable taxonomoic and biogeographic information to address our scientific questions. Even after excluding these taxa, the subsequent phylogenetic reconstruction were poorly statistically supported. The main issue came from the fact that our Bayesian TED analyses could not handle polymorphic or uncertain morphological characters, treating them as missing data.
+
+```{=latex}
+\includepdf[pages=-, scale=0.9, frame]{./Appendix/LOZES-MELERO-Frédéric-RapportM2EE-2025.pdf}
+```
