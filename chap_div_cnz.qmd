@@ -1,4 +1,4 @@
-# Chapter 1. The fate of South America's endemic mammalian fauna in response to the most dramatic Cenozoic climate disruption {header-title="Chapter 1 -- The Eocene--Oligocene Transition in South America"}
+# Chapter 1. The fate of South America's endemic mammalian fauna in response to the most dramatic Cenozoic climate disruption {#sec-chap1 header-title="Chapter 1 -- The Eocene--Oligocene Transition in South America"}
 
 Lucas Buffan$^{1,*}$, Fabien L. Condamine$^1$, Narla S. Stutz$^1$, François Pujos$^2$, Pierre-Olivier Antoine$^1$, Laurent Marivaux$^1$
 

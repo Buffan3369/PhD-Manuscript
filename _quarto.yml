@@ -14,11 +14,11 @@ book:
     - chap_chinchi.qmd
     - chap_gabi.qmd
     - discu.qmd
-    - ccl.qmd
     - glossary.qmd
     - references.qmd
   appendices: 
-    - MPhil_Fred.qmd
+    - Appendix1-MPhil_Fred.qmd
+    - Appendix2-Poster.qmd
   
 bibliography: references.bib
 #citecolor: LimeGreen
@@ -63,5 +63,9 @@ format:
         % Add page numbers
         \fancyfoot[C]{\thepage}
         
+        % To embed PDF files (Fred's MSc Thesis)
         \usepackage{pdfpages}
+        
+        % To start numbering at 0 instead of 1
+        \setcounter{chapter}{-1}
 

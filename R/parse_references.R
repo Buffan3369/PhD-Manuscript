@@ -1,3 +1,5 @@
+library(stringr)
+
 uppercase <- function(letter){
   if(letter %in% LETTERS){
     return(paste0("{", letter, "}"))
@@ -12,7 +14,7 @@ for(i in 1:length(biblio)){
   line <- biblio[i]
   if(line != ""){
     spl_equal <- strsplit(line, split = " = ")[[1]]
-    if(spl_equal[1] == "\ttitle"){
+    if(str_detect(string = spl_equal[1], pattern = "\ttitle")){
       ttl <- spl_equal[2]
       ttl_upr <- paste0(sapply(strsplit(ttl, split = "")[[1]],
                                FUN = uppercase), 

@@ -1,3 +1,0 @@
-# Concluding remarks {.unnumbered header-title="Concluding Remarks"}
-
-{{< pagebreak >}}

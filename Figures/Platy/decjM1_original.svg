@@ -28,17 +28,23 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.5087025"
-     inkscape:cx="355.27215"
-     inkscape:cy="294.2926"
+     inkscape:cx="590.57369"
+     inkscape:cy="495.12744"
      inkscape:window-width="1854"
      inkscape:window-height="1043"
      inkscape:window-x="1986"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g46497"
      showgrid="false" />
   <defs
      id="defs1">
+    <rect
+       x="60.446681"
+       y="-5.8441674"
+       width="18.835239"
+       height="7.3835571"
+       id="rect10709" />
     <rect
        x="357.39064"
        y="440.62519"
@@ -25496,6 +25502,24 @@
        width="44.089321"
        height="7.3454175"
        id="rect73415-0" />
+    <rect
+       x="60.446682"
+       y="-5.8441672"
+       width="18.835239"
+       height="7.3835573"
+       id="rect10709-3" />
+    <rect
+       x="60.446682"
+       y="-5.8441672"
+       width="18.835239"
+       height="7.3835573"
+       id="rect10709-7" />
+    <rect
+       x="60.446682"
+       y="-5.8441672"
+       width="18.835239"
+       height="7.3835573"
+       id="rect10709-3-5" />
   </defs>
   <g
      inkscape:label="Calque 1"
@@ -29801,12 +29825,12 @@
            y="0"><tspan
              x="17.531738"
              y="0"
-             id="tspan182388">Early<tspan
+             id="tspan43065">Early<tspan
    y="0"
-   id="tspan182390"> </tspan></tspan><tspan
+   id="tspan43067"> </tspan></tspan><tspan
              x="17.531738"
              y="12.5"
-             id="tspan182392">Eocene</tspan></text>
+             id="tspan43069">Eocene</tspan></text>
         <text
            id="text3559-9-7"
            xml:space="preserve"
@@ -29817,12 +29841,12 @@
            y="0"><tspan
              x="17.531738"
              y="0"
-             id="tspan182394">Early<tspan
+             id="tspan43071">Early<tspan
    y="0"
-   id="tspan182396"> </tspan></tspan><tspan
+   id="tspan43073"> </tspan></tspan><tspan
              x="17.531738"
              y="12.5"
-             id="tspan182398">Eocene</tspan></text>
+             id="tspan43075">Eocene</tspan></text>
         <path
            id="path3561-9"
            d="M 272.48,33.02 H 452.7 V 60.51 H 272.48 Z"
@@ -44494,24 +44518,24 @@
         <text
            xml:space="preserve"
            style="font-style:italic;font-size:14.1111px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Italic';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke:#0000ff;stroke-width:0.114"
-           x="100.81689"
+           x="100.6171"
            y="66.836456"
            id="text1"><tspan
              sodipodi:role="line"
              id="tspan1"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#000000;stroke-width:0.114;stroke-opacity:1"
-             x="100.81689"
+             x="100.6171"
              y="66.836456">Platyrrhini</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:italic;font-size:14.1111px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Italic';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0000ff;stroke:#0000ff;stroke-width:0.114"
-           x="101.61066"
+           x="101.71088"
            y="71.694786"
            id="text1-1"><tspan
              sodipodi:role="line"
              id="tspan1-4"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:#000000;stroke-width:0.114;stroke-opacity:1"
-             x="101.61066"
+             x="101.71088"
              y="71.694786">Catarrhini</tspan></text>
         <text
            xml:space="preserve"
@@ -44520,9 +44544,9 @@
            style="font-style:normal;font-weight:normal;font-size:17.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect52436);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
              x="99.994141"
              y="221.77341"
-             id="tspan182402"><tspan
+             id="tspan43079"><tspan
                style="font-weight:bold"
-               id="tspan182400">DEC</tspan></tspan></text>
+               id="tspan43077">DEC</tspan></tspan></text>
         <text
            xml:space="preserve"
            transform="matrix(0.26458333,0,0,0.26458333,125.24752,1.5071738)"
@@ -44530,9 +44554,9 @@
            style="font-style:normal;font-weight:normal;font-size:17.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect52436-5);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
              x="99.994141"
              y="221.77341"
-             id="tspan182406"><tspan
+             id="tspan43083"><tspan
                style="font-weight:bold"
-               id="tspan182404">DEC+j</tspan></tspan></text>
+               id="tspan43081">DEC+j</tspan></tspan></text>
         <text
            xml:space="preserve"
            transform="matrix(0.26458333,0,0,0.26458333,14.868133,12.389703)"
@@ -44540,9 +44564,9 @@
            style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect113321);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
              x="0"
              y="177.19138"
-             id="tspan182410"><tspan
+             id="tspan43087"><tspan
                style="font-weight:bold;font-family:Helvetica;-inkscape-font-specification:Helvetica"
-               id="tspan182408">(A)</tspan></tspan></text>
+               id="tspan43085">(A)</tspan></tspan></text>
         <text
            xml:space="preserve"
            transform="matrix(0.26458333,0,0,0.26458333,198.7485,12.389703)"
@@ -44550,9 +44574,9 @@
            style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect113321-9);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
              x="0"
              y="177.19138"
-             id="tspan182414"><tspan
+             id="tspan43091"><tspan
                style="font-weight:bold;font-family:Helvetica;-inkscape-font-specification:Helvetica"
-               id="tspan182412">(B)</tspan></tspan></text>
+               id="tspan43089">(B)</tspan></tspan></text>
         <text
            xml:space="preserve"
            style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.514155px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.0279026;stroke-dasharray:none;stroke-opacity:1"
@@ -45564,9 +45588,9 @@
            style="font-style:normal;font-weight:normal;font-size:5.33333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect73415);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
              x="357.39062"
              y="445.34375"
-             id="tspan182418"><tspan
+             id="tspan43095"><tspan
                style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-               id="tspan182416">: local extinction</tspan></tspan></text>
+               id="tspan43093">: local extinction</tspan></tspan></text>
         <text
            xml:space="preserve"
            transform="matrix(0.26458333,0,0,0.26458333,11.20204,58.886862)"
@@ -45574,9 +45598,9 @@
            style="font-style:normal;font-weight:normal;font-size:5.33333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect73415-0);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
              x="357.39062"
              y="445.34375"
-             id="tspan182422"><tspan
+             id="tspan43099"><tspan
                style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-               id="tspan182420">: dispersal event</tspan></tspan></text>
+               id="tspan43097">: dispersal event</tspan></tspan></text>
       </g>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -45589,9 +45613,9 @@
          style="font-style:normal;font-weight:normal;font-size:8px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect11052);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
            x="216.43945"
            y="402.78516"
-           id="tspan182426"><tspan
+           id="tspan43103"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182424">Eosimiiformes</tspan></tspan></text>
+             id="tspan43101">Eosimiiformes</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,3.1303046,29.234257)"
@@ -45601,15 +45625,15 @@
          y="0"><tspan
            x="223.68456"
            y="401.98516"
-           id="tspan182430"><tspan
+           id="tspan43107"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182428">Oligopith-
+             id="tspan43105">Oligopith-
 </tspan></tspan><tspan
            x="229.00056"
            y="410.63127"
-           id="tspan182434"><tspan
+           id="tspan43111"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182432">ecidae</tspan></tspan></text>
+             id="tspan43109">ecidae</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,4.1042724,12.185746)"
@@ -45619,9 +45643,9 @@
          y="0"><tspan
            x="219.49535"
            y="401.58516"
-           id="tspan182438"><tspan
+           id="tspan43115"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182436">Amphipithecidae</tspan></tspan></text>
+             id="tspan43113">Amphipithecidae</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,3.7539807,-15.333102)"
@@ -45631,9 +45655,9 @@
          y="0"><tspan
            x="222.51135"
            y="401.58516"
-           id="tspan182442"><tspan
+           id="tspan43119"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182440">Parapithecidae</tspan></tspan></text>
+             id="tspan43117">Parapithecidae</tspan></tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 60.913058,129.13217 v 13.23015"
@@ -45657,9 +45681,9 @@
          style="font-style:normal;font-weight:normal;font-size:8px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect11052-6);display:inline;fill:#000000;fill-opacity:1;stroke:none"><tspan
            x="216.43945"
            y="402.78516"
-           id="tspan182446"><tspan
+           id="tspan43123"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182444">Eosimiiformes</tspan></tspan></text>
+             id="tspan43121">Eosimiiformes</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,86.141592,29.187364)"
@@ -45669,15 +45693,15 @@
          y="0"><tspan
            x="223.68456"
            y="401.98516"
-           id="tspan182450"><tspan
+           id="tspan43127"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182448">Oligopith-
+             id="tspan43125">Oligopith-
 </tspan></tspan><tspan
            x="229.00056"
            y="410.63127"
-           id="tspan182454"><tspan
+           id="tspan43131"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182452">ecidae</tspan></tspan></text>
+             id="tspan43129">ecidae</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,80.765558,12.138847)"
@@ -45687,9 +45711,9 @@
          y="0"><tspan
            x="219.49535"
            y="401.58516"
-           id="tspan182458"><tspan
+           id="tspan43135"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182456">Amphipithecidae</tspan></tspan></text>
+             id="tspan43133">Amphipithecidae</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,81.473605,-15.37999)"
@@ -45699,9 +45723,9 @@
          y="0"><tspan
            x="222.51135"
            y="401.58516"
-           id="tspan182462"><tspan
+           id="tspan43139"><tspan
              style="font-family:Helvetica;-inkscape-font-specification:Helvetica"
-             id="tspan182460">Parapithecidae</tspan></tspan></text>
+             id="tspan43137">Parapithecidae</tspan></tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 156.20787,129.08543 v 13.23015"
@@ -45715,5 +45739,45 @@
          d="M 156.1926,106.78169 V 74.261727"
          id="path12684-7" />
     </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.2645815,-9.8450986e-4,9.8450986e-4,0.2645815,12.347136,63.343655)"
+       id="text10707"
+       style="font-style:normal;font-weight:normal;font-size:5.33333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect10709);display:inline;fill:#c82631;fill-opacity:1;stroke:none"><tspan
+         x="60.447266"
+         y="-1.1250028"
+         id="tspan43143"><tspan
+           style="font-weight:bold"
+           id="tspan43141">MECO</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26454249,-0.0046486,0.0046486,0.26454249,25.216684,63.584841)"
+       id="text10707-6"
+       style="font-style:normal;font-weight:normal;font-size:5.33333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect10709-3);display:inline;fill:#c82631;fill-opacity:1;stroke:none"><tspan
+         x="60.447266"
+         y="-1.1250028"
+         id="tspan43147"><tspan
+           style="font-weight:bold"
+           id="tspan43145">EOT</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.2645815,-9.8450986e-4,9.8450986e-4,0.2645815,168.1706,63.343586)"
+       id="text10707-3"
+       style="font-style:normal;font-weight:normal;font-size:5.33333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect10709-7);display:inline;fill:#c82631;fill-opacity:1;stroke:none"><tspan
+         x="60.447266"
+         y="-1.1250028"
+         id="tspan43151"><tspan
+           style="font-weight:bold"
+           id="tspan43149">MECO</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26454249,-0.0046486,0.0046486,0.26454249,156.74268,63.584772)"
+       id="text10707-6-5"
+       style="font-style:normal;font-weight:normal;font-size:5.33333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect10709-3-5);display:inline;fill:#c82631;fill-opacity:1;stroke:none"><tspan
+         x="60.447266"
+         y="-1.1250028"
+         id="tspan43155"><tspan
+           style="font-weight:bold"
+           id="tspan43153">EOT</tspan></tspan></text>
   </g>
 </svg>
