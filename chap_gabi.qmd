@@ -10,13 +10,19 @@ Lucas Buffan¹, Fabien L. Condamine¹, Philip B. Holden², Sara Varela³
 
 **Keywords**: Biotic Interchange; Eco-evolutionary simulations; Macroecology; Palaeoclimate
 
+## Foreword {.unnumbered}
+
+The last chapter of this PhD thesis is framed around a long-standing question in evolutionary biology: the drivers behind the asymmetry observed during the late Neogene faunal exchange between North and South America, commonly referred to as the Great American Biotic Interchange (GABI). Why North American lineages colonised the South with an undoubtedly larger success than the other way around in the aftermath of the GABI has indeed long puzzled evolutionary biologists [*e*.*g*., @simpson1980; @webb1976; @marshall1982]. Meanwhile some assumed that such an asymmetry emerged from the competitive superiority of North American mammals over South Americans [*e*.*g*., @simpson1950] or a predatory regime disequilibrium between the two continents [*e*.*g*., @faurby_asymmetry_2016], others emphasised that this asymmetry most likely arose as a result from palaeoclimate dynamics [*e*.*g*., @webb1991; @vrba1992]. Using mechanistic eco-evolutionary simulations, a powerful framework to test for the factors at play to shape the emergence and the dynamics of biodiversity patterns without being impacted by biases present in empirical data [*e*.*g*., @hagen2023], this chapter causally assesses the latter family of hypotheses, *i*.*e*., palaeoclimate-dependent asymmetry. This represent the first attempt to derive the mechanisms behind the GABI by means of eco-evolutionary simulations.
+
+The content of this chapter is currently under review in an international journal.
+
+{{< pagebreak >}}
+
 ## Abstract
 
 Asymmetric colonisation patterns often arise from large-scale biotic exchanges involving two source areas. In the Pliocene, the closure of the isthmus of Panama facilitated the admixture between North and South American faunas, an event termed Great American Biotic Interchange (GABI). The ecological mechanisms underlying the asymmetry of the GABI, incontestably in favour of North American lineages, remain debated. Here, coupling a mechanistic eco-evolutionary simulator with palaeoclimatic reconstructions, we test fundamental hypotheses relating this biogeographic imbalance to palaeoclimate dynamics. When climate is the only constraint to species' dispersal, our simulations yield more South-to-North than North-to-South dispersal events, mostly within the tropical biome. Also, our models fail to explain the migrant diversity desequilibrium between the two continents, as well as temperate specialists' over-representation in the fossil record of successfully-exchanged taxa. Hence, we argue that spatio-temporal palaeoclimate dynamics alone cannot explain the asymmetry of the GABI, suggesting additional factors fashioned this macroecological enigma.
 
 The content of this chapter led to a manuscript that is currently under review.
-
-{{< pagebreak >}}
 
 ## Introduction
 
@@ -424,6 +430,12 @@ colnames(tbl) <- sapply(X = colnames(tbl), FUN = function(x){paste0("**", x, "**
 kable(tbl, align = "c")
 ```
 
+
+{{< pagebreak >}}
+
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/General_discu.pdf}
+```
 
 {{< pagebreak >}}
 

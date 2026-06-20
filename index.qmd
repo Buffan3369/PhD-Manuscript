@@ -196,11 +196,16 @@ Le CROUS et les bourses pour m'avoir accordé une autonomie financière sur mes 
 
 Ministère de l'Enseignement Supérieur et de la Recherche, via Contrat Doctoral Spécifique Normalien. Labex CEBA (EMERGENCE) for financing my attendance to the GTÖ Lisbon (02/2024) congress, the two missions in Amazonia, and one paper in PNAS. ECOS-Nord for travel tickets to Colombia. PEM-PAL teams for their support to attend PalAss 2024 and 2025. The Palaeontological Association for travel grants. Thomas J. Smith, Erin E. Saupe and her NERC project for organising this highly insightful workshop about spatial methods to study the fossil record in Oxford (03/2024). Alexis Licht and ERC DISPERSAL for organising BIOGEOPHYLO workshop (03/2025), probably the most inspiring and interesting scientific event I have had the chance to attend so far. MAPAS project ERC for financing my tickets to Vigo in June 2024. École Doctorale GAIA for travel grant to attend AEET-SIBECOL joint congress in Pontevedra and my subsequent stay in Vigo (06/2025). 
 
-{{< pagebreak >}}
-
-\noindent "*Le génie est fait d'1% d'inspiration et de 99% de transpiration*" -- Thomas Edison
-
-\noindent Ça doit puer un génie...
 :::
 
 {{< pagebreak >}}
+
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/quote.pdf}
+```
+
+{{< pagebreak >}}
+
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/resume_FR.pdf}
+```

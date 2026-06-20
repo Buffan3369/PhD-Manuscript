@@ -4,12 +4,6 @@
 library(knitr)
 ```
 
-::: {.content-visible unless-format="pdf"}
-## Foreword
-
-With their 2,747 recognised species organised into 540 genera, rodents are the most diverse mammal order, accounting for *c.* $40\%$ of extant mammal diversity [@burgin2025]. Within rodents, New World hystricognaths (Hystricognathi: Caviomorpha) encompass *c.* $10\%$ of the extant rodent diversity. This speciose and morphologically disparate American and Caribbean radiation can be divided into four major clades: Octodontoidea (spiny rats and relatives), Cavioidea (maras, cavies, capybara and relatives), Erethizontoidea (New World porcupines) and Chinchilloidea (chinchillas, viscachas and pacarana) [@upham2015; @álvarez2017]. Talk about their arrival on the continent
-:::
-
 Lucas Buffan¹, Myriam Boivin$^{2,3}$, Alicia Álvarez$^{2,3}$, Fabien L. Condamine¹, Laurent Marivaux¹
 
 ¹ Institut des Sciences de l’Évolution de Montpellier, Université de Montpellier, CNRS, IRD, Place Eugène Bataillon, 34095 Montpellier cedex 5, France.
@@ -19,6 +13,12 @@ Lucas Buffan¹, Myriam Boivin$^{2,3}$, Alicia Álvarez$^{2,3}$, Fabien L. Condam
 ³ Instituto de Geología y Minería (IdGyM), Universidad Nacional de Jujuy, Avenida Bolivia 1661, 4600 San Salvador de Jujuy, Jujuy, Argentina
 
 **Keywords**: Body Mass; Environment-dependent Diversification; Extinction Selectivity; Rodentia; South America; Trait-dependent Diversification
+
+## Foreword {.unnumbered}
+
+This chapter will transition from the broad to a narrow focus, by placing the emphasis on a particular superfamily of caviomorph rodents: Chinchilloidea. Chinchilloids indeed have a modest extant diversity, contrasting with their rich and diverse fossil record, the latter incidentally encompassing the largest rodents ever recorded. Over this chapter, we assemble the most exhaustive expert-revised temporal occurrence dataset for the clade, unprecedented body mass and crown eight measurements, to reconstruct the diversification dynamics of the clade. We further apply environment- and trait-dependent diversification models to investigate whether chinchilloid diversification dynamics were related to particular environmental variables, and whether these was homogeneous across body-size and crown-height categories.
+
+{{< pagebreak >}}
 
 ## Abstract
 
@@ -144,7 +144,7 @@ This diversity pattern consistently matched the temporal dynamics of body size a
 #| out-height: 15cm
 #| out-width: 5.25cm
 #| fig-pos: 'H'
-#| fig-cap: The joint temporal trends in diversity and clade-wise body size evolution of Chinchilloidea. Occurrence-based diversity reconstructions were either produced in a bayesian preservation-aware framework jointly assessing the times of speciation and extinction of each species (@fig-lifespans) from the temporal occurrence database (PyRate) (*i*.*e*., sampled diversity, **A**), or using a simulation-based deep-learning framework incorporating a wide variety of biases to reconstruct the temporal variations of the 'true' (*i*.*e*., corrected) diversity in 1-Myr time bins (DeepDive) **(B)**. Body mass through time reconstructions (**C**, log scale) were produced after binning our body mass estimates of each species in 1-Myr time bins. The body mass of a taxon was included within a given bin if its reconstructed lifepan overlapped with it. The black dot at the right of the plot shows the median body mass of the extant chinchilloids, and the red line shows its range. In all cases, full lines represent median estimates. In **(A)**, the ribbon shows the 95% HPD interval of the dievrsity estimate across MCMC iterations. In **(B)**, the lighter and darker ribbons respectively encompass 95% and 50% of the per-bin diversity distribution across the 100 DeepDive prediction replicates. In **(C)**, the ribbon depicts the total range of values.
+#| fig-cap: The joint temporal trends in diversity and clade-wise body size evolution of Chinchilloidea. Occurrence-based diversity reconstructions were either produced in a bayesian preservation-aware framework jointly assessing the times of speciation and extinction of each species (@fig-lifespans) from the temporal occurrence database (PyRate) (*i*.*e*., sampled diversity, **A**), or using a simulation-based deep-learning framework incorporating a wide variety of biases to reconstruct the temporal variations of the 'true' (*i*.*e*., corrected) diversity in 1-Myr time bins (DeepDive) **(B)**. Body mass through time reconstructions (**C**, log scale) were produced after binning our body mass estimates of each species in 1-Myr time bins. The body mass of a taxon was included within a given bin if its reconstructed lifespan overlapped with it. The black dot at the right of the plot shows the median body mass of the extant chinchilloids, and the red line shows its range. In all cases, full lines represent median estimates. In **(A)**, the ribbon shows the 95% HPD interval of the diversity estimate across MCMC iterations. In **(B)**, the lighter and darker ribbons respectively encompass 95% and 50% of the per-bin diversity distribution across the 100 DeepDive prediction replicates. In **(C)**, the ribbon depicts the total range of values.
 
 include_graphics("../Chinchilloids/Figures/Main/Diversity_and_BM_through_time.png")
 ```
@@ -158,7 +158,7 @@ include_graphics("../Chinchilloids/Figures/Main/Diversity_and_BM_through_time.pn
 include_graphics("../Chinchilloids/Figures/Main/Lifespans/lifespans_distribs.png")
 ```
 
-Figure 3.4. Bayesian reconstruction of the longevities of the 124 chinchilloid species considered in our dataset. Each segment depicts the longevity of a given species, that is, the interval between species' speciation and extinction times averaged across PyRate runs that achieved convergence. Segments and taxonomic names were coloured according to the body mass category to which species were assigned. The histogram at the centre of the plot shows the number of species within each body mass class. The 8 extant species names are highlighted in bold with a star at the end. Except *Lagostomus maximus*, these taxa had almost no fossil record. Consequently, their age of origination was estimated with the method presented in @fig-ExtSampl. The first four silhouettes (from top to bottom) are from Phylopic (credits available in @tbl-2s3). The last two silhouettes ($\dagger$*Elasmodontomys obliquus* and $\dagger$*Borikenomys praecursor*) were designed by L.M. for a previous work [@marivaux_early_2020].
+Figure 3.4. Bayesian reconstruction of the longevities of the 124 chinchilloid species considered in our dataset. Each segment depicts the longevity of a given species, that is, the interval between species' speciation and extinction times averaged across PyRate runs that achieved convergence. Segments and taxonomic names were coloured according to the body mass category to which species were assigned. The histogram at the centre of the plot shows the number of species within each body mass class. The 8 extant species names are highlighted in bold with a star at the end. Except for *Lagostomus maximus*, these taxa had almost no fossil record. Consequently, their age of origination was estimated with the method presented in @fig-ExtSampl. The first four silhouettes (from top to bottom) are from Phylopic (credits available in @tbl-2s3). The last two silhouettes ($\dagger$*Elasmodontomys obliquus* and $\dagger$*Borikenomys praecursor*) were designed by L.M. for a previous work [@marivaux_early_2020].
 
 ### Diversification dynamics of Chinchilloidea : a cautionary tale on extant sampling scheme and taxonomy
 
@@ -252,7 +252,7 @@ We are grateful to Torsten Hauffe, Rebecca B. Cooper and Bethany J. Allen for th
 
 ## Supporting Information Appendix {header-title="Chapter 2 -- SI Appendix"}
 
-### Supplementary text
+### Detail of some of our occurrence data cleaning steps {#sec-ManClean2}
 
 Age ranges of the Miocene occurrences from the Río Santa Cruz (Santacrucian SALMA) were sharpened based on their assigned locality [@arnal2019]. Hence, occurrence from Barrancas Blancas were respectively assigned the 16.3--17.21 and 15.3--16.47 Ma intervals.
 
@@ -768,12 +768,25 @@ kable(tbl_weibull, align = "c")
 
 ```{r, echo=FALSE}
 #| label: tbl-2s12
+#| tbl-colwidths: "[20, 50, 30]"
 #| tbl-cap: The 12 problematic taxa that we spotted from @carrillo2026, along with an explanation of why we consider these taxa to be problematic.
 
 library(readxl)
 tbl_car <- read_xlsx("./Figures/Bad_Chinchilloids_from_Carrillo.xlsx")
-kable(tbl_car)
+tbl_car$Species <- sapply(X = tbl_car$Species,
+                          FUN = function(x){
+                            spl <- strsplit(x, split = "_")[[1]]
+                            new_sp <- paste0("*", spl[1], " ", spl[2], "*")
+                            return(new_sp)
+                          })
+kable(tbl_car, knitr.kable.NA = ' ')
 ```
 
+
+{{< pagebreak >}}
+
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/Chap3.pdf}
+```
 
 {{< pagebreak >}}

@@ -13,3 +13,9 @@ Se surimpose à cela le contraste extrêmement marqué entre la biodiversité su
 Pour tout cela, l'histoire de la biodiversité mammalienne sud-Américaine regorge de mystères, dont beaucoup demeurent encore irrésolus à l'heure actuelle. C'est dans ce sillage que se range ce travail doctoral.
 
 {{< pagebreak >}}
+
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/General_intro.pdf}
+```
+
+{{< pagebreak >}}

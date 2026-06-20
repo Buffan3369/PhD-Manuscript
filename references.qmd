@@ -2,3 +2,11 @@
 
 ::: {#refs}
 :::
+
+{{< pagebreak >}}
+
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/Appendices.pdf}
+```
+
+{{< pagebreak >}}
