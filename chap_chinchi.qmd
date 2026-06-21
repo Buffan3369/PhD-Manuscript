@@ -16,7 +16,7 @@ Lucas Buffan¹, Myriam Boivin$^{2,3}$, Alicia Álvarez$^{2,3}$, Fabien L. Condam
 
 ## Foreword {.unnumbered}
 
-This chapter will transition from the broad to a narrow focus, by placing the emphasis on a particular superfamily of caviomorph rodents: Chinchilloidea. Chinchilloids indeed have a modest extant diversity, contrasting with their rich and diverse fossil record, the latter incidentally encompassing the largest rodents ever recorded. Over this chapter, we assemble the most exhaustive expert-revised temporal occurrence dataset for the clade, unprecedented body mass and crown eight measurements, to reconstruct the diversification dynamics of the clade. We further apply environment- and trait-dependent diversification models to investigate whether chinchilloid diversification dynamics were related to particular environmental variables, and whether these was homogeneous across body-size and crown-height categories.
+This chapter will transition from a generalistic to a clade-specific focus, by placing the emphasis on a particular superfamily of caviomorph rodents: the Chinchilloidea. Chinchilloids (chinchillas, vizcachas and relatives) indeed have a modest extant diversity [@fig-DivDeseq], contrasting with their rich and diverse fossil record [@vucetich2015], the latter incidentally encompassing the largest rodents ever recorded [*e*.*g*., @sánchez-villagra2003; @rinderknecht2008]. The factors underlying their drastic evolutionary demise, together with those that underpinned their evolution towards the largest body sizes ever recorded in the Rodentia, remain poorly understood. This chapter will shed some light on these macroevolutionary enigmas. Relying on the most exhaustive expert-revised temporal occurrence dataset for the clade and unprecedented body mass and cheek teeth crown height reconstructions from dental measurements, we infer chinchilloid diversification dynamics, test the likely environmental triggers behind their unique phenotypic evolution, and investigate whether their decline was related to any particular trait or environmental variable.
 
 {{< pagebreak >}}
 
@@ -781,7 +781,6 @@ tbl_car$Species <- sapply(X = tbl_car$Species,
                           })
 kable(tbl_car, knitr.kable.NA = ' ')
 ```
-
 
 {{< pagebreak >}}
 
