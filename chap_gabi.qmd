@@ -439,3 +439,9 @@ kable(tbl, align = "c")
 
 {{< pagebreak >}}
 
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/all_models_are_wrong.pdf}
+```
+
+{{< pagebreak >}}
+
