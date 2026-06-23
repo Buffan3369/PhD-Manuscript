@@ -9,7 +9,7 @@ uppercase <- function(letter){
   }
 }
 
-biblio <- readLines("./references.bib")
+biblio <- readLines("./refs.bib")
 for(i in 1:length(biblio)){
   line <- biblio[i]
   if(line != ""){
@@ -24,4 +24,4 @@ for(i in 1:length(biblio)){
   }
 }
 
-writeLines(biblio, "./references1.bib")
+writeLines(biblio, "./refs1.bib")
