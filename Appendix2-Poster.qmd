@@ -1,7 +1,0 @@
-# Continent-scale insights into the last 23 million years of South American mammal evolution {.unnumbered header-title="Appendix -- SAM post-Palaeogene"}
-
-This poster, presented at the III SIBECOL & XVII AEET meeting (02--06/2025, Pontevedra, Spain), presents an attempt to reconstruct the macroevolutionary dynamics of SAM after Palaeogene times. Several caveats make that the findings presented here cannot be submitted for publication. The most concerning has to do with the level of cleaning of our dataset, that was -- at the time the analyses were run -- highly heterogeneous across clades, with some (*e*.*g*., Xenarthra) highly intensively revised, whereas others (*e*.*g*., Rodentia) almost not revised (for a matter of time). 
-
-```{=latex}
-\includepdf[pages=-, scale=1, frame]{./Appendix/Poster_AEET.pdf}
-```

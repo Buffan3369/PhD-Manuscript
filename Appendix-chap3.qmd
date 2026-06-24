@@ -1,0 +1,239 @@
+# Supporting Information Appendix for Chapter 3 {header-title="Chapter 3 -- SI Appendix"}
+
+## Details regarding the palaeoclimate dataset used in this study
+
+The PALEO-PGEM series [@barreto2023] relies on the runs of Atmosphere-Ocean General Circulation Model (GCM) PLASIM-GENIE [@holden2016] temporally interpolated between each other across the last 5 million years with a 1000-year interval by the statistical emulator PALEO-PGEM [@holden2019]. The PALEO-PGEM emulator also involves a spatial downscaling step, improving the spatial resolution of the runs from PLASIM-GENIE to a $1 \times 1$° resolution, by interpolating climate anomalies onto fine-resolution climate data. The underlying philosophy of PALEO-PGEM is firstly that complex non-linear Earth system model feedbacks to external forcings can be described by decomposing those responses into a collection of orthogonal patterns (principal components), and secondly that the relative magnitudes of those patterns can be estimated as scalar functions of the forcing [@holden2010] . The approach was motivated by the widely used method of pattern-scaling [@mitchell1999], but instead of approximating the response by a single pattern, it extends this idea by combining many patterns together, therefore allowing the capture of non-linear responses. Different patterns might, for instance, arise from the effects of changing CO$_2$ concentration, or changing orbit, or of interactions between those changes. In PALEO-PGEM, ten principal components were included for each emulated variable, sufficient to explain 99% of the variance of simulated temperature and 90% of the variance of simulated precipitation [@holden2019].
+
+In detail, PALEO-PGEM applies Gaussian process emulation of the singular value decomposition of ensembles of runs from the intermediate complexity fully 3D atmosphere– ocean coupled model PLASIM-GENIE [@holden2016]. The emulator was built from two 50-member quasi-equilibrium simulation ensembles, one of which varied orbital forcing and CO$_2$ , while the other repeated this ensemble with the addition of a varying ice sheet, so that the effect of ice sheets was treated as a (non-linear) anomaly that was combined with the response to other forcings. Spatial fields of monthly temperature and precipitation were emulated at 1000-year intervals, driven by time series of scalar boundary-condition forcing of CO$_2$ concentration [@lüthi2008], the three orbital parameters [@berger1991] and ice volume [@stap2017]. The native resolution climate data (\~5° × 5°) was downscaled to a spatial resolution of 1°×1° [@barreto2023] using anomaly adjustments from the climate baseline of CHELSA [@karger2017].
+
+{{< pagebreak >}}
+
+## Supplementary Figures
+
+All across the study, metrics computed out of simulations starting from North America are shown in coral red, and those starting from South America in cyan.
+
+```{r, echo=FALSE}
+library(knitr)
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s1
+#| out-height: 11cm
+#| out-width: 11cm
+#| fig-pos: 'H'
+#| fig-cap: Average palaeoclimate histories within our studied landmasses. North America is displayed in coral red and South America in cyan. Spatially-averaged climate variables (Annual Temperature and Precipitation) are taken from the PALEO-PGEM series @barreto2023. This series being spatialised at a 1 x 1° resolution, numbers inside the continents represent the quantity of overlaying pixels from the climate grid within each continent. On climate plots, the time frame of the onset of significant land mammal exchange across the americas [@bacon2016; @woodburne2010] is indicated by the light purple vertical bands. The empirically-derived asymmetry of the transcontinental land mammal exchange is represented by the thickness of the two arrows, the thicker the arrow, the more intense the exchange.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_framework/Figure_framework.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s2
+#| out-height: 8cm
+#| out-width: 17cm
+#| fig-pos: 'H'
+#| fig-cap: Initial distances to the isthmus of all simulations ($n=500$), either starting from North or South America. On the top row, locations of simlation's ancestral species resulted from a random landmass-scale equal-area sampling scheme, both starting from North and South America. On the bottom row, initial distances to the isthmus of simulations originating in North America were standardised to those of South America (see *Methods*). Note that no change was made for simulations starting from South America.
+ 
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/metrics_std/panel_all_starting_distances.png")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s3
+#| out-width: 16cm
+#| fig-pos: 'H'
+#| fig-cap: Proportion of simulations leading to a successful exchange to the other continent after standardising initial distances to the isthmus of simulated species originating in North America to those of simulated species from South America (see *Methods*). This proportion is computed as the ratio, given an initial continent and a modelling scenario, between the number of simulations leading to a transcontinental exchange and the total number of simulations resulting in at least one living species at the final state -- *i*.*e*., excluding crashes, see @tbl-3s2. From left to right are depicted the outcome of the fixed-niche model ($M0$, species climatic niche does not change through time), adaptive-niche model ($M1$, species climatic niche evolves following local changes in temperature and precipitations) and alternative versions of $M1$ where species ecological niche is only determined by precipitation ($M2$) or temperature ($M3$). Dots represent mean success proportion estimates and error bars show their associated Binomial-derived 95% confidence interval.
+
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/metrics_std/prop_successful_col_STD.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s4
+#| out-height: 15cm
+#| out-width: 21cm
+#| fig-pos: 'H'
+#| fig-cap: A few metrics summarising climate-mediated interchange after standardising initial distances to the isthmus of simulations starting from North America to those starting from South America. Each individual plot shows the outcome of simulations starting in North (red) and South (cyan) America. (*top*) Proportion of foreign continent's colonised area. (*middle*) Diversity within the colonised area. (*bottom*) Distance to the isthmus. The first two metrics have been computed out of successful simulations, *i*.*e*., that resulted in a transcontinental faunal exchange.
+ 
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/metrics_std/panel_area_div_dist_std.png")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s5
+#| out-height: 22cm
+#| out-width: 17cm
+#| fig-pos: 'H'
+#| fig-cap: Starting range of all simulations either starting from North America (*left*), North America after standardising initial distances to the isthmus with those from South America (*middle*) or South America (*right*).
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/starting_ranges/Initial_ranges_All_runs.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s6
+#| out-height: 22cm
+#| out-width: 17cm
+#| fig-pos: 'H'
+#| fig-cap: Starting range of successful simulations generated under each model (from $M0$ to $M3$), either starting from North America (*left*), North America after standardising initial distances to the isthmus with those from South America (*middle*) or South America (*right*).
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/starting_ranges/Initial_ranges_successful_runs.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s7
+#| out-height: 8cm
+#| out-width: 16cm
+#| fig-pos: 'H'
+#| fig-cap: Comparison of the initial distance to the isthmus between successful and unsuccessful simulations of each of our four models, either starting from North (top) or South (bottom) America. Successful simulations ($Exchange$ $Sucess=1$) are displayed in green, whereas unsuccessful simulations ($Exchange$ $Sucess=0$) are displayed in yellow. Dashed lines on top and bottom of the distribution represent the 25% and 75% quantiles whereas the thicker full line in the middle shows the median (50% quantile).
+
+include_graphics("../GABI-gen3sis/Figures/dist_to_isthm/distance_violin_panel_NoCRASH.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s8
+#| out-height: 8cm
+#| out-width: 16cm
+#| fig-pos: 'H'
+#| fig-cap: Comparison of the initial distance to the isthmus between successful and unsuccessful simulations of each of our four models including simulations that crashed (*i*.*e*., resulted in no living representative at the final time step), either starting from North (top) or South (bottom) America.  Successful simulations ($Exchange$ $Sucess=1$) are displayed in green, unsuccessful simulations ($Exchange$ $Sucess=0$) in yellow and simulation that crashed ($Exchange$ $Sucess=-1$) in grey. Dashed lines on top and bottom of the distribution represent the 25% and 75% quantiles whereas the thicker full line in the middle shows the median (50% quantile).
+
+include_graphics("../GABI-gen3sis/Figures/dist_to_isthm/distance_violin_panel_CRASH.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s9
+#| out-height: 8cm
+#| out-width: 17.5cm
+#| fig-pos: 'H'
+#| fig-cap: Proportion of successful simulations starting from North America -- after standardising initial distances to the isthmus with simulations starting from South America (see *Methods* and @fig-3s2) -- for each scenario. Coloured dots and error bars respectively show proportion estimates -- ratio between number of successful simulations and total number of simulations starting for a given biome -- and their associated Binomial-derived 95% confidence intervals.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/biomes/starting_biome_EXCH_PROP_STD.png")
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: fig-3s10
+#| out-height: 8cm
+#| out-width: 17.5cm
+#| fig-pos: 'H'
+#| fig-cap: Biome where the ancestral species of each of the 500 simulation originated, for each modelling scenario, starting from North America after standardising initial distance to isthmus with that of simulations starting from South America (see *Methods* and @fig-3s2). We removed simulations starting from a cell that could not be assigned a biome from our counts, hence the reason why some are not exactly summing to 500.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/biomes/starting_biome_STD.png")
+```
+
+{{< pagebreak >}}
+
+```{r, echo=FALSE}
+#| label: fig-3s11
+#| out-height: 8cm
+#| out-width: 17.5cm
+#| fig-pos: 'H'
+#| fig-cap: Absolute colonised area, expressed as the number of foreign continent's occupied cells for each successful simulation generated under each model ($M0$--$M3$).
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/abs_col_area.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s12
+#| out-height: 7.5cm
+#| out-width: 10cm
+#| fig-cap: Effect of climatic variable temporal upscaling. Continent-averaged temperature estimates were produced for both North and South America, with the original time step of the climate emulator (1 ky, **A**) or after downscaling to a 10 ky time step (**B**).
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/Downscaled_temp.png")
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s13
+#| out-height: 9cm
+#| out-width: 19cm
+#| fig-pos: 'H'
+#| fig-cap: Snapshots of the two bioclimatic variables used in this study (Annual Temperature and precipitations, respectively called Bio1 and Bio12 in the climate model) from the PALEO-PGEM series [@barreto2023], together with the corresponding biome reconstructions that we carried out following @galván2023 (using broad climate classes), at key time steps. Last Interglacial corresponds to t=120ka and Last Glacial Maximum to t=21ka. In the bottom row, the "Tropical" class was subdivided into "Tropical forest", incorporating closed Rainforest and Moist forest (Monsoon), and "Tropical savannah", associated with a more open landscape. Last Interglacial corresponds to t=120ka and Last Glacial Maximum to t=21ka.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/Clim_snapshots/Climatic_snapshots_panel_PALEO-PGEM_biomes_savannah.pdf")
+
+```
+
+```{r, echo=FALSE}
+#| label: fig-3s14
+#| out-height: 12cm
+#| out-width: 18cm
+#| fig-pos: 'H'
+#| fig-cap: Comparative proportion of successful simulations (**A**) and of simulations that crashed (*i*.*e*., leading to no living representative at the end of the simulation) (**B**). Simulations were generated in a landscape based on the PALEO-PGEM series, either under the fixed-niche ($M0$) or the (full) adaptative-niche ($M1$) models. `w_max` indicates the upper bound of the thermal breadth parameter ($\omega_T$) associated to the corresponding batch of simulations.
+
+include_graphics("../GABI-gen3sis/Figures/MS/Supp/niche_expanded/NA_vs_SA-PPGEM-diff_w.pdf")
+
+```
+
+{{< pagebreak >}}
+
+## Supplementary Tables
+
+```{r, echo=FALSE}
+library(kableExtra)
+```
+
+```{r, echo=FALSE}
+#| label: tbl-3s1
+#| tbl-cap: Fixed parameter values for gen3sis simulations.
+ 
+names <- c("`divergence_factor`", "`max_species`", "`max_coex_species`", "`start_species`", "`init_ab`", "`grid_cell_distance`")
+values <- c(0.05, 10000, 1000, 1, 500, 111)
+descr <- c("How much divergence disconnected populations accumulate across iterations",
+           "Maximum number of simulated species a simulation can handle (if falls above, the simulation crashes)",
+           "Cell carrying capacity",
+           "Number of species to start with",
+           "Initial abundance of the start species",
+           "Distance (in km) between two grid cells of the landscape at the equator"
+           )
+
+fixed_params <- data.frame(Name = names, 
+                           Value = values,
+                           Description = descr)
+
+# Display
+kable(fixed_params, align = 'c')
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: tbl-3s2
+#| tbl-cap: Proportion of simulations that crashed -- *i*.*e*., leading to no living representative at the end of the simulation -- for each modelling scenario ($M0-3$) depending on the ancestral area (`Start` column). "North America Standardised" refers to simulations carried out from a North American ancestor after standardising initial distances to Isthmus with simulations starting from South America (see *Methods*). Simulations were obtained with a narrow temperature niche ($\omega_T \in [0.01, 0.1]$).
+
+prop_crash_unstd <- readRDS("../GABI-gen3sis/Results/Exchanged_metrics/Crash_counter.RDS")
+
+kable(prop_crash_unstd, align = "c")
+```
+
+| 
+| 
+
+```{r, echo=FALSE}
+#| label: tbl-3s3
+#| tbl-cap: Proportion of simulations that crashed depending on the ancestral area when varying thermal niche breadth, with the upper bound of the thermal breadth range (`w_max` column) ranging from 0.1, 0.6 to 1.
+
+prop_crash <- readRDS("../GABI-gen3sis/Results/Exchanged_metrics/Crash_counter_diff_w.RDS")
+colnames(prop_crash) <- c("Start", "w_max", "Model", "Proportion")
+
+kable(prop_crash, align = "c")
+```
+
+{{< pagebreak >}}
+
+```{r, echo=FALSE}
+#| label: tbl-3s4
+#| tbl-cap: References for the silhouettes used in Figure 1, from Phylopic.
+
+library(readxl)
+tbl <- read_xlsx("../GABI-gen3sis/Manuscript/phylopic_ID_table.xlsx")
+# Italicise species names
+tbl$Silhouette <- sapply(X = tbl$Silhouette, FUN = function(x){paste0("*", x, "*")})
+# Header in bold
+colnames(tbl) <- sapply(X = colnames(tbl), FUN = function(x){paste0("**", x, "**")})
+
+# Display
+kable(tbl, align = "c")
+```
+
+{{< pagebreak >}}

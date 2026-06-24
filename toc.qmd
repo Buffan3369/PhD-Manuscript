@@ -1,0 +1,7 @@
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/Shapaja.pdf}
+```
+
+{{< pagebreak >}}
+
+\tableofcontents
