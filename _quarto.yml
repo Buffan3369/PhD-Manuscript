@@ -7,7 +7,6 @@ book:
   title: "Macro-eco-evolutionary perspectives on the Cenozoic history of South American Mammals"
   author: "Lucas Buffan"
   chapters:
-    - toc.qmd
     - index.qmd
     - resume_FR.qmd
     - introduction.qmd
@@ -23,6 +22,7 @@ book:
     - Appendix-chap3.qmd
     - Appendix-MPhil_Fred.qmd
     - Appendix-Poster.qmd
+  cover-image: Lama_Machu_Picchu.jpeg
   
 bibliography: references.bib
 #citecolor: LimeGreen
@@ -40,7 +40,8 @@ format:
       - bottom=25mm
       - top=25mm
     link-citations: true
-    toc: false
+#    toc: false
+    toc-depth: 3
     fig-pos: h
     filters: 
       - custom-header.lua
