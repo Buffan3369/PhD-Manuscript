@@ -47,6 +47,9 @@ format:
       - custom-header.lua
     include-in-header: 
       text: |
+        % Cover image
+        % \titlehead{\includegraphics{./Fioritures/Cover/cover.pdf}}
+        
         % Increase Line Spacing
         \setlength{\parskip}{0.5\baselineskip}
         
@@ -72,5 +75,8 @@ format:
         \usepackage{pdfpages}
         
         % To start numbering at 0 instead of 1
-        \setcounter{chapter}{-1}
+        % \setcounter{chapter}{-1}
+        
+        % Use letters for chapter numbering
+        \renewcommand{\thechapter}{\Alph{chapter}}
 

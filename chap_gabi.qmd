@@ -8,13 +8,14 @@ Lucas Buffan¹, Fabien L. Condamine¹, Philip B. Holden², Sara Varela³
 
 ³ Centro de Investigación Mariña, Departamento de Ecoloxía e Bioloxía Animal, Universidade de Vigo, Campus Lagoas-Marcosende, 36310 Vigo, Spain
 
-**Keywords**: Biotic Interchange; Eco-evolutionary simulations; Macroecology; Palaeoclimate
-
 ## Foreword {.unnumbered}
 
 The last chapter of this PhD thesis is framed around a long-standing question in evolutionary biology: the drivers behind the asymmetry observed during the late Neogene faunal exchange between North and South America, commonly referred to as the Great American Biotic Interchange (GABI). Why North American lineages colonised the South with an undoubtedly larger success than the other way around in the aftermath of the GABI has indeed long puzzled evolutionary biologists [*e*.*g*., @marshall1982; @simpson1980; @webb1976]. Meanwhile some assumed that such an asymmetry emerged from the competitive superiority of North American mammals over South Americans [*e*.*g*., @simpson1950] or a predatory regime disequilibrium between the two continents [*e*.*g*., @faurby_asymmetry_2016], others emphasised that this asymmetry most likely arose as a result from palaeoclimate dynamics [*e*.*g*., @vrba1992; @webb1991]. Using mechanistic eco-evolutionary simulations, a powerful framework to test for the factors at play to shape the emergence and the dynamics of biodiversity patterns without being impacted by biases inherent to empirical data [*e*.*g*., @hagen2023], this chapter causally assesses the latter family of hypotheses, *i*.*e*., palaeoclimate-dependent asymmetry. This represent the first attempt to derive the mechanisms behind the GABI by means of eco-evolutionary simulations.
 
 The content of this chapter is currently under review in an international journal.
+
+**Keywords**: Biotic Interchange; Eco-evolutionary simulations; Macroecology; Palaeoclimate
+
 
 {{< pagebreak >}}
 
@@ -34,20 +35,18 @@ Recent improvements in process-explicit modelling have marked a turning point in
 
 Here, we test Webb and Vrba's hypotheses on the role of palaeoclimate dynamics in the asymmetry of the GABI (@fig-hypotheses) using a spatially-explicit mechanistic biodiversity simulator coupled with palaeoclimate reconstructions across the last 5 million years. Our simulations tracked the diversification of a clade originating either in North or South America. The ability of a virtual species to survive at a given place was only mediated by climatic factors. We hypothesise that (i) simulations starting from a North American ancestor would be more successful at reaching the other continent than the other way around, (ii) successful simulations starting from a North American ancestor would result in a more diverse and spatially spread radiation in the newly-colonised continent, (iii) niche evolvability and (iv) initial biome would significantly impact exchange frequencies, with higher values obtained for adaptive-niche simulations, or fixed-niche simulations with temperate or arid rather than tropical affinity.
 
+## Material and Methods
+
+Beforehand, it has to be noticed that, across the entire study, 'North America' actually refers to the current North and Central American continents. The delimitation between North and South America was arbitrarily set as a straight line connecting two points located along the eastern and western coasts of present Panama ($82.882°$ W, $7.138°$ N and $81.369°$ W and $9.008°$ N) (see @fig-3s1).
+
 ```{r, echo=FALSE}
 #| label: fig-hypotheses
 #| out-height: 13cm
 #| fig-pos: 'H'
-#| fig-cap: "*Caption on next page*."
+#| fig-cap: "The two nonmutually-exclusive hypotheses relating the asymmetry of the GABI to the Pleistocene climatic oscillations, formulated in the framework of land mammals. Both involve biome transition from close tropical rainforest (green) during interglacial periods -- warm and humid -- to open savannah/desert (dark yellow) during glacial maxima -- cold and dry -- in the isthmian region. The first one (A), formulated by @webb1991 views the asymmetry of the GABI as the result from the fact that North America had a higher pool of open-adapted taxa than South America. The opening of the isthmian region acted as an ecological filter favouring the dispersal of these open-adapted taxa to the detriment of the others. Hence, given the imbalance in open-adapted pool size between the two continents, more species would have been expected to disperse to the South than the other way around. The second one (B), formulated by @vrba1992, proposes that the contraction of the tropical biome towards the equator triggered by the interglacial-glacial transition would have mechanically attracted tropical specialists southwards, irrespective of their continent of origin. Silhouettes are from phylopic, credits are available in @tbl-3s4. Note that the purpose of this figure is to illustrate our working hypotheses. Thus, we do not pretend these maps to accurately reflect inter-American biome dynamics between glacial and interglacial periods. A more accurate picture of these dynamics is available on @fig-3s13."
+
 knitr::include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_intro/Figure_hypotheses.png")
 ```
-
-Figure 4.1. The two nonmutually-exclusive hypotheses relating the asymmetry of the GABI to the Pleistocene climatic oscillations, formulated in the framework of land mammals. Both involve biome transition from close tropical rainforest (green) during interglacial periods -- warm and humid -- to open savannah/desert (dark yellow) during glacial maxima -- cold and dry -- in the isthmian region. The first one (A), formulated by @webb1991 views the asymmetry of the GABI as the result from the fact that North America had a higher pool of open-adapted taxa than South America. The opening of the isthmian region acted as an ecological filter favouring the dispersal of these open-adapted taxa to the detriment of the others. Hence, given the imbalance in open-adapted pool size between the two continents, more species would have been expected to disperse to the South than the other way around. The second one (B), formulated by @vrba1992, proposes that the contraction of the tropical biome towards the equator triggered by the interglacial-glacial transition would have mechanically attracted tropical specialists southwards, irrespective of their continent of origin. Silhouettes are from phylopic, credits are available in @tbl-3s4. Note that the purpose of this figure is to illustrate our working hypotheses. Thus, we do not pretend these maps to accurately reflect inter-American biome dynamics between glacial and interglacial periods. A more accurate picture of these dynamics is available on @fig-3s13.
-
-
-## Material and Methods
-
-Beforehand, it has to be noticed that, across the entire study, 'North America' actually refers to the current North and Central American continents. The delimitation between North and South America was arbitrarily set as a straight line connecting two points located along the eastern and western coasts of present Panama ($82.882°$ W, $7.138°$ N and $81.369°$ W and $9.008°$ N) (see @fig-3s1).
 
 ### Palaeoclimate data
 
@@ -94,6 +93,9 @@ Our results suggest that the proportion of simulations successfully reaching the
 
 Out of the 500 runs carried out for each initial landmass-modelling scenario combination, the proportion of simulations leading to no living representative (=crash) was on average three times higher for simulations starting from North America, except for model $M3$, recording almost no crash (@tbl-3s2). This difference, although attenuated, persisted after the spatial standardisation procedure, but fully disappeared when we increased the thermal breadth of simulations originating in North America (@fig-3s14 B).
 
+### Successful establishment on the newly-colonised continent
+
+Irrespective of the initial continent, our findings highlight that successful simulations generated under models allowing species climatic niches to evolve ($M1-M3$) colonised a larger area on the newly-colonised continent than those generated under the $M0$ model -- where climatic niche evolution was not allowed (@fig-metrics A). Furthermore, species of North American origin that successfully made it to South America generally colonised a greater area than those of South American origin reaching North America (@fig-metrics A). This pattern is particularly striking for simulations generated under the $M0$ model ($36.5\pm3.5\%$ vs. $11.7\pm0.4\%$), and holds for all but the $M3$ model -- relaxing the precipitation constraint on species' niche --, the latter suggesting an opposite trend ($69.9\pm3.3\%$ vs. $79.4\pm3.9\%$). However, due to the difference in size (*i*.*e*., number of pixels) between the two continents (@fig-3s1), the actual colonised area was greater when simulations generated under the $M1-3$ models started from South than North America, but remained larger when simulations were generated under $M0$ started from North America (@fig-3s11).
 
 ```{r, echo=FALSE}
 #| label: fig-propsuccess
@@ -106,10 +108,6 @@ Out of the 500 runs carried out for each initial landmass-modelling scenario com
 knitr::include_graphics("../GABI-gen3sis/Figures/MS/Main/Figure_PropSuccess/Figure_PropSuccess.png")
 ```
 
-
-### Successful establishment on the newly-colonised continent
-
-Irrespective of the initial continent, our findings highlight that successful simulations generated under models allowing species climatic niches to evolve ($M1-M3$) colonised a larger area on the newly-colonised continent than those generated under the $M0$ model -- where climatic niche evolution was not allowed (@fig-metrics A). Furthermore, species of North American origin that successfully made it to South America generally colonised a greater area than those of South American origin reaching North America (@fig-metrics A). This pattern is particularly striking for simulations generated under the $M0$ model ($36.5\pm3.5\%$ vs. $11.7\pm0.4\%$), and holds for all but the $M3$ model -- relaxing the precipitation constraint on species' niche --, the latter suggesting an opposite trend ($69.9\pm3.3\%$ vs. $79.4\pm3.9\%$). However, due to the difference in size (*i*.*e*., number of pixels) between the two continents (@fig-3s1), the actual colonised area was greater when simulations generated under the $M1-3$ models started from South than North America, but remained larger when simulations were generated under $M0$ started from North America (@fig-3s11).
 
 Besides, contrary to the proportion of colonised area for a given ancestral continent, colonised diversity does not vary significantly across our four models. However, a significant decrease is evident in simulations starting from North America generated under the $M3$ model (@fig-metrics B). Moreover, ancestral continent does not seem to affect mean colonised diversity values in the case of the $M1$ ($212\pm61$ vs. $170\pm25$ species respectively retrieved in the newly-colonised continent after starting from North or South America) and $M2$ ($161\pm48$ vs. $171\pm27$ species) models. It does however have an effect for simulations generated under $M0$, with higher average values obtained for simulations starting from North America ($247\pm85$ vs. $79\pm20$ species).
 
