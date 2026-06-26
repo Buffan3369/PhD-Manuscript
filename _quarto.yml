@@ -16,14 +16,13 @@ book:
     - discu.qmd
     - glossary.qmd
     - references.qmd
-  appendices: 
+  appendices:
     - Appendix-chap1.qmd
     - Appendix-chap2.qmd
     - Appendix-chap3.qmd
     - Appendix-MPhil_Fred.qmd
     - Appendix-Poster.qmd
-  cover-image: Lama_Machu_Picchu.jpeg
-  
+
 bibliography: references.bib
 #citecolor: LimeGreen
 
@@ -40,7 +39,6 @@ format:
       - bottom=25mm
       - top=25mm
     link-citations: true
-#    toc: false
     toc-depth: 3
     fig-pos: h
     filters: 
