@@ -172,7 +172,7 @@ Simon Roy-Marsiquet
 
 ### Amis d'ailleurs
 
-Bastien Ruaud
+Merci Bastien (Ruaud) pour ces petites bouffées d'Oxygène Gardoises venues égayer mon quotidien Héraultais, que ce soit à l'occasion d'un Jeudi de Nîmes, d'un concert de Mika aux Arènes ou juste d'un petit Prolet en semaine. Je garderai un souvenir mémorable de nos premières sorties vélo communes et de tes "Nan!" catégoriques à chaque fois que je te demandais si tu passais un bon moment, te plaignant de ton postérieur endolori. Tu es quelqu'un de vrai avec qui je savoure chaque moment passé, et sans plus faire usage de compliments -- art dans lequel tu sais que j'excelle --, ta personnalité est, par bien des attraits, extrêmement inspirante (si l'on omet ta faible appétence pour les tâches ménagères, et ta forte propension à ne pas te forcer à faire les choses pour lesquelles tu as une faible appétence). Je me félicite de te compter parmi mes amis les plus chers.
 
 P.O. et Max
 
@@ -203,15 +203,23 @@ Ministère de l'Enseignement Supérieur et de la Recherche, via Contrat Doctoral
 
 ## Je ne remercie pas...
 
-Les politiques d'austérité envers l'enseignement supérieur et la recherche, en France comme à l'international, au motif d'une absence de perspective de rentabilité court-termiste, en inadéquation absolue avec les enjeux du moment.
+Les politiques d'austérité à l'égard de l'Enseignement Supérieur et la Recherche, en France comme à l'international, au motif d'une absence de perspective de rentabilité court-termiste, en inadéquation absolue avec les enjeux du moment.
 
-Les efforts acharnés des milliardaires d'extrême-droite à la tête de la plupart des médias les plus communs de diaboliser la gauche.
+Les efforts acharnés des milliardaires d'extrême-droite à la tête de la plupart des grands médias de diffusion de leurs fantasmes xénophobes sur la base d'argumentaires fallacieux et de méthodes insidieuses.
+
+Les Sionistes, qui justifient un génocide sur la base d'arguments religieux et assimilent toute critique de la politique actuelle menée par l'État d'Israël à de l'antisémitisme.
 
 Les cigales, véritables architectes d'une cacophonie permanente habillant le Sud de la France trois mois dans l'année.
 
-Les soirée karaoké et le Roquefort. Aucune justification, juste par défoulement.
+Les soirées karaoké et le Roquefort. Aucune justification.
 
 :::
+
+{{< pagebreak >}}
+
+```{=latex}
+\includepdf[pages=-, scale=1]{./Fioritures/blank.pdf}
+```
 
 {{< pagebreak >}}
 
