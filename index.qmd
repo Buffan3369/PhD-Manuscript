@@ -5,54 +5,32 @@
 ## Avant-propos
 
 ::: {.content-visible unless-format="pdf"}
-
 Back in the days, Aristotle famously wrote that "*The more you know, the more you realise you don't know*". This statement has a particularly strong reasoning at the time I jump into the first lines of what is supposed to be the achievement of three years of intense labour on a topic on which I will apparently become an *expert* of.
 
-
 Tempérons les ardeurs des méritocrates invétérés qui verront en cet essai signé de la main d'un fils d'ouvrier du bâtiment/intermittent du spectacle et d'animatrice en EHPAD la matérialisation du fantasme bourgeois du "*Quand tu veux, tu peux*". Non, je n'ai pas grandi dans l'opulence, mais j'ai toujours joui d'un soutien inébranlable, que ce soit sur le plan matériel, intellectuel ou émotionnel, soutien pour lequel je ne pourrais jamais suffisamment remercier mes proches, en première ligne desquels se trouvent mes parents. J'ai grandi à mille lieux de là où se concentre la violence du système, dans un petit coin de campagne tranquille et hors d'une quelconque minorité. Donc finalament bien armé pour affronter le système.
-
 :::
 
 ## Remerciements / Acknowledgements / Agradecimientos {header-title="Préambule et Remerciements"}
 
-::: {.content-visible unless-format="pdf"}
-
 ### Jury
 
-I first wanted to warmly thank my PhD ju
-
-Darin
-
-Erin
-
-Tiago
-
-Fred Delsuc
-
-+ CSI (Gilles, Ignacio, Ana Rodrigues)
-
-Myriam Boivin
-
+I first warmly thank my PhD jury, Darin A. Croft, Tiago B. Quental, Erin E. Saupe and Frédéric Delsuc, for accepting to endorse the role of evaluating my doctoral work. Hopefully this manuscript won't spoil too much of your summer! I also thank the members of my PhD committee, Gilles Escarguel, Ignacio Quintero, Ana Rodrigues and Myriam Boivin for their involvement. The two meetings that we had were highly insightful to me. Mention spéciale à Ana, merci de m'avoir convié à partager ce repas avec ton équipe au CEFE, et de m'avoir reçu par la suite pour dialoguer informellement du monde académique. J'ai énormément apprécié ce petit bol d'air extérieur. Mention aussi toute particulière à Myriam avec qui, au gré de la thèse, j'ai eu la chance d'amorcer une collaboration donnant lieu à ce joli chapitre sur les chinchilloïdes. Merci beaucoup d'avoir accepté de travailler avec moi sur ce groupe absolument passionnant, en y investissant toute ta rigueur et ton sérieux malgré tes contraintes familiales. J'espère avoir l'opportunité de continuer à collaborer avec toi dans le futur.
 
 ### Encadrement
 
-Merci Laurent pour ton optimisme inébranlable, qu'il s'agisse de tes "yeux bleus loupés", de ton mode de vie de "curé", de ta quinzième mission de terrain à l'autre bout du monde où tu feins de te rendre à reculons en clamant que, cette fois-ci, c'est la dernière et que tu es "trop vieux pour ces conneries", ou du fait que tu es tout simplement "bon à jeter", faisant preuve d'une inspiration débordante dès qu'il est question d'auto-flagellation (kong!). Plus sérieusement, merci pour ces trois années que tu m'as offertes. Bien qu'étant fort incapable de déchiffrer, à ta manière, l'histoire de la vie inscrite dans ces enchevêtrements de cingulums, talonides et autres hypoconules fossilisés (ton "business" comme tu dis), j'ai énormément appris de ta connaissance intégrée sur tes modèles d'étude de prédilection dont, je l'espère, mon travail rendra un hommage un tant soit peu comparable à l'attrait que j'ai développé pour l'histoire évolutive de ces groupes en te cotoyant. Merci aussi pour ces expériences uniques que j'ai passées en ta compagnie sur le terrain. Si l'on enlève quelques ronflements survenus alors que nous partagions cette chambre à *La Pradera* et quelques mésaventures intestinales dont je passerai les détails, je garderai un excellent souvenir de nos conversations échangées sous la chaleur écrasante de l'Amazonie en pleine journée, à donner des coups de marteau dans du sédiment, à "branler du tamis", ou le soir autour de la bino, en sirotant une *Cusqueña* ou un *Pisco Sour*. Tu as un vécu remarquable, et je te souhaite sincèrement de faire de toutes tes anecdotes de terrain un livre: il faut que le monde sache ! Enfin, en plus d'être un brillant scientifique, tu es d'une gentillesse sans pareil. Il n'y avait pas que de l'ironie quand je te comparais à mon grand-père sur le terrain: ta bienveillance dans les interactions que nous avons pu avoir m'a, par moment, ramené à un cadre presque familial. Tes passage éclair dans mon bureau, laissant seulement entrevoir ta tête habillée d'un sourire espiègle sans mot dire, me manqueront. Aussi, merci pour tout, et j'espère que j'aurai de nouveau affaire à ton crâne si régulier -- qui laisse rêveuse ma dolichocéphalie, comme tu l'as très justement souligné -- et tes contrepèteries dans le futur !
+Merci Laurent pour ton optimisme inébranlable, qu'il s'agisse de tes "yeux bleus loupés", de ton mode de vie de "curé", de ta quinzième mission de terrain à l'autre bout du monde où tu feins de te rendre à reculons en clamant que, cette fois-ci, c'est la dernière et que tu es "trop vieux pour ces conneries", ou du fait que tu es tout simplement "bon à jeter", faisant preuve d'une inspiration débordante dès qu'il est question d'auto-flagellation (kong!). Plus sérieusement, merci pour ces trois années que tu m'as offertes. Bien qu'étant fort incapable de déchiffrer, à ta manière, l'histoire de la vie inscrite dans ces enchevêtrements de cingulums, talonides et autres hypoconules fossilisés (ton "business" comme tu dis), j'ai énormément appris de ta connaissance intégrée sur tes modèles d'étude de prédilection dont, je l'espère, mon travail rendra un hommage un tant soit peu comparable à l'attrait que j'ai développé pour l'histoire évolutive de ces groupes en te cotoyant. Merci aussi pour ces expériences uniques que j'ai passées en ta compagnie sur le terrain. Si l'on enlève quelques ronflements survenus alors que nous partagions cette chambre à *La Pradera*, je garderai un excellent souvenir de nos conversations échangées sous la chaleur écrasante de l'Amazonie en pleine journée, à donner des coups de marteau dans du sédiment, à "branler du tamis", ou le soir autour de la bino, en sirotant une *Cusqueña* ou un *Pisco Sour*. Tu as un vécu remarquable, et je te souhaite sincèrement de faire de toutes tes anecdotes de terrain un livre: il faut que le monde sache ! Enfin, en plus d'être un brillant scientifique, tu es d'une gentillesse sans pareil. Il n'y avait pas que de l'ironie quand je te comparais à mon grand-père sur le terrain: ta bienveillance dans les interactions que nous avons pu avoir m'a, par moment, ramené à un cadre presque familial. Tes passage éclair dans mon bureau, laissant seulement entrevoir ta tête habillée d'un sourire espiègle sans mot dire, me manqueront. Aussi, merci pour tout, et j'espère que j'aurai de nouveau affaire à ton crâne si régulier -- qui laisse rêveuse ma dolichocéphalie, comme tu l'as très justement souligné -- et tes contrepèteries dans le futur !
 
-Merci Fabien. Quelques semaines à peine après ma venue à l'ISEM, tu m'as dit une phrase qui, je pense, s'avère être le meilleur conseil que l'on m'ait jamais donné en sciences, à s'avoir qu' "Un bon chercheur, c'est avant tout un bon lecteur et un bon écrivain". Merci beaucoup d'avoir partagé un peu de ton enthousiasme inflexible, de ta soif inétanchable de savoir, de tes capacités réflexives hors du commun et de ton regard intégré sur un large pan de la biologie évolutive avec moi. Par bien des aspects, tes qualités professionnelles font de toi quelqu'un de très inspirant, même si je pense qu'elles te jouent aussi parfois des tours, comme en témoigne ce florilège de cheveux blanchissants illuminant ton implantation capillaire absolument remarquable pour un quadragénaire -- dont je suis d'ailleurs jaloux, et sûrement que Laurent aussi ! J'ai énormément savouré nos interactions enrichies de ta connaissance encyclopédique (devrais-je même dire autistique?) de la littérature. Tu es plein de ressources, et je pense que travailler à tes côtés n'a fait que renforcer ma motivation à faire de la science, surtout quand nos sessions de travail nocturnes impliquaient la consommation d'un saint breuvage anisé pour lequel nous partageons une affection toute particulière (merci papa). J'espère sincèrement pouvoir être amené à travailler de nouveau avec toi dans le futur. Enfin, merci énormément de m'avoir communiqué la moindre offre de post-doc de ton réseau tentaculaire qui te paraissait coïncider avec mon profil, et de m'avoir proposé d'assister à ce Workshop à Arles avec toi et Romain qui, si l'on met de côté un pneu de vélo crevé et une voiture à la fourrière, restera sans doute le meilleur événement scientifique auquel j'ai assisté au cours de ma thèse. Je te suis sincèrement reconnaissant pour toutes ces attentions.
+Merci Fabien. Quelques semaines à peine après ma venue à l'ISEM, tu m'as dit une phrase qui, je pense, s'avère être le meilleur conseil que l'on m'ait jamais donné en sciences, à savoir: "Un bon chercheur, c'est avant tout un bon lecteur et un bon écrivain". Merci beaucoup d'avoir partagé un peu de ton enthousiasme inflexible, de ta soif inétanchable de savoir, de tes capacités réflexives hors du commun et de ton regard intégré sur un large pan de la biologie évolutive avec moi. Par bien des aspects, tes qualités professionnelles font de toi quelqu'un de très inspirant, même si je pense qu'elles te jouent aussi parfois des tours, comme en témoigne ce florilège de cheveux blanchissants illuminant ton implantation capillaire absolument remarquable pour un quadragénaire -- dont je suis d'ailleurs jaloux, et sûrement que Laurent aussi ! J'ai énormément savouré nos interactions enrichies de ta connaissance encyclopédique (devrais-je même dire autistique?) de la littérature. Tu es plein de ressources, et je pense que travailler à tes côtés n'a fait que renforcer ma motivation à faire de la science, surtout quand nos sessions de travail nocturnes impliquaient également la consommation d'un saint breuvage anisé pour lequel nous partageons une appétence toute particulière (merci papa). J'espère sincèrement pouvoir être amené à travailler de nouveau avec toi dans le futur. Enfin, merci énormément de m'avoir communiqué la moindre offre de post-doc de ton réseau tentaculaire qui te paraissait coïncider avec mon profil, et de m'avoir proposé d'assister à ce Workshop à Arles avec toi et Romain qui, si l'on met de côté un pneu de vélo crevé et une voiture à la fourrière, restera sans doute le meilleur événement scientifique auquel j'ai assisté au cours de ma thèse. Je te suis sincèrement reconnaissant pour toutes ces attentions.
 
 Muchísimas gracias por todo Sara (Varela), sea por los proyectos súper bonitos que llevamos haciendo desde un par de años ya, o por tu apoyo constante, que no tiene valor en el sistema académico, individualista y súper competitivo. Por varios motivos eres una persona muy inspirante, por lo listo, entusiasta, determinado y profundamente majo y empático que eres. Creo que por culpa tuya, parte de mi corazón científico-personal se quedó en Galicia para siempre. Gracias a tí y a tu equipo, pase unas semanas inolvidables en Vigo durante de mi experiencia doctoral. Te agradezco también por haberme invitado a este congreso en Pontevedra el año pasado, que estuvo una experiencia muy bonita. Espero que seguiremos trabajando juntos.
 
 ### ISEM
 
-Merci PierrO. N'en déplaise à toute considération d'horizontalité hiérarchique, à bien des égards, t'es le boss.
+Ensuite, merci PierrO. On ne va pas se mentir, en faisant une thèse sur les mammifères sud-Américains, même si tu n'étais pas dans mon encadrement officiel, à bien des reprises, ton expertise intégrée sur les faunes et les paléoenvironnements de ce continent fascinant ont été utiles à mon travail, si bien que tu m'as très certainement parfois encadré de manière non-officielle (t'inquiète, je dirai rien à l'ED). Merci pour ça. Merci aussi énormément de m'avoir offert ces deux opportunités uniques de vous accompagner, toi, Lolo, Narla et François (une année sur deux pour le père Pujos) sur les traces des faunes éteintes d'Amérique du Sud tropicale. En mettant de côté quelques petites filouteries, comme la fois où nous nous sommes rendus au quartier des garages de Bucaramanga, ne faisant pas fière mine d'être les deux seuls blancs, pour racheter le miroir d'un rétroviseur qu'on nous avait volé quelques jours plus tôt, ou quelques mésaventures intestinales dont je passerai les détails, ces moments sur le terrain à l'autre bout du monde resteront à jamais gravés dans ma mémoire, et tu en as été l'un des acteurs principaux. Je ne te remercierai jamais assez pour ça. Merci aussi pour ta confiance en m'ayant impliqué dans ton projet ANR PHENOMENA. Je mesure la chance que j'ai de jouir d'une telle opportunité à un stade aussi précoce de ma carrière, et je t'en suis très reconnaissant. Merci aussi pour ces moments sportifs que nous avons partagé, à l'occasion du Marathon par équipes de Montpellier, des footings de relâchements à Lima et Bucaramanga après d'interminables journées de transit (pas intestinal cette fois!!) ou, plus récemment, sous la fraîcheur palavasienne à l'occasion des 24h St Pierre que nous avons remporté il y a quelques semaines. Il faut quand même reconnaître que, malgré ton âge vénérable, tu en as encore un peu sous la pédale ! En parlant de pédale (oulah, transition douteuse), merci aussi pour ces moments musicaux où j'ai eu l'honneur de partager la scène avec tes coups de caisse claire, charlet et tomme basse dynamiques sur une batterie montée à l'envers qui partait en furie dès qu'elle entendait le nom "Zebda", faisant ressortir ses ardeurs Toulousaines. Je concluerai donc cette tirade infinie en disant que, n'en déplaise à toute considération d'horizontalité hiérarchique, il faut reconnaître qu'à bien des égards t'es le boss !
 
-Merci Guillaume pour ces quelques échanges au détour d'un café ou autre, et, plus généralement, ton regard très intégré sur les questions de macroévolution et le registre fossile et ton appétance -- partagée -- pour les douceurs anisées.
+J'en profite aussi pour te remercier François. Je suis heureux d'avoir partagé cette mission de terrain avec toi en Amazonie en 2024, on ne s'ennuie pas en ta compagnie... Kong ! Merci aussi de m'avoir fourni certaines des illustrations qui habillent ma thèse.
 
-Merci Manu (Douzery) pour ton soutien au détour de quelques mots dans le couloir ou en salle café, ta bonne volonté et ton entrain sincère et particulièrement inspirant dès qu'il est question de sciences. L'un des plus grands regrets de ma carrière d'étudiant est de ne pas avoir eu la chance d'assister à l'un de tes cours, dont on m'a conté monts et merveilles -- à juste titre, sans aucun doute, quand on voit la facilité que tu as à amener des concepts peu triviaux au détour de conversations informelles.
-
-Obrigado Marisa. És uma pessoa brilhante e carinhosa. Desejo-lhe o melhor para o futuro.
-
-Le reste des équipes PAL et PEM.
+Merci au reste des équipes PEM et PAL pour l'environnement de travail unique dont j'ai pu bénéficier au cours de ces trois années. J'avais parfois la sensation étrange d'être un peu en grand écart permanent, pas suffisamment moléculaire pour être un PEM, mais pas assez qualifié en systématique pour un PAL. Merci tout de même de m'avoir accepté et intégré ! **Côté PAL**, merci Guillaume pour ces quelques échanges au détour d'un café ou autre, et, plus généralement, ton regard très intégré sur les questions de macroévolution et le registre fossile et ton appétence -- partagée -- pour les douceurs anisées. Merci Romain pour à peu près la même chose. Merci aussi à Fabrice et Renaud pour ces très chouettes moments musicaux, et merci à Maëva de m'avoir fourni quelques-unes des illustrations qui ornent mes transitions entre chapitres. **Côté PEM**, merci Manu pour ton soutien au détour de quelques mots dans le couloir ou en salle café, ta bonne volonté et ton entrain sincère et particulièrement inspirant dès qu'il est question de sciences. L'un des plus grands regrets de ma carrière d'étudiant est de ne pas avoir eu la chance d'assister à l'un de tes cours, dont on m'a conté monts et merveilles. Merci aussi Mathou pour ton sourire, ta bienveillance et tes encouragements quand la fin approchait. J'espère que tu continueras à t'éclater dans ton post-doc à venir. Merci Benoit (Nabholz) pour ton entrain à te creuser la tête sur des questions d'évolution générale ou de programmation. Merci aussi de m'avoir autorisé à enseigner dans ton UE de L3, je garderai de délicieux souvenirs de ces séances de TP données en ta compagnie. Obrigado Marisa. És uma pessoa brilhante e carinhosa. Desejo-lhe o melhor para o futuro.
 
 Ariane
 
@@ -64,9 +42,7 @@ Arthur
 
 Alex
 
-Narla 
-
-Merci François, je suis heureux d'avoir partagé cette mission de terrain avec toi en Amazonie en 2024, avec toi on ne s'ennuie pas... Kong ! Merci aussi de m'avoir fourni certaines des illustrations qui habillent ma thèse.
+Narla
 
 Céline
 
@@ -91,8 +67,6 @@ Alba, Moritz
 Fred Lozes-Méléro
 
 Nathan Mazet
-
-Merci Mathou pour ton sourire, ta bienveillance et tes encouragements quand la fin approchait. J'espère que tu continueras à t'éclater dans ton post-doc à venir.
 
 Laurent Pouyaud
 
@@ -130,33 +104,25 @@ Ma petite châtaigne
 
 ### Amis Lyonnais
 
-Nils
+Merci aux copaines que je côtoie depuis mon arrivée dans la capitale des quenelles et du saucisson brioché, en 2019 (même avant pour certains).
 
-Raph
+En particulier, merci aux potos de la BAB. Merci Thomas, astre du Val-de-Marne, empereur de la chimie computationnelle et surtout, hôte de qualité supérieure. Merci d'avoir organisé ces événements réguliers dans ton palais Massicois, auxquel j'ai eu énormément de plaisir à assister. Merci Max la Menace pour ton smile, ta bonne humeur et tout l'amour que tu portes. T'es vraiment un boss, et je suis ultra-heureux que t'aies enfin pu te trouver une thèse ! Plein de bonheur à toi et ta Lulu. Merci Jerem, le D.E.F.R.A.N.C.E, seigneur incontesté dans l'art de la vulgarisation dont le sourire ravageur fait chavirer tous les cœurs. J'ai beaucoup apprécié ces quelques années qu'on a partagé sous le même toit, et je suis heureux que tu t'épanouisses avec ta douce. Merci Arthur, homme fait de muscles, de corne et de sel. Plein de force pour l'ATER, j'espère que tes futurs élèves prendront la mesure de la chance qu'ils ont d'avoir un prof aussi exceptionnel que toi. Merci Wassim, on ne s'est pas beaucoup croisés ces derniers temps (surtout par ma faute), mais t'es un crack. Courage pour ta 4A et tout le bonheur du monde avec le W ! Enfin, un gros merci à l'étoile du Limousin, au fer de lance de la macroévolution, à cet esprit vif et percutant dont la science a besoin: Nilsou. Je suis hyper heureux de voir nos trajectoires scientifiques converger, et j'ai l'insolence de caresser l'espoir que, peut-être un jour, en plus de te compter parmi mes plus chers amis, je te compterai parmi mes collaborateurs les plus aguerris. En attendant, je languis de voir fleurir le premier @chabrol2027.
 
-Jerem
+Merci Raph, ou plutôt, Dr. Rullan. Ça commence à faire un bail depuis la première année de prépa, quand on sortait dépités des colles de Jubault, ne comprenant pas pourquoi, à productions égales, Clémence sortait avec 4 points de plus que nous... Quel filou ce Marco, n'est-ce pas ? D'ailleurs, en parlant de Marco, force avec le tiens hein, là-dessus on se sait je crois ! Merci pour ces années Lyonnaises, et notamment, ces moments de coloc dans ce chouette petit appart rue Matthieu Varille qu'après 6 ans de bons et loyaux service tu t'apprêtes à rendre. Merci aussi pour ces petits moments passés en ta compagnie ces dernières années, hélas encore trop rares, mais hautement appréciables. Je garderai un très chouette souvenir de ce duo étoilé. Plein de bonheur et de kiff pour ton post-doc en Islande !
 
-Thomas
+Merci Hugo (Raveton). J'ai passé de très chouettes moments avec toi à Marseille ces dernières années, et je conserverai des souvenirs intarissables de ces scènes que nous avons partagées avec decheENS. Sans doute les meilleurs concerts de ma vie, sincèrement. Je connais peu de gens avec autant de ressources que toi, et je languis de repasser un peu de temps à tes côtés. Tu es quelqu'un de très inspirant, et je te souhaite le plus grand des épanouissements dans tes projets !
 
-Max
+Merci Floriane, la bioacousti-queen des primates et des chats ! Sans forcer sur les compliments -- c'est pas mon genre, tu me connais -- à quelques centimètres près t'es pas loin d'être un prototype de ce que les gens s'imaginent quand ils entendent le mot "perfection". Tu es quelqu'un avec qui j'apprécie passer du temps
 
-Arthur
-
-Wass
-
-Hugo Raveton
-
-Bastien Girault
+Merci Bastien (Girault).
 
 Cara
-
-Floriane
 
 Loanne
 
 ### Amis Montpelliérains
 
-Augustin
+Merci Augustin. Déjà cinq ans en arrière, fin Avril 2021, je traversais l'Europe en ta compagnie à bord de ton épave roulante, cap sur un Danemark fraîchement déconfiné. Certains appelleraient ça le début d'une belle histoire, mais, pragmatique comme tu es, tu appellerais sûrement ça un trajet comme les autres. Merci pour tous ces moments passés en ta compagnie depuis lors -- avec une mention spéciale à notre nuit improvisée sur les îles Cíes alors que nous avions manqué le bateau censé nous ramener sur le continent (heureusement qu'on a trouvé des bières) ! Je ne me lasserai jamais de ton aplomb comique, de ton côté pince-sans-rire si caractéristique, de ton alcoolisme et de ton appétence (partagée) pour la bonne bouffe. À bien des égards, tu es quelqu'un de très inspirant, et j'espère te garder parmi mes plus proches amis.
 
 Simon & Axelle
 
@@ -172,13 +138,15 @@ Simon Roy-Marsiquet
 
 ### Amis d'ailleurs
 
-Merci Bastien (Ruaud) pour ces petites bouffées d'Oxygène Gardoises venues égayer mon quotidien Héraultais, que ce soit à l'occasion d'un Jeudi de Nîmes, d'un concert de Mika aux Arènes ou juste d'un petit Prolet en semaine. Je garderai un souvenir mémorable de nos premières sorties vélo communes et de tes "Nan!" catégoriques à chaque fois que je te demandais si tu passais un bon moment, te plaignant de ton postérieur endolori. Tu es quelqu'un de vrai avec qui je savoure chaque moment passé, et sans plus faire usage de compliments -- art dans lequel tu sais que j'excelle --, ta personnalité est, par bien des attraits, extrêmement inspirante (si l'on omet ta faible appétence pour les tâches ménagères, et ta forte propension à ne pas te forcer à faire les choses pour lesquelles tu as une faible appétence). Je me félicite de te compter parmi mes amis les plus chers.
+Merci Bastien (Ruaud) pour ces petites bouffées d'Oxygène Gardoises venues égayer mon quotidien Héraultais, que ce soit à l'occasion d'un Jeudi de Nîmes, d'un concert de Mika aux Arènes ou juste d'un petit Prolet en semaine. De manière générale, merci pour ces week-ends, ces soirées et ces après-midi mémorables passés en ta compagnie. Je garderai un souvenir inaltérable de nos premières sorties vélo, rythmées par tes "Nan!" catégoriques à chaque fois que je te demandais si tu passais un bon moment, te plaignant de ton postérieur endolori. Tu es quelqu'un de vrai avec qui je savoure chaque moment passé, et sans plus faire usage de compliment -- art dans lequel tu sais que j'excelle --, ta personnalité est, par bien des aspects, extrêmement inspirante (si l'on omet ta faible appétence pour les tâches ménagères, et ta forte propension à ne pas te forcer à faire les choses pour lesquelles tu as une faible appétence). Je suis fier de te compter parmi mes amis les plus chers.
 
 P.O. et Max
 
-Lucas et Hugo
+Merci Lucas, merci Hugo, merci les jumeaux. Cela fait plus de la moitié de nos vies que l'on se côtoie en s'appréciant et en se respectant -- même si je passe un peu pour le fou du bus avec ma trajectoire géographico-professionnelle très divergente à la vôtre ! Avec vous, en plus d'avoir en tête de doux souvenirs de nos escapades sportives à base de VTT, basket, tennis et course à pieds (enfin, la course à pieds avec Hugo c'était il y a un moment... avant la prise de masse !!), j'ai vécu mes premières bières, mes premières fêtes de villages, mes premières vacances entre amis, parmi mes premières vagues et mes premières soirées mémorables, alors que nous plantions la tente dans le jardin de (feu) M. Scott. Vous comptez énormément pour moi, et je ne vous remercierai jamais assez pour tous ces chouettes moments passés en votre compagnie, qui ne se sont pas achevés alors que je quittais le cocon pailleton. Je nous souhaite un avenir commun heureux et durable, et j'en profite pour glisser un gros merci à Florence et Olivier pour leus multiples accueils toujours aussi chalereux et bienveillants les uns que les autres dans votre petit havre de bonheur girondin.
 
 Damien
+
+Sousou
 
 Le reste de l'équipe
 
@@ -186,20 +154,19 @@ Floflo
 
 ### Autres
 
-Lewis
+I thank you, Lewis, the best supervisor that I ever had. Four years ago, I had the immense pleasure to do my Master's thesis on your (and Sara's) side at the University of Vigo. I have learnt a lot from your programming and organisational skills (and I probably owe you my British written english!). You have always been very proactive in your projects, and thanks to your massive investment, we could eventually publish this nice study about the sensitivity of palaeobiological pipelines to the use of different global plate models in *Methods in Ecology and Evlution*, which is pretty cool . Thank you also for involving me in the early palaeoverse community, I apologise if my investment progressively faded away as my PhD was going on. Hopefully we can keep collaborating in the future!
 
-David Nogués Bravo & Ryan R. Germain
+I also thank David Nogués Bravo and Ryan R. Germain for offering me my first experience in the world of research at the Center for Macroecology, Evolution and Climate (CMEC), University of Copenhagen. To be honest, I don't even know if I would have considered the application that I made as a naive, poorly-skilled first year's Master's student if I had received it myself. This experience was highly formative to me and gave me the will to keep going in the world of academia. Also, thank you very much for offering me the opportunity to get involved in this very cool paper about bird functional diversity over the last million years. I was very lucky, and I thank you for that attention.
 
 Laurent Sausset, Amandine Lazarini.
 
 PBDB
 
+### Fundings / Financements
 
-### Funds
+Merci au CROUS et aux bourses pour m'avoir accordé une autonomie financière au cours de mes deux premières années d'études supérieures. Merci au salaire normalien pour les quatre suivantes. Merci au contrat doctoral spécifique normalien pour les trois dernières. Je suis conscient de l'extrême privilège auquel j'ai pu jouir en bénéficiant d'une rémunération continue au cours de mes études. Je suis également conscient de la chance que j'ai eue d'accéder aux classe préparatoires aux grandes écoles (CPGE) en pouvant bénéficier d'une pension complète à moindre frais à l'heure où les lois du marché font rage et, au bas mot, sous-tirent chaque mois aux étudiant-es en loyer le montant trimestriel auquel me revenait ma pension en CPGE (logement + nourriture à 3 repas par jour). La violence des inégalités du système me laisse particulièrement amer, posture bien facile à tenir du point de vue de celui qui a pu en bénéficier. J'en profite alors pour affirmer mon soutien le plus inconditionnel à la gratuité totale de l'ensignement supérieur, pour tous-tes, peu importe l'origine sociale ou géographique (car oui, il est actuellement question d'imposer des frais d'inscription aux études Universtitaires mirobolants pour les étudiant-es étranger-es) et à toute initiative de lutte contre la précarité étudiante.
 
-Le CROUS et les bourses pour m'avoir accordé une autonomie financière sur mes deux premières années d'études supérieures. Le salaire normalien pour les quatre suivantes. Le contrat doctoral spécifique normalien pour les quatre dernières. Je suis conscient de l'extrême privilège auquel j'ai pu jouir en bénéficiant d'une rémunération continue au cours de mes études. Je suis également conscient de la chance que j'ai eue d'accéder aux classe préparatoires aux grandes écoles (CPGE) en pouvant bénéficier d'une pension complète à moindre frais à l'heure où les lois du marché font rage et, au bas mot, sous-tirent chaque mois aux étudiant-es en loyer le montant trimestriel auquel me revenait ma pension en CPGE (logement + nourriture à 3 repas par jour). La violence des inégalités du système me laisse particulièrement amer, posture bien facile à tenir du point de vue de celui qui a pu bénéficier d'un tel système. J'en profite alors pour affirmer mon soutien le plus inconditionnel à la gratuité totale de l'ensignement supérieur, pour tous-tes, peu importe l'origine sociale ou géographique (car oui, il est actuellement question d'imposer des frais d'inscription mirobolants aux étudiant-es étrangers) et à toute initiative de lutte contre la précarité étudiante.
-
-Ministère de l'Enseignement Supérieur et de la Recherche, via Contrat Doctoral Spécifique Normalien. Labex CEBA (EMERGENCE) for financing my attendance to the GTÖ Lisbon (02/2024) congress, the two missions in Amazonia, and one paper in PNAS. ECOS-Nord for travel tickets to Colombia. PEM-PAL teams for their support to attend PalAss 2024 and 2025. The Palaeontological Association for travel grants. Thomas J. Smith, Erin E. Saupe and her NERC project for organising this highly insightful workshop about spatial methods to study the fossil record in Oxford (03/2024). Alexis Licht and ERC DISPERSAL for organising BIOGEOPHYLO workshop (03/2025), probably the most inspiring and interesting scientific event I have had the chance to attend so far. MAPAS project ERC for financing my tickets to Vigo in June 2024. École Doctorale GAIA for travel grant to attend AEET-SIBECOL joint congress in Pontevedra and my subsequent stay in Vigo (06/2025). 
+Thanks to the Labex CEBA (via the EMERGENCE project) for financing my attendance to the GTÖ Lisbon (02/2024) congress as well as for funding the two missions I had the immense privilege to do in Colombia Peruvian Amazonia, and for covering the APC of my first PhD paper. Thanks to the ECOS-Nord for funding travel tickets to Colombia last year. Thanks to my two teams (PEM and PAL) for their support to attend PalAss 2024 and 2025. Thanks to The Palaeontological Association for allocating me travel grants two years in a row. Thanks to Thomas J. Smith, Erin E. Saupe (again!) and her NERC project for organising this highly insightful workshop about spatial methods to study the fossil record in Oxford (03/2024). Thanks to Alexis Licht and ERC DISPERSAL for organising BIOGEOPHYLO workshop (03/2025), probably the most inspiring and interesting scientific event I have had the chance to attend so far. Thanks to the ERC-funded project MAPAS for financing my tickets to Vigo in June 2024. Thanks to the École Doctorale GAIA for travel grant to attend AEET-SIBECOL joint congress in Pontevedra and my subsequent stay in Vigo (06/2025).
 
 ## Je ne remercie pas...
 
@@ -212,8 +179,6 @@ Les Sionistes, qui justifient un génocide sur la base d'arguments religieux et 
 Les cigales, véritables architectes d'une cacophonie permanente habillant le Sud de la France trois mois dans l'année.
 
 Les soirées karaoké et le Roquefort. Aucune justification.
-
-:::
 
 {{< pagebreak >}}
 

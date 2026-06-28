@@ -46,8 +46,7 @@ We downloaded genus- and species-level fossil occurrences of Chinchilloidea from
 
 ```{r, echo=FALSE}
 #| label: fig-context
-#| out-height: 15cm
-#| out-width: 13cm
+#| out-width: 17cm
 #| fig-pos: 'H'
 #| fig-cap: "A glimpse into the evolutionary history of Chinchilloidea : combined perspectives from a dated phylogeny and the fossil record. On the top left corner, we represented the extant caviomorph tree of life, encompassing four superfamilies: Octodontoidea, Cavioidea, Erethizontoidea and Chinchilloidea. At present, Chinchilloidea encompass eight species, represented on their dated sub-tree along with a few silhouettes (credits in @tbl-2s3). Purple bars represent node age 95% Confidence Interval. On the bottom part of the figure, we plotted the raw chinchilloid species count across 5-Myr time bins from the fossil occurrence dataset that we built *de novo* ($n=124$ species). In the Late Miocene, up to 37 chinchilloid species were co-existing in a 5-Myr frame, contrasting with the extant diversity of the group. This paper seeks to understand the causes of this striking diversity decline."
 
