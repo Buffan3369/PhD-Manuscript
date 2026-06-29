@@ -383,7 +383,7 @@ Such an incompleteness was shown to significantly affect upstream macroevolution
 ```{r, echo=FALSE}
 #| label: fig-TMB
 #| out-width: 17cm
-#| fig-cap: Example of a fossil locality along the Tambo river, Peruvian Amazonia (photo by the author).
+#| fig-cap: Example of a fossil locality along the Tambo river, Peruvian Amazonia (&copy; Pierre-Olivier Antoine).
 
 include_graphics("./Figures/TMB01-2025.jpeg")
 ```
