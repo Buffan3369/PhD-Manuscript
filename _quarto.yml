@@ -17,6 +17,7 @@ book:
     - discu.qmd
     - glossary.qmd
     - references.qmd
+    - remerciements.qmd
   appendices:
     - Appendix-chap1.qmd
     - Appendix-chap2.qmd

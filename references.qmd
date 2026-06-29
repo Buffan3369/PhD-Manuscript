@@ -6,13 +6,7 @@
 {{< pagebreak >}}
 
 ```{=latex}
-\includepdf[pages=-, scale=1]{./Fioritures/Wayna_Picchu.pdf}
-```
-
-{{< pagebreak >}}
-
-```{=latex}
-\includepdf[pages=-, scale=1]{./Fioritures/Appendices.pdf}
+\includepdf[pages=-, scale=1]{./Fioritures/remerciements.pdf}
 ```
 
 {{< pagebreak >}}
