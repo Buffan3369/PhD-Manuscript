@@ -8,7 +8,6 @@ book:
   author: "Lucas Buffan"
   chapters:
     - index.qmd
-    - Abstract.qmd
     - resume_FR.qmd
     - introduction.qmd
     - chap_div_cnz.qmd
