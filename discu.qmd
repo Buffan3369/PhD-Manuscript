@@ -1,4 +1,4 @@
-# General Discussion, Conclusions and Perspectives {header-title="General Discussion"}
+# General Discussion, Conclusions and Perspectives {header-title="General Discussion, Conclusions and Perspectives"}
 
 ```{r, echo=FALSE}
 library(knitr)
