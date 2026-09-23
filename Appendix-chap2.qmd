@@ -1,3 +1,10 @@
+\appendix
+\renewcommand{\thesection}{B.\arabic{section}}
+\renewcommand{\thefigure}{S.B.\arabic{figure}}
+\renewcommand{\thetable}{S.B.\arabic{table}}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
 # Supporting Information Appendix for Chapter 2 {header-title="Chapter 2 -- SI Appendix"}
 
 ## Detail of some of our occurrence data cleaning steps {#sec-ManClean2}

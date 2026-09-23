@@ -1,3 +1,10 @@
+\appendix
+\renewcommand{\thesection}{A.\arabic{section}}
+\renewcommand{\thefigure}{S.A.\arabic{figure}}
+\renewcommand{\thetable}{S.A.\arabic{table}}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
 # Supporting Information Appendix for Chapter 1 {header-title="Chapter 1 -- SI Appendix"}
 
 ## What is a mass extinction? {#sec-MExDef}
